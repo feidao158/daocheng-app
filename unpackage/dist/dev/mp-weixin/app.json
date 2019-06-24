@@ -6,7 +6,8 @@
     "pages/setting/setting",
     "pages/recruit/add2/add2",
     "pages/recruit/consultation/router/router",
-    "pages/recruit/consultation/holder/holder"
+    "pages/recruit/consultation/holder/holder",
+    "pages/recruit/consultation/input/input"
   ],
   "subPackages": [],
   "window": {

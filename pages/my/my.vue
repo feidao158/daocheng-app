@@ -113,8 +113,6 @@
 					url: "../setting/setting"
 				})
 			}
-			
-			
 		},
 		onLoad() {
 			var me = this;
