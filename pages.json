@@ -49,6 +49,10 @@
             "path" : "pages/recruit/consultation/bill_form/bill_form",
             "style" : {}
         }
+        ,{
+            "path" : "pages/recruit/consultation/bill_router/bill_router",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

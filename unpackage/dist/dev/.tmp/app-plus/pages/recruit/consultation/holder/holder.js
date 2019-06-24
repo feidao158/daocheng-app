@@ -394,10 +394,11 @@ var _default =
     this.loadStudentInfo();
 
 
+
   },
   onLoad: function onLoad(param)
   {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\holder\\holder.vue:300");
+    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\holder\\holder.vue:301");
     this.pageType = param.type;
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))

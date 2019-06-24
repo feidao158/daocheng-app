@@ -16,7 +16,7 @@
 						    <view  class="collapse-item-content" @tap="myStudentRouter">
 						        我的学员
 						    </view>
-							<view class="collapse-item-content" >
+							<view class="collapse-item-content" @tap="billInfoRouter">
 							   我的账单
 							</view>
 							<view class="collapse-item-content">
@@ -94,6 +94,13 @@
 				this.showDrawer = false;
 				uni.navigateTo({
 					url: "../recruit/consultation/router/router"
+				})
+			},
+			billInfoRouter()
+			{
+				this.showDrawer = false;
+				uni.navigateTo({
+					url: "../recruit/consultation/bill_router/bill_router"
 				})
 			}
 		},

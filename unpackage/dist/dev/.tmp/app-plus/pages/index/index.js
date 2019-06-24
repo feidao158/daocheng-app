@@ -195,6 +195,13 @@ __webpack_require__.r(__webpack_exports__);
       uni.navigateTo({
         url: "../recruit/consultation/router/router" });
 
+    },
+    billInfoRouter: function billInfoRouter()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/consultation/bill_router/bill_router" });
+
     } },
 
   components: {

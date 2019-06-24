@@ -294,6 +294,7 @@
 			this.loadStudentInfo()
 			
 			
+			
 		},
 		onLoad(param)
 		{
