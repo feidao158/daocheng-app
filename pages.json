@@ -45,6 +45,10 @@
             "path" : "pages/recruit/consultation/stu_modify/stu_modify",
             "style" : {}
         }
+        ,{
+            "path" : "pages/recruit/consultation/bill_form/bill_form",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

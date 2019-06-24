@@ -14405,6 +14405,23 @@ createPage(_add.default);
 
 /***/ }),
 
+/***/ "../../../../uniapp/daocheng/main.js?{\"page\":\"pages%2Frecruit%2Fconsultation%2Fbill_form%2Fbill_form\"}":
+/*!****************************************************************************************************!*\
+  !*** D:/uniapp/daocheng/main.js?{"page":"pages%2Frecruit%2Fconsultation%2Fbill_form%2Fbill_form"} ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../uniapp/daocheng/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _bill_form = _interopRequireDefault(__webpack_require__(/*! ./pages/recruit/consultation/bill_form/bill_form.vue */ "../../../../uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_bill_form.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
 /***/ "../../../../uniapp/daocheng/main.js?{\"page\":\"pages%2Frecruit%2Fconsultation%2Fholder%2Fholder\"}":
 /*!**********************************************************************************************!*\
   !*** D:/uniapp/daocheng/main.js?{"page":"pages%2Frecruit%2Fconsultation%2Fholder%2Fholder"} ***!

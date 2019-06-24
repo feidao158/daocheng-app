@@ -1215,14 +1215,14 @@ function gz$gwx_10(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
 __WXML_GLOBAL__.ops_cached.$gwx_10=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[2,'=='],[[7],[3,'pageType']],[1,0]])
-Z(z[0])
 })(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
 }
 function gz$gwx_11(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_11)return __WXML_GLOBAL__.ops_cached.$gwx_11
 __WXML_GLOBAL__.ops_cached.$gwx_11=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[2,'=='],[[7],[3,'pageType']],[1,0]])
+Z(z[0])
 })(__WXML_GLOBAL__.ops_cached.$gwx_11);return __WXML_GLOBAL__.ops_cached.$gwx_11
 }
 function gz$gwx_12(){
@@ -1234,6 +1234,12 @@ __WXML_GLOBAL__.ops_cached.$gwx_12=[];
 function gz$gwx_13(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_13)return __WXML_GLOBAL__.ops_cached.$gwx_13
 __WXML_GLOBAL__.ops_cached.$gwx_13=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+})(__WXML_GLOBAL__.ops_cached.$gwx_13);return __WXML_GLOBAL__.ops_cached.$gwx_13
+}
+function gz$gwx_14(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_14)return __WXML_GLOBAL__.ops_cached.$gwx_14
+__WXML_GLOBAL__.ops_cached.$gwx_14=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'__e'])
 Z([3,'form'])
@@ -1273,19 +1279,19 @@ Z(z[28])
 Z([3,'资讯信息'])
 Z([[2,'+'],[[2,'+'],[1,'5'],[1,',']],[1,'1']])
 Z(z[7])
-})(__WXML_GLOBAL__.ops_cached.$gwx_13);return __WXML_GLOBAL__.ops_cached.$gwx_13
-}
-function gz$gwx_14(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_14)return __WXML_GLOBAL__.ops_cached.$gwx_14
-__WXML_GLOBAL__.ops_cached.$gwx_14=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
 })(__WXML_GLOBAL__.ops_cached.$gwx_14);return __WXML_GLOBAL__.ops_cached.$gwx_14
+}
+function gz$gwx_15(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_15)return __WXML_GLOBAL__.ops_cached.$gwx_15
+__WXML_GLOBAL__.ops_cached.$gwx_15=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+})(__WXML_GLOBAL__.ops_cached.$gwx_15);return __WXML_GLOBAL__.ops_cached.$gwx_15
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./components/uni-drawer/uni-drawer.wxml','./components/w-picker/w-picker.wxml','./node-modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item.wxml','./node-modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse.wxml','./node-modules/@dcloudio/uni-ui/lib/uni-icon/uni-icon.wxml','./pages/index/index.wxml','./pages/login/login.wxml','./pages/my/my.wxml','./pages/recruit/add2/add2.wxml','./pages/recruit/consultation/holder/holder.wxml','./pages/recruit/consultation/input/input.wxml','./pages/recruit/consultation/router/router.wxml','./pages/recruit/consultation/stu_modify/stu_modify.wxml','./pages/setting/setting.wxml'];d_[x[0]]={}
+var x=['./components/uni-drawer/uni-drawer.wxml','./components/w-picker/w-picker.wxml','./node-modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item.wxml','./node-modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse.wxml','./node-modules/@dcloudio/uni-ui/lib/uni-icon/uni-icon.wxml','./pages/index/index.wxml','./pages/login/login.wxml','./pages/my/my.wxml','./pages/recruit/add2/add2.wxml','./pages/recruit/consultation/bill_form/bill_form.wxml','./pages/recruit/consultation/holder/holder.wxml','./pages/recruit/consultation/input/input.wxml','./pages/recruit/consultation/router/router.wxml','./pages/recruit/consultation/stu_modify/stu_modify.wxml','./pages/setting/setting.wxml'];d_[x[0]]={}
 var m0=function(e,s,r,gg){
 var z=gz$gwx_1()
 var oB=_v()
@@ -1442,24 +1448,24 @@ e_[x[8]]={f:m8,j:[],i:[],ti:[],ic:[]}
 d_[x[9]]={}
 var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
-var oHB=_n('view')
-var xIB=_v()
-_(oHB,xIB)
-if(_oz(z,0,e,s,gg)){xIB.wxVkey=1
-}
-var oJB=_v()
-_(oHB,oJB)
-if(_oz(z,1,e,s,gg)){oJB.wxVkey=1
-}
-xIB.wxXCkey=1
-oJB.wxXCkey=1
-_(r,oHB)
 return r
 }
 e_[x[9]]={f:m9,j:[],i:[],ti:[],ic:[]}
 d_[x[10]]={}
 var m10=function(e,s,r,gg){
 var z=gz$gwx_11()
+var xIB=_n('view')
+var oJB=_v()
+_(xIB,oJB)
+if(_oz(z,0,e,s,gg)){oJB.wxVkey=1
+}
+var fKB=_v()
+_(xIB,fKB)
+if(_oz(z,1,e,s,gg)){fKB.wxVkey=1
+}
+oJB.wxXCkey=1
+fKB.wxXCkey=1
+_(r,xIB)
 return r
 }
 e_[x[10]]={f:m10,j:[],i:[],ti:[],ic:[]}
@@ -1472,27 +1478,33 @@ e_[x[11]]={f:m11,j:[],i:[],ti:[],ic:[]}
 d_[x[12]]={}
 var m12=function(e,s,r,gg){
 var z=gz$gwx_13()
-var oNB=_mz(z,'form',['bindsubmit',0,'class',1,'data-event-opts',1],[],e,s,gg)
-var cOB=_mz(z,'uni-collapse',['accordion',3,'animation',1,'bind:__l',2,'vueId',3,'vueSlots',4],[],e,s,gg)
-var oPB=_mz(z,'uni-collapse-item',['animation',8,'bind:__l',1,'title',2,'vueId',3,'vueSlots',4],[],e,s,gg)
-var lQB=_mz(z,'w-picker',['bind:__l',13,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'endYear',6,'mode',7,'selectList',8,'startYear',9,'step',10,'themeColor',11,'vueId',12],[],e,s,gg)
-_(oPB,lQB)
-_(cOB,oPB)
-var aRB=_mz(z,'uni-collapse-item',['animation',26,'bind:__l',1,'class',2,'title',3,'vueId',4,'vueSlots',5],[],e,s,gg)
-_(cOB,aRB)
-var tSB=_mz(z,'uni-collapse-item',['animation',32,'bind:__l',1,'class',2,'title',3,'vueId',4,'vueSlots',5],[],e,s,gg)
-_(cOB,tSB)
-_(oNB,cOB)
-_(r,oNB)
 return r
 }
 e_[x[12]]={f:m12,j:[],i:[],ti:[],ic:[]}
 d_[x[13]]={}
 var m13=function(e,s,r,gg){
 var z=gz$gwx_14()
+var cOB=_mz(z,'form',['bindsubmit',0,'class',1,'data-event-opts',1],[],e,s,gg)
+var oPB=_mz(z,'uni-collapse',['accordion',3,'animation',1,'bind:__l',2,'vueId',3,'vueSlots',4],[],e,s,gg)
+var lQB=_mz(z,'uni-collapse-item',['animation',8,'bind:__l',1,'title',2,'vueId',3,'vueSlots',4],[],e,s,gg)
+var aRB=_mz(z,'w-picker',['bind:__l',13,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'endYear',6,'mode',7,'selectList',8,'startYear',9,'step',10,'themeColor',11,'vueId',12],[],e,s,gg)
+_(lQB,aRB)
+_(oPB,lQB)
+var tSB=_mz(z,'uni-collapse-item',['animation',26,'bind:__l',1,'class',2,'title',3,'vueId',4,'vueSlots',5],[],e,s,gg)
+_(oPB,tSB)
+var eTB=_mz(z,'uni-collapse-item',['animation',32,'bind:__l',1,'class',2,'title',3,'vueId',4,'vueSlots',5],[],e,s,gg)
+_(oPB,eTB)
+_(cOB,oPB)
+_(r,cOB)
 return r
 }
 e_[x[13]]={f:m13,j:[],i:[],ti:[],ic:[]}
+d_[x[14]]={}
+var m14=function(e,s,r,gg){
+var z=gz$gwx_15()
+return r
+}
+e_[x[14]]={f:m14,j:[],i:[],ti:[],ic:[]}
 if(path&&e_[path]){
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
 var main=e_[path].f
@@ -1539,6 +1551,9 @@ __wxAppCode__['pages/my/my.wxml']=$gwx('./pages/my/my.wxml');
 
 __wxAppCode__['pages/recruit/add2/add2.json']={"usingComponents":{"uni-collapse":"/node-modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse","uni-collapse-item":"/node-modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item","w-picker":"/components/w-picker/w-picker"}};
 __wxAppCode__['pages/recruit/add2/add2.wxml']=$gwx('./pages/recruit/add2/add2.wxml');
+
+__wxAppCode__['pages/recruit/consultation/bill_form/bill_form.json']={"usingComponents":{}};
+__wxAppCode__['pages/recruit/consultation/bill_form/bill_form.wxml']=$gwx('./pages/recruit/consultation/bill_form/bill_form.wxml');
 
 __wxAppCode__['pages/recruit/consultation/holder/holder.json']={"usingComponents":{}};
 __wxAppCode__['pages/recruit/consultation/holder/holder.wxml']=$gwx('./pages/recruit/consultation/holder/holder.wxml');
@@ -16340,6 +16355,23 @@ createPage(_add.default);
 
 /***/ }),
 
+/***/ "../../../../uniapp/daocheng/main.js?{\"page\":\"pages%2Frecruit%2Fconsultation%2Fbill_form%2Fbill_form\"}":
+/*!****************************************************************************************************!*\
+  !*** D:/uniapp/daocheng/main.js?{"page":"pages%2Frecruit%2Fconsultation%2Fbill_form%2Fbill_form"} ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../uniapp/daocheng/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _bill_form = _interopRequireDefault(__webpack_require__(/*! ./pages/recruit/consultation/bill_form/bill_form.vue */ "../../../../uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_bill_form.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
 /***/ "../../../../uniapp/daocheng/main.js?{\"page\":\"pages%2Frecruit%2Fconsultation%2Fholder%2Fholder\"}":
 /*!**********************************************************************************************!*\
   !*** D:/uniapp/daocheng/main.js?{"page":"pages%2Frecruit%2Fconsultation%2Fholder%2Fholder"} ***!
@@ -27260,6 +27292,34 @@ var _default =
       uni.navigateTo({
         url: "../stu_modify/stu_modify?id=" + id });
 
+    },
+    // 标记优生
+    setGood: function setGood()
+    {
+      uni.request({
+        url: this.serverUrl + '/stu/sign_cancel_good/' + this.stu.id,
+        method: 'GET',
+        data: {},
+        success: function success(res) {
+          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:263");
+          if (res.data.status == 200)
+          {
+            uni.showToast({
+              title: res.data.msg });
+
+            return;
+          }
+
+          uni.showToast({
+            title: "未知错误！" });
+
+
+
+        },
+        fail: function fail() {},
+        complete: function complete() {} });
+
+
     } },
 
 
@@ -27278,7 +27338,7 @@ var _default =
   },
   onLoad: function onLoad(param)
   {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\holder\\holder.vue:272");
+    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\holder\\holder.vue:300");
     this.pageType = param.type;
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
@@ -28153,6 +28213,134 @@ render._withStripped = true
 },[["../../../../uniapp/daocheng/main.js?{\"page\":\"pages%2Frecruit%2Fconsultation%2Fstu_modify%2Fstu_modify\"}","common/runtime","common/vendor"]]]);
 });
 require('pages/recruit/consultation/stu_modify/stu_modify.js');
+__wxRoute = 'pages/recruit/consultation/bill_form/bill_form';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/recruit/consultation/bill_form/bill_form.js';
+
+define('pages/recruit/consultation/bill_form/bill_form.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
+(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/recruit/consultation/bill_form/bill_form"],{
+
+/***/ "../../../../uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue":
+/*!*****************************************************************************!*\
+  !*** D:/uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _bill_form_vue_vue_type_template_id_b41d1712___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bill_form.vue?vue&type=template&id=b41d1712& */ "../../../../uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue?vue&type=template&id=b41d1712&");
+/* harmony import */ var _bill_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bill_form.vue?vue&type=script&lang=js& */ "../../../../uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue?vue&type=script&lang=js&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _bill_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _bill_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../HBuilderX.1.9.9.20190522.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _bill_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _bill_form_vue_vue_type_template_id_b41d1712___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _bill_form_vue_vue_type_template_id_b41d1712___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "../../../../uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************!*\
+  !*** D:/uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_bill_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../HBuilderX.1.9.9.20190522.full/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../HBuilderX.1.9.9.20190522.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../HBuilderX.1.9.9.20190522.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../HBuilderX.1.9.9.20190522.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./bill_form.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue?vue&type=script&lang=js&");
+/* harmony import */ var _HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_bill_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_bill_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_bill_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_bill_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_bill_form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "../../../../uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue?vue&type=template&id=b41d1712&":
+/*!************************************************************************************************************!*\
+  !*** D:/uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue?vue&type=template&id=b41d1712& ***!
+  \************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_bill_form_vue_vue_type_template_id_b41d1712___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../HBuilderX.1.9.9.20190522.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../HBuilderX.1.9.9.20190522.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!../../../../../../HBuilderX.1.9.9.20190522.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!../../../../../../HBuilderX.1.9.9.20190522.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./bill_form.vue?vue&type=template&id=b41d1712& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue?vue&type=template&id=b41d1712&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_bill_form_vue_vue_type_template_id_b41d1712___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_HBuilderX_1_9_9_20190522_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_bill_form_vue_vue_type_template_id_b41d1712___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!D:/uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+var _default =
+{
+  data: function data() {
+    return {};
+
+
+  },
+  methods: {} };exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue?vue&type=template&id=b41d1712&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib??vue-loader-options!D:/uniapp/daocheng/pages/recruit/consultation/bill_form/bill_form.vue?vue&type=template&id=b41d1712& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+},[["../../../../uniapp/daocheng/main.js?{\"page\":\"pages%2Frecruit%2Fconsultation%2Fbill_form%2Fbill_form\"}","common/runtime","common/vendor"]]]);
+});
+require('pages/recruit/consultation/bill_form/bill_form.js');
 ;(function(global) {
     __uni_launch_ready(function() {
         var entryPagePath = __wxConfig.entryPagePath.replace('.html', '')
