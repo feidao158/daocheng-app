@@ -345,6 +345,12 @@ var _default =
         fail: function fail() {},
         complete: function complete() {} });
 
+    },
+    stuModify: function stuModify(id)
+    {
+      uni.navigateTo({
+        url: "../stu_modify/stu_modify?id=" + id });
+
     } },
 
 
@@ -363,7 +369,7 @@ var _default =
   },
   onLoad: function onLoad(param)
   {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\holder\\holder.vue:266");
+    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\holder\\holder.vue:272");
     this.pageType = param.type;
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))

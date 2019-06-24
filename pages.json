@@ -41,6 +41,10 @@
             "path" : "pages/recruit/consultation/input/input",
             "style" : {}
         }
+        ,{
+            "path" : "pages/recruit/consultation/stu_modify/stu_modify",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

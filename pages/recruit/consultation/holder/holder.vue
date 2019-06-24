@@ -33,7 +33,7 @@
 			</view> -->
 			
 			<view v-if="pageType==0" class=" margin-top padding flex flex-wrap justify-between align-center bg-white">
-				<button class="cu-btn bg-cyan">修改</button>
+				<button class="cu-btn bg-cyan" @tap="stuModify(stu.id)">修改</button>
 				<button class="cu-btn bg-cyan">报名</button>
 				<button class="cu-btn bg-cyan">续报名</button>
 				<button class="cu-btn bg-cyan">回访</button>
@@ -245,6 +245,12 @@
 					fail: () => {},
 					complete: () => {}
 				});
+			},
+			stuModify(id)
+			{
+				uni.navigateTo({
+					url:"../stu_modify/stu_modify?id=" + id
+				})
 			}
 			
 		},

@@ -385,13 +385,12 @@
 			},
 			selectRelationShip(e)
 			{
-				var index = e.detail.value;
-				var relationShipName = this.relationShip[index]
-				this.selectedRelationShip = relationShipName;
+				this.selectedRelationShip = this.relationShip[e.detail.value]
 			},
 			selectIntentionLevel(e)
 			{
-				this.selectedIntentionLevel = e.detail.value;
+				
+				this.selectedIntentionLevel = this.intentionLevel[e.detail.value];
 			}
 		},
 		components:{
@@ -424,7 +423,6 @@
 					this.resourceFormTypes = res.data;
 				}
 			});
-			
 			
 		},
 		onShow() {
