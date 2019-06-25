@@ -10,7 +10,9 @@
     "pages/recruit/consultation/input/input",
     "pages/recruit/consultation/stu_modify/stu_modify",
     "pages/recruit/consultation/bill_form/bill_form",
-    "pages/recruit/consultation/bill_router/bill_router"
+    "pages/recruit/consultation/bill_router/bill_router",
+    "pages/recruit/ledger/ledger_school/ledger_school",
+    "pages/recruit/ledger/ledger_school_detail/ledger_school_detail"
   ],
   "subPackages": [],
   "window": {

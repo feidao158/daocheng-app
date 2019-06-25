@@ -202,6 +202,13 @@ __webpack_require__.r(__webpack_exports__);
       uni.navigateTo({
         url: "../recruit/consultation/bill_router/bill_router" });
 
+    },
+    ledgerSchool: function ledgerSchool()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/ledger/ledger_school/ledger_school" });
+
     } },
 
   components: {

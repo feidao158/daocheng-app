@@ -53,6 +53,14 @@
             "path" : "pages/recruit/consultation/bill_router/bill_router",
             "style" : {}
         }
+        ,{
+            "path" : "pages/recruit/ledger/ledger_school/ledger_school",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/recruit/ledger/ledger_school_detail/ledger_school_detail",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

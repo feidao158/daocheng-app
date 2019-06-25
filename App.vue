@@ -150,4 +150,25 @@
 			transform: translateY(0px);
 		}
 	}
+	
+	.half-content{
+		
+		width: 50%;
+	}
+	.tab-hide{
+		display: none;
+	}
+	
+	
+	.tab-list{
+		
+	}
+	
+	.tab-list .tab-item{
+		display: none;
+	}
+	
+	.tab-list .tab-show{
+		display: block;
+	}
 </style>
