@@ -9,20 +9,19 @@
 			<uni-list>
 			
 				
-			
 					<uni-collapse accordion="true" animation="true">
 						
 						<uni-collapse-item title="咨询" animation="true">
 						    <view  class="collapse-item-content" @tap="myStudentRouter">
-						        我的学员
+						       我的学员
 						    </view>
 							<view class="collapse-item-content" >
 							   我的账单
 							</view>
-							<view class="collapse-item-content">
+							<view class="collapse-item-content" @tap="myReturnVisitRouter">
 							   我的回访
 							</view>
-							<view class="collapse-item-content">
+							<view class="collapse-item-content" @tap="returnVisitToRemind">
 							   回访提醒
 							</view>
 							<view class="collapse-item-content">
@@ -94,6 +93,20 @@
 				this.showDrawer = false;
 				uni.navigateTo({
 					url: "../recruit/consultation/router/router"
+				})
+			},
+			myReturnVisitRouter()
+			{
+				this.showDrawer = false;
+				uni.navigateTo({
+					url:"../recruit/consultation/visit_router/visit_router"
+				})
+			},
+			returnVisitToRemind()
+			{
+				this.showDrawer = false;
+				uni.navigateTo({
+					url:"../recruit/consultation/visit_remind_router/visit_remind_router"
 				})
 			}
 		},

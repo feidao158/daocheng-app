@@ -33,14 +33,14 @@
 			</view> -->
 			
 			<view v-if="pageType==0" class=" margin-top padding flex flex-wrap justify-between align-center bg-white">
-				<button class="cu-btn bg-cyan">修改</button>
+				<button class="cu-btn bg-cyan" @tap="stuModify(stu.id)">修改</button>
 				<button class="cu-btn bg-cyan">报名</button>
 				<button class="cu-btn bg-cyan">续报名</button>
 				<button class="cu-btn bg-cyan">回访</button>
 			</view>
 			
 			<view  v-if="pageType==0" class="padding flex flex-wrap justify-between align-center bg-white">
-				<button class="cu-btn bg-cyan">优生</button>
+				<button class="cu-btn bg-cyan" @tap="setGood">优生</button>
 				<button class="cu-btn bg-cyan">分配负责老师</button>
 				<button class="cu-btn bg-cyan">学生状态修改</button>
 			</view>
@@ -245,6 +245,40 @@
 					fail: () => {},
 					complete: () => {}
 				});
+			},
+			stuModify(id)
+			{
+				uni.navigateTo({
+					url:"../stu_modify/stu_modify?id=" + id
+				})
+			},
+			// 标记优生
+			setGood()
+			{
+				uni.request({
+					url: this.serverUrl + '/stu/sign_cancel_good/' + this.stu.id,
+					method: 'GET',
+					data: {},
+					success: res => {
+						console.log(res.data)
+						if(res.data.status==200)
+						{
+							uni.showToast({
+								title: res.data.msg
+							})
+							return;
+						}
+						
+						uni.showToast({
+							title: "未知错误！"
+						})
+						
+						
+					},
+					fail: () => {},
+					complete: () => {}
+				});
+				
 			}
 			
 		},
@@ -258,6 +292,7 @@
 		onShow(param) {
 			var me = this;
 			this.loadStudentInfo()
+			
 			
 			
 		},

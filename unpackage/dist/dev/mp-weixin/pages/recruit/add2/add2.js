@@ -447,7 +447,6 @@ __webpack_require__.r(__webpack_exports__);
         complete: function complete() {} });
 
 
-
     },
 
     selectedBirthday: function selectedBirthday(e)
@@ -485,13 +484,12 @@ __webpack_require__.r(__webpack_exports__);
     },
     selectRelationShip: function selectRelationShip(e)
     {
-      var index = e.detail.value;
-      var relationShipName = this.relationShip[index];
-      this.selectedRelationShip = relationShipName;
+      this.selectedRelationShip = this.relationShip[e.detail.value];
     },
     selectIntentionLevel: function selectIntentionLevel(e)
     {
-      this.selectedIntentionLevel = e.detail.value;
+
+      this.selectedIntentionLevel = this.intentionLevel[e.detail.value];
     } },
 
   components: {
@@ -523,7 +521,6 @@ __webpack_require__.r(__webpack_exports__);
       success: function success(res) {
         _this2.resourceFormTypes = res.data;
       } });
-
 
 
   },

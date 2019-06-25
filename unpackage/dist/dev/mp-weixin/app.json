@@ -7,7 +7,11 @@
     "pages/recruit/add2/add2",
     "pages/recruit/consultation/router/router",
     "pages/recruit/consultation/holder/holder",
-    "pages/recruit/consultation/input/input"
+    "pages/recruit/consultation/input/input",
+    "pages/recruit/consultation/stu_modify/stu_modify",
+    "pages/recruit/consultation/bill_form/bill_form",
+    "pages/recruit/consultation/bill_router/bill_router",
+    "pages/recruit/consultation/visit_router/visit_router"
   ],
   "subPackages": [],
   "window": {

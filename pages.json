@@ -41,6 +41,34 @@
             "path" : "pages/recruit/consultation/input/input",
             "style" : {}
         }
+        ,{
+            "path" : "pages/recruit/consultation/stu_modify/stu_modify",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/recruit/consultation/bill_form/bill_form",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/recruit/consultation/bill_router/bill_router",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/recruit/consultation/visit_router/visit_router",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/recruit/consultation/return_visit/return_visit",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/recruit/consultation/visit_remind_router/visit_remind_router",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/recruit/consultation/visit_remind/visit_remind",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

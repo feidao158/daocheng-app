@@ -166,7 +166,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 {
   data: function data() {
     return {
@@ -194,6 +193,13 @@ __webpack_require__.r(__webpack_exports__);
       this.showDrawer = false;
       uni.navigateTo({
         url: "../recruit/consultation/router/router" });
+
+    },
+    myReturnVisit: function myReturnVisit()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/consultation/visit_router/visit_router" });
 
     } },
 

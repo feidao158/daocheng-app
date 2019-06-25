@@ -345,6 +345,40 @@ var _default =
         fail: function fail() {},
         complete: function complete() {} });
 
+    },
+    stuModify: function stuModify(id)
+    {
+      uni.navigateTo({
+        url: "../stu_modify/stu_modify?id=" + id });
+
+    },
+    // 标记优生
+    setGood: function setGood()
+    {
+      uni.request({
+        url: this.serverUrl + '/stu/sign_cancel_good/' + this.stu.id,
+        method: 'GET',
+        data: {},
+        success: function success(res) {
+          console.log(res.data);
+          if (res.data.status == 200)
+          {
+            uni.showToast({
+              title: res.data.msg });
+
+            return;
+          }
+
+          uni.showToast({
+            title: "未知错误！" });
+
+
+
+        },
+        fail: function fail() {},
+        complete: function complete() {} });
+
+
     } },
 
 
@@ -358,6 +392,7 @@ var _default =
   onShow: function onShow(param) {
     var me = this;
     this.loadStudentInfo();
+
 
 
   },

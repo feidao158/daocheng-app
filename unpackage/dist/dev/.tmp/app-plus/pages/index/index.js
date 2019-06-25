@@ -166,7 +166,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 {
   data: function data() {
     return {
@@ -194,6 +193,20 @@ __webpack_require__.r(__webpack_exports__);
       this.showDrawer = false;
       uni.navigateTo({
         url: "../recruit/consultation/router/router" });
+
+    },
+    myReturnVisitRouter: function myReturnVisitRouter()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/consultation/visit_router/visit_router" });
+
+    },
+    returnVisitToRemind: function returnVisitToRemind()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/consultation/visit_remind_router/visit_remind_router" });
 
     } },
 
