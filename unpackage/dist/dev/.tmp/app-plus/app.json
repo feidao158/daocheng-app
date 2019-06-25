@@ -14,7 +14,9 @@
     "pages/recruit/consultation/visit_router/visit_router",
     "pages/recruit/consultation/return_visit/return_visit",
     "pages/recruit/consultation/visit_remind_router/visit_remind_router",
-    "pages/recruit/consultation/visit_remind/visit_remind"
+    "pages/recruit/consultation/visit_remind/visit_remind",
+    "pages/recruit/ledger/ledger_school/ledger_school",
+    "pages/recruit/ledger/ledger_school_detail/ledger_school_detail"
   ],
   "subPackages": [],
   "window": {

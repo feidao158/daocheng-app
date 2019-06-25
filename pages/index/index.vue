@@ -30,7 +30,7 @@
 						</uni-collapse-item>
 						
 						<uni-collapse-item title="台账">
-							<view class="collapse-item-content">
+							<view class="collapse-item-content" @tap="ledgerSchool">
 								学校台账
 							</view>
 							
@@ -107,6 +107,13 @@
 				this.showDrawer = false;
 				uni.navigateTo({
 					url:"../recruit/consultation/visit_remind_router/visit_remind_router"
+				})
+			},
+			ledgerSchool()
+			{
+				this.showDrawer = false;
+				uni.navigateTo({
+					url: "../recruit/ledger/ledger_school/ledger_school"
 				})
 			}
 		},

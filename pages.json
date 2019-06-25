@@ -65,8 +65,16 @@
             "path" : "pages/recruit/consultation/visit_remind_router/visit_remind_router",
             "style" : {}
         }
+		,{
+		   "path" : "pages/recruit/consultation/visit_remind/visit_remind",
+		    "style" : {}
+		}
         ,{
-            "path" : "pages/recruit/consultation/visit_remind/visit_remind",
+            "path" : "pages/recruit/ledger/ledger_school/ledger_school",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/recruit/ledger/ledger_school_detail/ledger_school_detail",
             "style" : {}
         }
     ],

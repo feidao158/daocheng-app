@@ -208,6 +208,13 @@ __webpack_require__.r(__webpack_exports__);
       uni.navigateTo({
         url: "../recruit/consultation/visit_remind_router/visit_remind_router" });
 
+    },
+    ledgerSchool: function ledgerSchool()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/ledger/ledger_school/ledger_school" });
+
     } },
 
   components: {
