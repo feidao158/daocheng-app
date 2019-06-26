@@ -24,8 +24,8 @@
 							<view class="collapse-item-content" @tap="returnVisitToRemind">
 							   回访提醒
 							</view>
-							<view class="collapse-item-content">
-							  生日提醒
+							<view class="collapse-item-content" @tap="birthdayReminder">
+							   生日提醒
 							</view>
 						</uni-collapse-item>
 						
@@ -107,6 +107,12 @@
 				this.showDrawer = false;
 				uni.navigateTo({
 					url:"../recruit/consultation/visit_remind_router/visit_remind_router"
+				})
+			},
+			birthdayReminder(){
+				this.showDrawer = false;
+				uni.navigateTo({
+					url:"../recruit/consultation/birthday_reminder_router/birthday_reminder_router"
 				})
 			},
 			ledgerSchool()

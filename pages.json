@@ -77,6 +77,14 @@
             "path" : "pages/recruit/ledger/ledger_school_detail/ledger_school_detail",
             "style" : {}
         }
+        ,{
+            "path" : "pages/recruit/consultation/birthday_reminder_router/birthday_reminder_router",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/recruit/consultation/birthday_remind/birthday_remind",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
