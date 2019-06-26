@@ -95,6 +95,11 @@
 						
 					</view>
 					
+					
+					<view class="cu-load load-modal" v-if="loadModal">
+						<view class="gray-text">加载中...</view>
+					</view>
+					
 				</view>
 				
 				
@@ -118,7 +123,8 @@
 				cultuerTeacherLedgerList:null,
 				schoolId:null,
 				pageNum:1,
-				teacherInfo:null
+				teacherInfo:null,
+				loadModal:false
 			}
 		},
 		methods: {
@@ -136,8 +142,17 @@
 					method: 'GET',
 					data: {},
 					success: res => {
-						
+							if(this.teacherInfo!=null && this.teacherInfo.id == res.data[0].id)
+						{
+							uni.showToast({
+								title: "到底了!"
+							})
+							this.pageNum--
+							this.loadModal = false
+							return
+						}
 						me.teacherInfo = res.data[0]
+						this.loadModal = false
 					},
 					fail: () => {},
 					complete: () => {}
@@ -148,6 +163,7 @@
 			{
 				if(this.pageNum>1)
 				{
+					this.loadModal = true
 					this.pageNum--;
 					this.getTeacherInfo()
 				}
@@ -155,6 +171,7 @@
 			next()
 			{
 				this.pageNum++
+				this.loadModal = true
 				this.getTeacherInfo()
 			}
 		},

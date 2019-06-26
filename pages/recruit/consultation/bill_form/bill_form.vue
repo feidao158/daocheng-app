@@ -127,6 +127,10 @@
 							<text class="text-red">李四</text>
 						</view> -->
 					</view>
+					
+					<view class="cu-load load-modal" v-if="loadModal">
+						<view class="gray-text">加载中...</view>
+					</view>
 			</view>
 			
 			
@@ -147,7 +151,8 @@
 				pageNum:1,
 				dataType:null,
 				billDetailList:null,
-				modalName: null
+				modalName: null,
+				loadModal:false
 				
 			}
 		},
@@ -172,36 +177,51 @@
 						url: this.serverUrl + '/sign_up/bill_info/un_complete/' + this.pageNum + '?name=&limit=1'
 					})
 					.then(data =>{
+						
 						var [error,res]  = data;
+						if(this.billInfo!=null && this.billInfo.id == res.data[0].id)
+						{
+							uni.showToast({
+								title: "到底了!"
+							})
+							this.pageNum--
+							this.loadModal = false
+							return
+						}
 						me.billInfo  = res.data[0]
 						this.getBillDetailList()
+						this.loadModal = false
 					})
 				}
 				else
 				{
-					// uni.request({
-					// 	url: this.serverUrl + '/sign_up/bill_info/complete/' + this.pageNum + '?name=&limit=1',
-					// 	method: 'GET',
-					// 	data: {},
-					// 	success: res => {
-					// 		me.billInfo = res.data[0]
-					// 	},
-					// 	fail: () => {},
-					// 	complete: () => {}
-					// });
+					
 					uni.request({
 						url: this.serverUrl + '/sign_up/bill_info/complete/' + this.pageNum + '?name=&limit=1'
 					})
 					.then(data =>{
+						
 						var [error,res]  = data;
+						if(this.billInfo!=null && this.billInfo.id == res.data[0].id)
+						{
+							uni.showToast({
+								title: "到底了!"
+							})
+							this.pageNum--
+							this.loadModal = false
+							return
+						}
+						
 						me.billInfo  = res.data[0]
 						this.getBillDetailList()
+						this.loadModal = false
 					})
 					
 				}			
 			},
 			next()
 			{
+				this.loadModal = true
 				this.pageNum++;
 				this.loadData()
 			},
@@ -210,6 +230,7 @@
 			{
 				if(this.pageNum>1)
 				{
+					this.loadModal = true
 					this.pageNum--;
 					this.loadData()
 				}

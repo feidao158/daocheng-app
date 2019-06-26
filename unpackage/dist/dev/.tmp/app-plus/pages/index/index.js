@@ -165,8 +165,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
 {
   data: function data() {
     return {
@@ -209,6 +207,13 @@ __webpack_require__.r(__webpack_exports__);
       uni.navigateTo({
         url: "../recruit/ledger/ledger_school/ledger_school" });
 
+    },
+    ledgerTeacher: function ledgerTeacher()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/ledger/ledger_teacher/ledger_teacher" });
+
     } },
 
   components: {
@@ -221,7 +226,7 @@ __webpack_require__.r(__webpack_exports__);
       method: 'GET',
       data: {},
       success: function success(res) {
-        console.log(res.data, " at pages\\index\\index.vue:124");
+        console.log(res.data, " at pages\\index\\index.vue:129");
         if (res.data.status == 200)
         {
           // 仍旧是登录状态
@@ -269,10 +274,10 @@ __webpack_require__.r(__webpack_exports__);
 
                 }
 
-                console.log(res.data, " at pages\\index\\index.vue:172");
+                console.log(res.data, " at pages\\index\\index.vue:177");
               },
               fail: function fail() {
-                console.log("出错了", " at pages\\index\\index.vue:175");
+                console.log("出错了", " at pages\\index\\index.vue:180");
               },
               complete: function complete() {} });
 
