@@ -61,6 +61,8 @@
             "path" : "pages/recruit/consultation/return_visit/return_visit",
             "style" : {}
         }
+		
+		
         ,{
             "path" : "pages/recruit/consultation/visit_remind_router/visit_remind_router",
             "style" : {}
@@ -69,6 +71,17 @@
 		   "path" : "pages/recruit/consultation/visit_remind/visit_remind",
 		    "style" : {}
 		}
+		
+		 ,{
+		    "path" : "pages/recruit/consultation/birthday_reminder_router/birthday_reminder_router",
+		    "style" : {}
+		}
+		 ,{
+		    "path" : "pages/recruit/consultation/birthday_remind/birthday_remind",
+		    "style" : {}
+		}
+		
+		
         ,{
             "path" : "pages/recruit/ledger/ledger_school/ledger_school",
             "style" : {}
@@ -78,11 +91,11 @@
             "style" : {}
         }
         ,{
-            "path" : "pages/recruit/consultation/birthday_reminder_router/birthday_reminder_router",
+            "path" : "pages/recruit/ledger/ledger_teacher/ledger_teacher",
             "style" : {}
         }
         ,{
-            "path" : "pages/recruit/consultation/birthday_remind/birthday_remind",
+            "path" : "pages/recruit/survey/survey_school/survey_school",
             "style" : {}
         }
     ],

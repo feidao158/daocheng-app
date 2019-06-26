@@ -29,46 +29,45 @@
 					</view>
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>地区:</text>
-						<text class="text-blue">{{stu.tLeatnerInfo.province + '-' + stu.tLeatnerInfo.city + '-' + stu.tLeatnerInfo.area}}</text>
+						<text class="text-blue">{{stu.province + '-' + stu.city + '-' + stu.area}}</text>
 					</view>
 				</view>
 				
 				<view class="flex">
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>学员姓名:</text>
-						<text class="text-blue">{{stu.tLeatnerInfo.name}}</text>
+						<text class="text-blue">{{stu.name}}</text>
 					
 					</view>
 					<view class="flex-sub border-grey  padding-sm margin-xs radius text-lg">
 						<text>生日</text>
-						<text class="text-blue">{{stu.tLeatnerInfo.intentionLevel}}</text>
+						<text class="text-blue">{{stu.birthday}}</text>
 					</view>
 				</view>
 				
 				<view class="flex">
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>报名校区:</text>
-						<text class="text-blue">{{stu.tLeatnerInfo==null ? '':stu.tLeatnerInfo.dicCode.dicName}}</text>
-						<!-- <text class="text-blue">{{stu.inputPerson==null ? '':stu.inputPerson.name}}</text> -->
+						<text class="text-blue">{{stu.companyCampus==null ? '': stu.companyCampus.schoolName}}</text>
 					
 					</view>
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>报名专业:</text>
-						<text class="text-blue">{{stu.cultureSchoolMajor.majorName}}</text>
+						<text class="text-blue">{{stu.cultureSchoolMajor==null ? '' :stu.cultureSchoolMajor.majorName}}</text>
 					</view>
 				</view>
 				
 				<view class="flex">
 					<view class="flex-sub border-grey padding-sm margin-xs radius text-lg">
 						<text>文化学校:</text>
-						<text class="text-blue">{{stu.cultureSchool.schoolName}}</text>
+						<text class="text-blue">{{stu.cultureSchool==null ? '': stu.cultureSchool.schoolName}}</text>
 					</view>	
 				</view>
 				
 				<view class="flex">
 					<view class="flex-sub border-grey  padding-sm margin-xs radius text-lg">
 						<text>备注:</text>
-						<text class="text-blue">{{stu.holder.name}}</text>
+						<text class="text-blue">{{stu.remask}}</text>
 					</view>
 				</view>
 				
@@ -113,6 +112,7 @@
 					method:"GET",
 					data:{},
 					success: birthdayData =>{
+						console.log(birthdayData)
 						this.stu = birthdayData.data[0]
 					},
 					fail: () => {},
@@ -129,10 +129,8 @@
 		},
 		onShow(param) {
 			var me = this;
-			this.visitRemindDate()
-			
-			
-			
+			this.birthdayRemindData()
+				
 		},
 		onLoad(param)
 		{

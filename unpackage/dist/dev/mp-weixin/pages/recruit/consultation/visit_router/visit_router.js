@@ -126,126 +126,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 var _default =
 {
   data: function data() {
-    return {
-      currentNum: 1,
-      stu: null,
-      dataList: null,
-      pageType: null };
+    return {};
+
 
   },
   methods: {
-    next: function next()
-    {
-      this.currentNum++;
-      this.validReturnLog();
 
+    toVisitDetail: function toVisitDetail(type) {
+      uni.navigateTo({
+        url: "../return_visit/return_visit?type=" + type });
 
-    },
-    prevent: function prevent()
-    {
-      this.currentNum--;
-      this.validReturnLog();
-    },
+      console.log(type);
 
-    /**
-        * 有效回访日志
-        */
-    validReturnLog: function validReturnLog()
-    {var _this = this;
-      uni.request({
-        url: this.serverUrl + '/stu/visit_info/valid/' + this.currentNum + '?name=&limit=1',
-        method: 'GET',
-        data: {},
-        success: function success(visitDate) {
-          _this.stu = visitDate.data[0];
-        },
-        fail: function fail() {},
-        complete: function complete() {} });
-
-    } },
-
-  computed: {
-    hasPrevent: function hasPrevent() {
-      return {
-        'bg-red': true };
-
-    } },
-
-  onShow: function onShow(param) {
-    var me = this;
-    this.validReturnLog();
-  },
-  onLoad: function onLoad(param)
-  {
-    console.log("load... type:" + param.type);
-    this.pageType = param.type;
-  } };exports.default = _default;
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["default"]))
 
 /***/ }),

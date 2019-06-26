@@ -98,7 +98,22 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance");}function _iterableToArrayLimit(arr, i) {var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;} //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -226,18 +241,109 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 var _default =
 {
   data: function data() {
-    return {};
+    return {
+      billInfo: null,
+      billDetailInfo: null,
+      pageNum: 1,
+      dataType: null,
+      billDetailList: null,
+      modalName: null };
 
 
   },
-  methods: {},
+  methods: {
+
+    loadData: function loadData()
+    {var _this = this;
+      var me = this;
+      if (this.dataType == 0)
+      {
+        // uni.request({
+        // 	url: this.serverUrl + '/sign_up/bill_info/un_complete/' + this.pageNum + '?name=&limit=1',
+        // 	method: 'GET',
+        // 	data: {},
+        // 	success: res => {
+        // 		me.billInfo = res.data[0]
+        // 	},
+        // 	fail: () => {},
+        // 	complete: () => {}
+        // });
+        uni.request({
+          url: this.serverUrl + '/sign_up/bill_info/un_complete/' + this.pageNum + '?name=&limit=1' }).
+
+        then(function (data) {var _data = _slicedToArray(
+          data, 2),error = _data[0],res = _data[1];
+          me.billInfo = res.data[0];
+          _this.getBillDetailList();
+        });
+      } else
+
+      {
+        // uni.request({
+        // 	url: this.serverUrl + '/sign_up/bill_info/complete/' + this.pageNum + '?name=&limit=1',
+        // 	method: 'GET',
+        // 	data: {},
+        // 	success: res => {
+        // 		me.billInfo = res.data[0]
+        // 	},
+        // 	fail: () => {},
+        // 	complete: () => {}
+        // });
+        uni.request({
+          url: this.serverUrl + '/sign_up/bill_info/complete/' + this.pageNum + '?name=&limit=1' }).
+
+        then(function (data) {var _data2 = _slicedToArray(
+          data, 2),error = _data2[0],res = _data2[1];
+          me.billInfo = res.data[0];
+          _this.getBillDetailList();
+        });
+
+      }
+    },
+    next: function next()
+    {
+      this.pageNum++;
+      this.loadData();
+    },
+
+    prevent: function prevent()
+    {
+      if (this.pageNum > 1)
+      {
+        this.pageNum--;
+        this.loadData();
+      }
+    },
+
+    getBillDetailList: function getBillDetailList()
+    {var _this2 = this;
+      uni.request({
+        url: this.serverUrl + '/sign_up/bill_details/info/json/' + this.billInfo.id,
+        method: 'GET',
+        data: {},
+        success: function success(res) {
+          _this2.billDetailList = res.data;
+          console.log(_this2.billDetailList.length);
+        },
+        fail: function fail() {},
+        complete: function complete() {} });
+
+    },
+    showModel: function showModel()
+    {
+      this.modalName = 'Image';
+    },
+    hideModal: function hideModal()
+    {
+      this.modalName = null;
+    } },
 
 
   onLoad: function onLoad(e) {
-    var type = e.type;
-
-
+    this.dataType = e.type;
+    this.loadData();
   } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["default"]))
 
 /***/ }),
 

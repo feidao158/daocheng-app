@@ -55,6 +55,8 @@
 				this.loadModal = true;
 				var me = this;
 				
+				uni.setStorageSync("username",this.username)
+				uni.setStorageSync("password",this.password)
 				uni.request({
 					url: me.serverUrl + '/login/mobile' ,
 					method: 'POST',

@@ -41,7 +41,7 @@
 						</uni-collapse-item>
 						
 						<uni-collapse-item title="调研">
-							<view class="collapse-item-content">
+							<view class="collapse-item-content" @tap="surveySchool" >
 								学校调研
 							</view>
 							<view class="collapse-item-content">
@@ -95,6 +95,7 @@
 					url: "../recruit/consultation/router/router"
 				})
 			},
+			//我的回访
 			myReturnVisitRouter()
 			{
 				this.showDrawer = false;
@@ -102,6 +103,7 @@
 					url:"../recruit/consultation/visit_router/visit_router"
 				})
 			},
+			//回访提醒
 			returnVisitToRemind()
 			{
 				this.showDrawer = false;
@@ -109,11 +111,23 @@
 					url:"../recruit/consultation/visit_remind_router/visit_remind_router"
 				})
 			},
-			birthdayReminder(){
+			//生日提醒
+			birthdayReminder()
+			{
 				this.showDrawer = false;
 				uni.navigateTo({
 					url:"../recruit/consultation/birthday_reminder_router/birthday_reminder_router"
 				})
+			},
+			//学校调研
+			surveySchool()
+			{
+				this.showDrawer = false;
+				uni.navigateTo({
+					url:"../recruit/survey/survey_school/survey_school"
+				})
+				
+				
 			},
 			ledgerSchool()
 			{
@@ -125,6 +139,78 @@
 		},
 		components:{
 			uniCollapse,uniCollapseItem,uniDrawer
+		},
+		onLoad() {
+			var me = this
+			uni.request({
+				url: me.serverUrl + '/login/status',
+				method: 'GET',
+				data: {},
+				success: res => {
+					console.log(res.data)
+					if(res.data.status==200)
+					{
+						// 仍旧是登录状态
+					
+					}else
+					{
+						// me.login = false;
+						// uni.removeStorageSync('userInfo')
+						var username = uni.getStorageSync("username")
+						var password = uni.getStorageSync("password")
+						if(username!=null & password !=null)
+						{
+							uni.request({
+								url: me.serverUrl + '/login/mobile' ,
+								method: 'POST',
+								header:{
+									"content-type":'application/x-www-form-urlencoded'
+								},
+								data: {
+									username:username,
+									password:password
+								},
+								success: res => {
+									me.loadModal = false
+									if(res.statusCode==404)
+									{
+										uni.showToast({
+											title: "服务器超时",
+											duration:2000
+										})
+									}
+									
+									
+									if(res.data.status==200)
+									{
+										//登录成功
+										uni.setStorageSync('userInfo',res.data.data)
+										
+									}else
+									{
+										
+										uni.showToast({
+											title:res.data.msg,
+											duration: 2000
+										})
+									}
+									
+									console.log(res.data)
+								},
+								fail: () => {
+									console.log("出错了")
+								},
+								complete: () => {}
+							});
+						}
+						
+						
+					}
+					
+				},
+				fail: () => {},
+				complete: () => {}
+			});
 		}
 	}
 </script>

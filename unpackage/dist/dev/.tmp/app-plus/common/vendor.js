@@ -14439,6 +14439,40 @@ createPage(_bill_router.default);
 
 /***/ }),
 
+/***/ "../../../../../daocheng-app/main.js?{\"page\":\"pages%2Frecruit%2Fconsultation%2Fbirthday_remind%2Fbirthday_remind\"}":
+/*!*************************************************************************************************************!*\
+  !*** D:/daocheng-app/main.js?{"page":"pages%2Frecruit%2Fconsultation%2Fbirthday_remind%2Fbirthday_remind"} ***!
+  \*************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../daocheng-app/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _birthday_remind = _interopRequireDefault(__webpack_require__(/*! ./pages/recruit/consultation/birthday_remind/birthday_remind.vue */ "../../../../../daocheng-app/pages/recruit/consultation/birthday_remind/birthday_remind.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_birthday_remind.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../../daocheng-app/main.js?{\"page\":\"pages%2Frecruit%2Fconsultation%2Fbirthday_reminder_router%2Fbirthday_reminder_router\"}":
+/*!*******************************************************************************************************************************!*\
+  !*** D:/daocheng-app/main.js?{"page":"pages%2Frecruit%2Fconsultation%2Fbirthday_reminder_router%2Fbirthday_reminder_router"} ***!
+  \*******************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../daocheng-app/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _birthday_reminder_router = _interopRequireDefault(__webpack_require__(/*! ./pages/recruit/consultation/birthday_reminder_router/birthday_reminder_router.vue */ "../../../../../daocheng-app/pages/recruit/consultation/birthday_reminder_router/birthday_reminder_router.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_birthday_reminder_router.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
 /***/ "../../../../../daocheng-app/main.js?{\"page\":\"pages%2Frecruit%2Fconsultation%2Fholder%2Fholder\"}":
 /*!*******************************************************************************************!*\
   !*** D:/daocheng-app/main.js?{"page":"pages%2Frecruit%2Fconsultation%2Fholder%2Fholder"} ***!
@@ -14605,6 +14639,40 @@ createPage(_ledger_school.default);
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
 var _ledger_school_detail = _interopRequireDefault(__webpack_require__(/*! ./pages/recruit/ledger/ledger_school_detail/ledger_school_detail.vue */ "../../../../../daocheng-app/pages/recruit/ledger/ledger_school_detail/ledger_school_detail.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_ledger_school_detail.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../../daocheng-app/main.js?{\"page\":\"pages%2Frecruit%2Fledger%2Fledger_teacher%2Fledger_teacher\"}":
+/*!*****************************************************************************************************!*\
+  !*** D:/daocheng-app/main.js?{"page":"pages%2Frecruit%2Fledger%2Fledger_teacher%2Fledger_teacher"} ***!
+  \*****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../daocheng-app/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _ledger_teacher = _interopRequireDefault(__webpack_require__(/*! ./pages/recruit/ledger/ledger_teacher/ledger_teacher.vue */ "../../../../../daocheng-app/pages/recruit/ledger/ledger_teacher/ledger_teacher.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_ledger_teacher.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../../daocheng-app/main.js?{\"page\":\"pages%2Frecruit%2Fsurvey%2Fsurvey_school%2Fsurvey_school\"}":
+/*!***************************************************************************************************!*\
+  !*** D:/daocheng-app/main.js?{"page":"pages%2Frecruit%2Fsurvey%2Fsurvey_school%2Fsurvey_school"} ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../daocheng-app/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _survey_school = _interopRequireDefault(__webpack_require__(/*! ./pages/recruit/survey/survey_school/survey_school.vue */ "../../../../../daocheng-app/pages/recruit/survey/survey_school/survey_school.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_survey_school.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),

@@ -69,7 +69,7 @@
 			toBirthdayDetail(type)
 			{
 				uni.navigateTo({
-					url: "../birthday_remind/birthday_remind/?type=" + type
+					url:"../birthday_remind/birthday_remind?type=" + type,
 				})
 				console.log(type)
 			}

@@ -195,16 +195,123 @@ __webpack_require__.r(__webpack_exports__);
         url: "../recruit/consultation/router/router" });
 
     },
-    myReturnVisit: function myReturnVisit()
+    //我的回访
+    myReturnVisitRouter: function myReturnVisitRouter()
     {
       this.showDrawer = false;
       uni.navigateTo({
         url: "../recruit/consultation/visit_router/visit_router" });
 
+    },
+    //回访提醒
+    returnVisitToRemind: function returnVisitToRemind()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/consultation/visit_remind_router/visit_remind_router" });
+
+    },
+    //生日提醒
+    birthdayReminder: function birthdayReminder()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/consultation/birthday_reminder_router/birthday_reminder_router" });
+
+    },
+    //学校调研
+    surveySchool: function surveySchool()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/survey/survey_school/survey_school" });
+
+
+
+    },
+    ledgerSchool: function ledgerSchool()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/ledger/ledger_school/ledger_school" });
+
     } },
 
   components: {
-    uniCollapse: _uniCollapse, uniCollapseItem: _uniCollapseItem, uniDrawer: uniDrawer } };exports.default = _default;
+    uniCollapse: _uniCollapse, uniCollapseItem: _uniCollapseItem, uniDrawer: uniDrawer },
+
+  onLoad: function onLoad() {
+    var me = this;
+    uni.request({
+      url: me.serverUrl + '/login/status',
+      method: 'GET',
+      data: {},
+      success: function success(res) {
+        console.log(res.data);
+        if (res.data.status == 200)
+        {
+          // 仍旧是登录状态
+
+        } else
+        {
+          // me.login = false;
+          // uni.removeStorageSync('userInfo')
+          var username = uni.getStorageSync("username");
+          var password = uni.getStorageSync("password");
+          if (username != null & password != null)
+          {
+            uni.request({
+              url: me.serverUrl + '/login/mobile',
+              method: 'POST',
+              header: {
+                "content-type": 'application/x-www-form-urlencoded' },
+
+              data: {
+                username: username,
+                password: password },
+
+              success: function success(res) {
+                me.loadModal = false;
+                if (res.statusCode == 404)
+                {
+                  uni.showToast({
+                    title: "服务器超时",
+                    duration: 2000 });
+
+                }
+
+
+                if (res.data.status == 200)
+                {
+                  //登录成功
+                  uni.setStorageSync('userInfo', res.data.data);
+
+                } else
+                {
+
+                  uni.showToast({
+                    title: res.data.msg,
+                    duration: 2000 });
+
+                }
+
+                console.log(res.data);
+              },
+              fail: function fail() {
+                console.log("出错了");
+              },
+              complete: function complete() {} });
+
+          }
+
+
+        }
+
+      },
+      fail: function fail() {},
+      complete: function complete() {} });
+
+  } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["default"]))
 
 /***/ }),

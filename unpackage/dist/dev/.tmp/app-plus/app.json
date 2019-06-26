@@ -15,8 +15,12 @@
     "pages/recruit/consultation/return_visit/return_visit",
     "pages/recruit/consultation/visit_remind_router/visit_remind_router",
     "pages/recruit/consultation/visit_remind/visit_remind",
+    "pages/recruit/consultation/birthday_reminder_router/birthday_reminder_router",
+    "pages/recruit/consultation/birthday_remind/birthday_remind",
     "pages/recruit/ledger/ledger_school/ledger_school",
-    "pages/recruit/ledger/ledger_school_detail/ledger_school_detail"
+    "pages/recruit/ledger/ledger_school_detail/ledger_school_detail",
+    "pages/recruit/ledger/ledger_teacher/ledger_teacher",
+    "pages/recruit/survey/survey_school/survey_school"
   ],
   "subPackages": [],
   "window": {
