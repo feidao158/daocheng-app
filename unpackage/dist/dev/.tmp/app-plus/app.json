@@ -12,7 +12,8 @@
     "pages/recruit/consultation/bill_form/bill_form",
     "pages/recruit/consultation/bill_router/bill_router",
     "pages/recruit/ledger/ledger_school/ledger_school",
-    "pages/recruit/ledger/ledger_school_detail/ledger_school_detail"
+    "pages/recruit/ledger/ledger_school_detail/ledger_school_detail",
+    "pages/recruit/ledger/ledger_teacher/ledger_teacher"
   ],
   "subPackages": [],
   "window": {

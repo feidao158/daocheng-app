@@ -155,6 +155,8 @@ var _default =
       this.loadModal = true;
       var me = this;
 
+      uni.setStorageSync("username", this.username);
+      uni.setStorageSync("password", this.password);
       uni.request({
         url: me.serverUrl + '/login/mobile',
         method: 'POST',
@@ -192,10 +194,10 @@ var _default =
 
           }
 
-          console.log(res.data, " at pages\\login\\login.vue:95");
+          console.log(res.data, " at pages\\login\\login.vue:97");
         },
         fail: function fail() {
-          console.log("出错了", " at pages\\login\\login.vue:98");
+          console.log("出错了", " at pages\\login\\login.vue:100");
         },
         complete: function complete() {} });
 
