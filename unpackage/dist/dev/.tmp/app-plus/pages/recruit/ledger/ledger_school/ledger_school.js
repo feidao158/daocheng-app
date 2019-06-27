@@ -156,6 +156,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -212,6 +225,18 @@ var _default =
     {
       uni.navigateTo({
         url: "../ledger_school_detail/ledger_school_detail?schoolId=" + this.schoolInfo.id });
+
+    },
+    addSchoolLedger: function addSchoolLedger()
+    {
+      uni.navigateTo({
+        url: "../ledger_school_add_ledger/ledger_school_add_ledger?id=" + this.schoolInfo.id });
+
+    },
+    addSchoolTeacher: function addSchoolTeacher()
+    {
+      uni.navigateTo({
+        url: "../ledger_school_add_teacher/ledger_school_add_teacher?id=" + this.schoolInfo.id });
 
     } },
 

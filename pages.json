@@ -69,6 +69,14 @@
             "path" : "pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail",
             "style" : {}
         }
+        ,{
+            "path" : "pages/recruit/ledger/ledger_school_add_ledger/ledger_school_add_ledger",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/recruit/ledger/ledger_school_add_teacher/ledger_school_add_teacher",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
