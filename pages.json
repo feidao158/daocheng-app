@@ -94,8 +94,20 @@
             "path" : "pages/recruit/ledger/ledger_teacher/ledger_teacher",
             "style" : {}
         }
+		 ,{
+		   "path" : "pages/recruit/survey/survey_school/survey_school",
+		    "style" : {}
+		}
         ,{
-            "path" : "pages/recruit/survey/survey_school/survey_school",
+            "path" : "pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/recruit/consultation/stu_return_visit/stu_return_visit",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher",
             "style" : {}
         }
     ],

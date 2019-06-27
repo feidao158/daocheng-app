@@ -8,7 +8,6 @@
 <uni-drawer :visible="showDrawer" :mode="right" @close="fuck">
 			<uni-list>
 			
-				
 					<uni-collapse accordion="true" animation="true">
 						
 						<uni-collapse-item title="咨询" animation="true">
@@ -34,7 +33,7 @@
 								学校台账
 							</view>
 							
-							<view class="collapse-item-content">
+							<view class="collapse-item-content" @tap="ledgerTeacher">
 								教师台账
 							</view>
 							
@@ -134,6 +133,13 @@
 				this.showDrawer = false;
 				uni.navigateTo({
 					url: "../recruit/ledger/ledger_school/ledger_school"
+				})
+			},
+			ledgerTeacher()
+			{
+				this.showDrawer = false;
+				uni.navigateTo({
+					url: "../recruit/ledger/ledger_teacher/ledger_teacher"
 				})
 			}
 		},

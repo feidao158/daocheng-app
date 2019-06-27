@@ -324,14 +324,12 @@ var _default =
       this.currentNum++;
       this.loadStudentInfo();
 
-
     },
     prevent: function prevent()
     {
       this.currentNum--;
       this.loadStudentInfo();
     },
-
 
     loadStudentInfo: function loadStudentInfo()
     {var _this = this;
@@ -360,7 +358,7 @@ var _default =
         method: 'GET',
         data: {},
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:263");
+          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:261");
           if (res.data.status == 200)
           {
             uni.showToast({
@@ -379,28 +377,40 @@ var _default =
         complete: function complete() {} });
 
 
-    } },
+    },
+    //  跳转到回访页面
+    returnVisit: function returnVisit(id)
+    {
+      uni.navigateTo({
+        url: "../stu_return_visit/stu_return_visit?id=" + id });
+
+      console.log(id, " at pages\\recruit\\consultation\\holder\\holder.vue:287");
+    },
+    computed: {
+      hasPrevent: function hasPrevent() {
+        return {
+          'bg-red': true };
+
+      } },
+
+    //跳转到分配负责教师页面
+    allocationTeacher: function allocationTeacher(id, name)
+    {
+      uni.navigateTo({
+        url: "../stu_allocation_teacher/stu_allocation_teacher?id=" + id + "&name=" + name });
 
 
-  computed: {
-    hasPrevent: function hasPrevent() {
-      return {
-        'bg-red': true };
+    },
+    onShow: function onShow(param) {
+      var me = this;
+      this.loadStudentInfo();
 
-    } },
-
-  onShow: function onShow(param) {
-    var me = this;
-    this.loadStudentInfo();
-
-
-
-  },
-  onLoad: function onLoad(param)
-  {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\holder\\holder.vue:301");
-    this.pageType = param.type;
-  } };exports.default = _default;
+    },
+    onLoad: function onLoad(param)
+    {
+      console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\holder\\holder.vue:311");
+      this.pageType = param.type;
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
 /***/ }),

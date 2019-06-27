@@ -58,11 +58,17 @@
 				</view>
 				
 			</view>
+			
+			<view class="cu-load load-modal" v-if="loadModal" >
+			
+					<view class="gray-text">加载中...</view>
+			</view>
+			
 		</view>
 		
 		<view class="flex margin-top">
-			<button @tap="prevent">上一页</button>
-			<button @tap="next">下一页</button>
+			<button @tap="prevent" :class="pageNum>1? 'bg-red':''">上一页</button>
+			<button @tap="next" class="bg-red">下一页</button>
 		</view>
 		
 	</view>
@@ -73,7 +79,8 @@
 		data() {
 			return {
 				schoolInfo:null,
-				pageNum:1
+				pageNum:1,
+				loadModal:false
 			}
 		},
 		methods: {
@@ -85,7 +92,20 @@
 					method: 'GET',
 					data: {},
 					success: res => {
+						
+						if(this.schoolInfo!=null && this.schoolInfo.id == res.data[0].id)
+						{
+							uni.showToast({
+								title: "到底了!"
+							})
+							this.pageNum--
+							this.loadModal = false
+							return
+						}
+						
+						
 						me.schoolInfo = res.data[0]
+						this.loadModal = false
 					},
 					fail: () => {},
 					complete: () => {}
@@ -96,11 +116,13 @@
 				if(this.pageNum>1)
 				{
 					this.pageNum--
+					this.loadModal = true
 					this.loadData()
 				}
 			},
 			next()
 			{
+				this.loadModal = true
 				this.pageNum++
 				this.loadData()
 			},

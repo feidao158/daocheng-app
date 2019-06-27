@@ -1215,6 +1215,10 @@ function gz$gwx_10(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
 __WXML_GLOBAL__.ops_cached.$gwx_10=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'__i0__'])
+Z([3,'item'])
+Z([[7],[3,'billDetailList']])
+Z([[7],[3,'loadModal']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
 }
 function gz$gwx_11(){
@@ -1265,6 +1269,12 @@ function gz$gwx_18(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_18)return __WXML_GLOBAL__.ops_cached.$gwx_18
 __WXML_GLOBAL__.ops_cached.$gwx_18=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+})(__WXML_GLOBAL__.ops_cached.$gwx_18);return __WXML_GLOBAL__.ops_cached.$gwx_18
+}
+function gz$gwx_19(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_19)return __WXML_GLOBAL__.ops_cached.$gwx_19
+__WXML_GLOBAL__.ops_cached.$gwx_19=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'__e'])
 Z([3,'form'])
 Z([[4],[[5],[[4],[[5],[[5],[1,'submit']],[[4],[[5],[[4],[[5],[[5],[1,'formSubmit']],[[4],[[5],[1,'$event']]]]]]]]]]])
@@ -1303,18 +1313,42 @@ Z(z[28])
 Z([3,'资讯信息'])
 Z([[2,'+'],[[2,'+'],[1,'5'],[1,',']],[1,'1']])
 Z(z[7])
-})(__WXML_GLOBAL__.ops_cached.$gwx_18);return __WXML_GLOBAL__.ops_cached.$gwx_18
-}
-function gz$gwx_19(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_19)return __WXML_GLOBAL__.ops_cached.$gwx_19
-__WXML_GLOBAL__.ops_cached.$gwx_19=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
 })(__WXML_GLOBAL__.ops_cached.$gwx_19);return __WXML_GLOBAL__.ops_cached.$gwx_19
 }
 function gz$gwx_20(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_20)return __WXML_GLOBAL__.ops_cached.$gwx_20
 __WXML_GLOBAL__.ops_cached.$gwx_20=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'__e'])
+Z([3,'form'])
+Z([[4],[[5],[[4],[[5],[[5],[1,'submit']],[[4],[[5],[[4],[[5],[[5],[1,'formSubmit']],[[4],[[5],[1,'$event']]]]]]]]]]])
+Z([3,'padding:16rpx;'])
+Z([3,'__l'])
+Z(z[0])
+Z([3,'vue-ref'])
+Z([1,false])
+Z([[4],[[5],[[4],[[5],[[5],[1,'^confirm']],[[4],[[5],[[4],[[5],[1,'onConfirm']]]]]]]]])
+Z([3,'picker'])
+Z([3,'2030'])
+Z([[7],[3,'selectedMode']])
+Z([[7],[3,'selectList']])
+Z([3,'2019'])
+Z([3,'1'])
+Z([3,'#f00'])
+Z(z[14])
+Z(z[4])
+Z(z[0])
+Z(z[6])
+Z([1,true])
+Z([[4],[[5],[[4],[[5],[[5],[1,'^confirm']],[[4],[[5],[[4],[[5],[1,'onConfirm2']]]]]]]]])
+Z([3,'picker2'])
+Z([[7],[3,'defaultVal2']])
+Z(z[13])
+Z([3,'date'])
+Z([[7],[3,'selectList2']])
+Z([3,'2018'])
+Z(z[15])
+Z([3,'2'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_20);return __WXML_GLOBAL__.ops_cached.$gwx_20
 }
 function gz$gwx_21(){
@@ -1339,25 +1373,46 @@ function gz$gwx_24(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_24)return __WXML_GLOBAL__.ops_cached.$gwx_24
 __WXML_GLOBAL__.ops_cached.$gwx_24=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[7],[3,'loadModal']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_24);return __WXML_GLOBAL__.ops_cached.$gwx_24
 }
 function gz$gwx_25(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_25)return __WXML_GLOBAL__.ops_cached.$gwx_25
 __WXML_GLOBAL__.ops_cached.$gwx_25=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[7],[3,'loadModal']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_25);return __WXML_GLOBAL__.ops_cached.$gwx_25
 }
 function gz$gwx_26(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_26)return __WXML_GLOBAL__.ops_cached.$gwx_26
 __WXML_GLOBAL__.ops_cached.$gwx_26=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[7],[3,'loadModal']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_26);return __WXML_GLOBAL__.ops_cached.$gwx_26
+}
+function gz$gwx_27(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_27)return __WXML_GLOBAL__.ops_cached.$gwx_27
+__WXML_GLOBAL__.ops_cached.$gwx_27=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+})(__WXML_GLOBAL__.ops_cached.$gwx_27);return __WXML_GLOBAL__.ops_cached.$gwx_27
+}
+function gz$gwx_28(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_28)return __WXML_GLOBAL__.ops_cached.$gwx_28
+__WXML_GLOBAL__.ops_cached.$gwx_28=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+})(__WXML_GLOBAL__.ops_cached.$gwx_28);return __WXML_GLOBAL__.ops_cached.$gwx_28
+}
+function gz$gwx_29(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_29)return __WXML_GLOBAL__.ops_cached.$gwx_29
+__WXML_GLOBAL__.ops_cached.$gwx_29=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+})(__WXML_GLOBAL__.ops_cached.$gwx_29);return __WXML_GLOBAL__.ops_cached.$gwx_29
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./components/uni-drawer/uni-drawer.wxml','./components/w-picker/w-picker.wxml','./node-modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item.wxml','./node-modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse.wxml','./node-modules/@dcloudio/uni-ui/lib/uni-icon/uni-icon.wxml','./pages/index/index.wxml','./pages/login/login.wxml','./pages/my/my.wxml','./pages/recruit/add2/add2.wxml','./pages/recruit/consultation/bill_form/bill_form.wxml','./pages/recruit/consultation/bill_router/bill_router.wxml','./pages/recruit/consultation/birthday_remind/birthday_remind.wxml','./pages/recruit/consultation/birthday_reminder_router/birthday_reminder_router.wxml','./pages/recruit/consultation/holder/holder.wxml','./pages/recruit/consultation/input/input.wxml','./pages/recruit/consultation/return_visit/return_visit.wxml','./pages/recruit/consultation/router/router.wxml','./pages/recruit/consultation/stu_modify/stu_modify.wxml','./pages/recruit/consultation/visit_remind/visit_remind.wxml','./pages/recruit/consultation/visit_remind_router/visit_remind_router.wxml','./pages/recruit/consultation/visit_router/visit_router.wxml','./pages/recruit/ledger/ledger_school/ledger_school.wxml','./pages/recruit/ledger/ledger_school_detail/ledger_school_detail.wxml','./pages/recruit/ledger/ledger_teacher/ledger_teacher.wxml','./pages/recruit/survey/survey_school/survey_school.wxml','./pages/setting/setting.wxml'];d_[x[0]]={}
+var x=['./components/uni-drawer/uni-drawer.wxml','./components/w-picker/w-picker.wxml','./node-modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item.wxml','./node-modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse.wxml','./node-modules/@dcloudio/uni-ui/lib/uni-icon/uni-icon.wxml','./pages/index/index.wxml','./pages/login/login.wxml','./pages/my/my.wxml','./pages/recruit/add2/add2.wxml','./pages/recruit/consultation/bill_form/bill_form.wxml','./pages/recruit/consultation/bill_router/bill_router.wxml','./pages/recruit/consultation/birthday_remind/birthday_remind.wxml','./pages/recruit/consultation/birthday_reminder_router/birthday_reminder_router.wxml','./pages/recruit/consultation/holder/holder.wxml','./pages/recruit/consultation/input/input.wxml','./pages/recruit/consultation/return_visit/return_visit.wxml','./pages/recruit/consultation/router/router.wxml','./pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.wxml','./pages/recruit/consultation/stu_modify/stu_modify.wxml','./pages/recruit/consultation/stu_return_visit/stu_return_visit.wxml','./pages/recruit/consultation/visit_remind/visit_remind.wxml','./pages/recruit/consultation/visit_remind_router/visit_remind_router.wxml','./pages/recruit/consultation/visit_router/visit_router.wxml','./pages/recruit/ledger/ledger_school/ledger_school.wxml','./pages/recruit/ledger/ledger_school_detail/ledger_school_detail.wxml','./pages/recruit/ledger/ledger_teacher/ledger_teacher.wxml','./pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.wxml','./pages/recruit/survey/survey_school/survey_school.wxml','./pages/setting/setting.wxml'];d_[x[0]]={}
 var m0=function(e,s,r,gg){
 var z=gz$gwx_1()
 var oB=_v()
@@ -1514,6 +1569,18 @@ e_[x[8]]={f:m8,j:[],i:[],ti:[],ic:[]}
 d_[x[9]]={}
 var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
+var oHB=_v()
+_(r,oHB)
+var xIB=function(fKB,oJB,cLB,gg){
+var oNB=_v()
+_(cLB,oNB)
+if(_oz(z,3,fKB,oJB,gg)){oNB.wxVkey=1
+}
+oNB.wxXCkey=1
+return cLB
+}
+oHB.wxXCkey=2
+_2z(z,2,xIB,e,s,gg,oHB,'item','__i0__','')
 return r
 }
 e_[x[9]]={f:m9,j:[],i:[],ti:[],ic:[]}
@@ -1538,18 +1605,18 @@ e_[x[12]]={f:m12,j:[],i:[],ti:[],ic:[]}
 d_[x[13]]={}
 var m13=function(e,s,r,gg){
 var z=gz$gwx_14()
-var cLB=_n('view')
-var hMB=_v()
-_(cLB,hMB)
-if(_oz(z,0,e,s,gg)){hMB.wxVkey=1
+var tSB=_n('view')
+var eTB=_v()
+_(tSB,eTB)
+if(_oz(z,0,e,s,gg)){eTB.wxVkey=1
 }
-var oNB=_v()
-_(cLB,oNB)
-if(_oz(z,1,e,s,gg)){oNB.wxVkey=1
+var bUB=_v()
+_(tSB,bUB)
+if(_oz(z,1,e,s,gg)){bUB.wxVkey=1
 }
-hMB.wxXCkey=1
-oNB.wxXCkey=1
-_(r,cLB)
+eTB.wxXCkey=1
+bUB.wxXCkey=1
+_(r,tSB)
 return r
 }
 e_[x[13]]={f:m13,j:[],i:[],ti:[],ic:[]}
@@ -1574,30 +1641,39 @@ e_[x[16]]={f:m16,j:[],i:[],ti:[],ic:[]}
 d_[x[17]]={}
 var m17=function(e,s,r,gg){
 var z=gz$gwx_18()
-var tSB=_mz(z,'form',['bindsubmit',0,'class',1,'data-event-opts',1],[],e,s,gg)
-var eTB=_mz(z,'uni-collapse',['accordion',3,'animation',1,'bind:__l',2,'vueId',3,'vueSlots',4],[],e,s,gg)
-var bUB=_mz(z,'uni-collapse-item',['animation',8,'bind:__l',1,'title',2,'vueId',3,'vueSlots',4],[],e,s,gg)
-var oVB=_mz(z,'w-picker',['bind:__l',13,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'endYear',6,'mode',7,'selectList',8,'startYear',9,'step',10,'themeColor',11,'vueId',12],[],e,s,gg)
-_(bUB,oVB)
-_(eTB,bUB)
-var xWB=_mz(z,'uni-collapse-item',['animation',26,'bind:__l',1,'class',2,'title',3,'vueId',4,'vueSlots',5],[],e,s,gg)
-_(eTB,xWB)
-var oXB=_mz(z,'uni-collapse-item',['animation',32,'bind:__l',1,'class',2,'title',3,'vueId',4,'vueSlots',5],[],e,s,gg)
-_(eTB,oXB)
-_(tSB,eTB)
-_(r,tSB)
 return r
 }
 e_[x[17]]={f:m17,j:[],i:[],ti:[],ic:[]}
 d_[x[18]]={}
 var m18=function(e,s,r,gg){
 var z=gz$gwx_19()
+var h1B=_mz(z,'form',['bindsubmit',0,'class',1,'data-event-opts',1],[],e,s,gg)
+var o2B=_mz(z,'uni-collapse',['accordion',3,'animation',1,'bind:__l',2,'vueId',3,'vueSlots',4],[],e,s,gg)
+var c3B=_mz(z,'uni-collapse-item',['animation',8,'bind:__l',1,'title',2,'vueId',3,'vueSlots',4],[],e,s,gg)
+var o4B=_mz(z,'w-picker',['bind:__l',13,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'endYear',6,'mode',7,'selectList',8,'startYear',9,'step',10,'themeColor',11,'vueId',12],[],e,s,gg)
+_(c3B,o4B)
+_(o2B,c3B)
+var l5B=_mz(z,'uni-collapse-item',['animation',26,'bind:__l',1,'class',2,'title',3,'vueId',4,'vueSlots',5],[],e,s,gg)
+_(o2B,l5B)
+var a6B=_mz(z,'uni-collapse-item',['animation',32,'bind:__l',1,'class',2,'title',3,'vueId',4,'vueSlots',5],[],e,s,gg)
+_(o2B,a6B)
+_(h1B,o2B)
+_(r,h1B)
 return r
 }
 e_[x[18]]={f:m18,j:[],i:[],ti:[],ic:[]}
 d_[x[19]]={}
 var m19=function(e,s,r,gg){
 var z=gz$gwx_20()
+var e8B=_mz(z,'form',['bindsubmit',0,'class',1,'data-event-opts',1],[],e,s,gg)
+var b9B=_n('view')
+_rz(z,b9B,'style',3,e,s,gg)
+var o0B=_mz(z,'w-picker',['bind:__l',4,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'endYear',6,'mode',7,'selectList',8,'startYear',9,'step',10,'themeColor',11,'vueId',12],[],e,s,gg)
+_(b9B,o0B)
+var xAC=_mz(z,'w-picker',['bind:__l',17,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'defaultVal',6,'endYear',7,'mode',8,'selectList',9,'startYear',10,'themeColor',11,'vueId',12],[],e,s,gg)
+_(b9B,xAC)
+_(e8B,b9B)
+_(r,e8B)
 return r
 }
 e_[x[19]]={f:m19,j:[],i:[],ti:[],ic:[]}
@@ -1622,21 +1698,54 @@ e_[x[22]]={f:m22,j:[],i:[],ti:[],ic:[]}
 d_[x[23]]={}
 var m23=function(e,s,r,gg){
 var z=gz$gwx_24()
+var oFC=_v()
+_(r,oFC)
+if(_oz(z,0,e,s,gg)){oFC.wxVkey=1
+}
+oFC.wxXCkey=1
 return r
 }
 e_[x[23]]={f:m23,j:[],i:[],ti:[],ic:[]}
 d_[x[24]]={}
 var m24=function(e,s,r,gg){
 var z=gz$gwx_25()
+var oHC=_v()
+_(r,oHC)
+if(_oz(z,0,e,s,gg)){oHC.wxVkey=1
+}
+oHC.wxXCkey=1
 return r
 }
 e_[x[24]]={f:m24,j:[],i:[],ti:[],ic:[]}
 d_[x[25]]={}
 var m25=function(e,s,r,gg){
 var z=gz$gwx_26()
+var aJC=_v()
+_(r,aJC)
+if(_oz(z,0,e,s,gg)){aJC.wxVkey=1
+}
+aJC.wxXCkey=1
 return r
 }
 e_[x[25]]={f:m25,j:[],i:[],ti:[],ic:[]}
+d_[x[26]]={}
+var m26=function(e,s,r,gg){
+var z=gz$gwx_27()
+return r
+}
+e_[x[26]]={f:m26,j:[],i:[],ti:[],ic:[]}
+d_[x[27]]={}
+var m27=function(e,s,r,gg){
+var z=gz$gwx_28()
+return r
+}
+e_[x[27]]={f:m27,j:[],i:[],ti:[],ic:[]}
+d_[x[28]]={}
+var m28=function(e,s,r,gg){
+var z=gz$gwx_29()
+return r
+}
+e_[x[28]]={f:m28,j:[],i:[],ti:[],ic:[]}
 if(path&&e_[path]){
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
 var main=e_[path].f
@@ -1654,7 +1763,7 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/index/index","pages/my/my","pages/login/login","pages/setting/setting","pages/recruit/add2/add2","pages/recruit/consultation/router/router","pages/recruit/consultation/holder/holder","pages/recruit/consultation/input/input","pages/recruit/consultation/stu_modify/stu_modify","pages/recruit/consultation/bill_form/bill_form","pages/recruit/consultation/bill_router/bill_router","pages/recruit/consultation/visit_router/visit_router","pages/recruit/consultation/return_visit/return_visit","pages/recruit/consultation/visit_remind_router/visit_remind_router","pages/recruit/consultation/visit_remind/visit_remind","pages/recruit/consultation/birthday_reminder_router/birthday_reminder_router","pages/recruit/consultation/birthday_remind/birthday_remind","pages/recruit/ledger/ledger_school/ledger_school","pages/recruit/ledger/ledger_school_detail/ledger_school_detail","pages/recruit/ledger/ledger_teacher/ledger_teacher"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"到成教育云平台","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"},"tabBar":{"color":"#7A7E83","selectedColor":"#3cc51f","borderStyle":"black","backgroundColor":"#ffffff","list":[{"pagePath":"pages/index/index","iconPath":"static/tabBar/index.png","selectedIconPath":"static/tabBar/indexSelected.png","text":"首页"},{"pagePath":"pages/my/my","iconPath":"static/tabBar/my.png","selectedIconPath":"static/tabBar/mySelected.png","text":"我的"}]},"nvueCompiler":"weex","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"daocheng","compilerVersion":"2.0.1","usingComponents":{}};
+__wxAppCode__['app.json']={"pages":["pages/index/index","pages/my/my","pages/login/login","pages/setting/setting","pages/recruit/add2/add2","pages/recruit/consultation/router/router","pages/recruit/consultation/holder/holder","pages/recruit/consultation/input/input","pages/recruit/consultation/stu_modify/stu_modify","pages/recruit/consultation/bill_form/bill_form","pages/recruit/consultation/bill_router/bill_router","pages/recruit/consultation/visit_router/visit_router","pages/recruit/consultation/return_visit/return_visit","pages/recruit/consultation/visit_remind_router/visit_remind_router","pages/recruit/consultation/visit_remind/visit_remind","pages/recruit/consultation/birthday_reminder_router/birthday_reminder_router","pages/recruit/consultation/birthday_remind/birthday_remind","pages/recruit/ledger/ledger_school/ledger_school","pages/recruit/ledger/ledger_school_detail/ledger_school_detail","pages/recruit/ledger/ledger_teacher/ledger_teacher","pages/recruit/survey/survey_school/survey_school","pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail","pages/recruit/consultation/stu_return_visit/stu_return_visit","pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"到成教育云平台","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"},"tabBar":{"color":"#7A7E83","selectedColor":"#3cc51f","borderStyle":"black","backgroundColor":"#ffffff","list":[{"pagePath":"pages/index/index","iconPath":"static/tabBar/index.png","selectedIconPath":"static/tabBar/indexSelected.png","text":"首页"},{"pagePath":"pages/my/my","iconPath":"static/tabBar/my.png","selectedIconPath":"static/tabBar/mySelected.png","text":"我的"}]},"nvueCompiler":"weex","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"daocheng","compilerVersion":"2.0.1","usingComponents":{}};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
 __wxAppCode__['components/uni-drawer/uni-drawer.json']={"usingComponents":{},"component":true};
@@ -1708,8 +1817,14 @@ __wxAppCode__['pages/recruit/consultation/return_visit/return_visit.wxml']=$gwx(
 __wxAppCode__['pages/recruit/consultation/router/router.json']={"usingComponents":{}};
 __wxAppCode__['pages/recruit/consultation/router/router.wxml']=$gwx('./pages/recruit/consultation/router/router.wxml');
 
+__wxAppCode__['pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.json']={"usingComponents":{}};
+__wxAppCode__['pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.wxml']=$gwx('./pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.wxml');
+
 __wxAppCode__['pages/recruit/consultation/stu_modify/stu_modify.json']={"usingComponents":{"w-picker":"/components/w-picker/w-picker"}};
 __wxAppCode__['pages/recruit/consultation/stu_modify/stu_modify.wxml']=$gwx('./pages/recruit/consultation/stu_modify/stu_modify.wxml');
+
+__wxAppCode__['pages/recruit/consultation/stu_return_visit/stu_return_visit.json']={"usingComponents":{"w-picker":"/components/w-picker/w-picker"}};
+__wxAppCode__['pages/recruit/consultation/stu_return_visit/stu_return_visit.wxml']=$gwx('./pages/recruit/consultation/stu_return_visit/stu_return_visit.wxml');
 
 __wxAppCode__['pages/recruit/consultation/visit_remind_router/visit_remind_router.json']={"usingComponents":{}};
 __wxAppCode__['pages/recruit/consultation/visit_remind_router/visit_remind_router.wxml']=$gwx('./pages/recruit/consultation/visit_remind_router/visit_remind_router.wxml');
@@ -1725,6 +1840,9 @@ __wxAppCode__['pages/recruit/ledger/ledger_school_detail/ledger_school_detail.wx
 
 __wxAppCode__['pages/recruit/ledger/ledger_school/ledger_school.json']={"usingComponents":{}};
 __wxAppCode__['pages/recruit/ledger/ledger_school/ledger_school.wxml']=$gwx('./pages/recruit/ledger/ledger_school/ledger_school.wxml');
+
+__wxAppCode__['pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.json']={"usingComponents":{}};
+__wxAppCode__['pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.wxml']=$gwx('./pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.wxml');
 
 __wxAppCode__['pages/recruit/ledger/ledger_teacher/ledger_teacher.json']={"usingComponents":{}};
 __wxAppCode__['pages/recruit/ledger/ledger_teacher/ledger_teacher.wxml']=$gwx('./pages/recruit/ledger/ledger_teacher/ledger_teacher.wxml');
@@ -16656,6 +16774,23 @@ createPage(_router.default);
 
 /***/ }),
 
+/***/ "../../../../../daocheng-app/main.js?{\"page\":\"pages%2Frecruit%2Fconsultation%2Fstu_allocation_teacher%2Fstu_allocation_teacher\"}":
+/*!***************************************************************************************************************************!*\
+  !*** D:/daocheng-app/main.js?{"page":"pages%2Frecruit%2Fconsultation%2Fstu_allocation_teacher%2Fstu_allocation_teacher"} ***!
+  \***************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../daocheng-app/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _stu_allocation_teacher = _interopRequireDefault(__webpack_require__(/*! ./pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue */ "../../../../../daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_stu_allocation_teacher.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
 /***/ "../../../../../daocheng-app/main.js?{\"page\":\"pages%2Frecruit%2Fconsultation%2Fstu_modify%2Fstu_modify\"}":
 /*!***************************************************************************************************!*\
   !*** D:/daocheng-app/main.js?{"page":"pages%2Frecruit%2Fconsultation%2Fstu_modify%2Fstu_modify"} ***!
@@ -16669,6 +16804,23 @@ createPage(_router.default);
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
 var _stu_modify = _interopRequireDefault(__webpack_require__(/*! ./pages/recruit/consultation/stu_modify/stu_modify.vue */ "../../../../../daocheng-app/pages/recruit/consultation/stu_modify/stu_modify.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_stu_modify.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../../daocheng-app/main.js?{\"page\":\"pages%2Frecruit%2Fconsultation%2Fstu_return_visit%2Fstu_return_visit\"}":
+/*!***************************************************************************************************************!*\
+  !*** D:/daocheng-app/main.js?{"page":"pages%2Frecruit%2Fconsultation%2Fstu_return_visit%2Fstu_return_visit"} ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../daocheng-app/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _stu_return_visit = _interopRequireDefault(__webpack_require__(/*! ./pages/recruit/consultation/stu_return_visit/stu_return_visit.vue */ "../../../../../daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_stu_return_visit.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
@@ -16771,6 +16923,23 @@ createPage(_ledger_school_detail.default);
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
 var _ledger_teacher = _interopRequireDefault(__webpack_require__(/*! ./pages/recruit/ledger/ledger_teacher/ledger_teacher.vue */ "../../../../../daocheng-app/pages/recruit/ledger/ledger_teacher/ledger_teacher.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_ledger_teacher.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../../daocheng-app/main.js?{\"page\":\"pages%2Frecruit%2Fledger%2Fledger_teacher_detail%2Fledger_teacher_detail\"}":
+/*!*******************************************************************************************************************!*\
+  !*** D:/daocheng-app/main.js?{"page":"pages%2Frecruit%2Fledger%2Fledger_teacher_detail%2Fledger_teacher_detail"} ***!
+  \*******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../daocheng-app/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _ledger_teacher_detail = _interopRequireDefault(__webpack_require__(/*! ./pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue */ "../../../../../daocheng-app/pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_ledger_teacher_detail.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
@@ -25660,7 +25829,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 {
   data: function data() {
     return {
@@ -25730,6 +25898,13 @@ __webpack_require__.r(__webpack_exports__);
       uni.navigateTo({
         url: "../recruit/ledger/ledger_school/ledger_school" });
 
+    },
+    ledgerTeacher: function ledgerTeacher()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/ledger/ledger_teacher/ledger_teacher" });
+
     } },
 
   components: {
@@ -25742,7 +25917,7 @@ __webpack_require__.r(__webpack_exports__);
       method: 'GET',
       data: {},
       success: function success(res) {
-        console.log(res.data, " at pages\\index\\index.vue:150");
+        console.log(res.data, " at pages\\index\\index.vue:156");
         if (res.data.status == 200)
         {
           // 仍旧是登录状态
@@ -25790,10 +25965,10 @@ __webpack_require__.r(__webpack_exports__);
 
                 }
 
-                console.log(res.data, " at pages\\index\\index.vue:198");
+                console.log(res.data, " at pages\\index\\index.vue:204");
               },
               fail: function fail() {
-                console.log("出错了", " at pages\\index\\index.vue:201");
+                console.log("出错了", " at pages\\index\\index.vue:207");
               },
               complete: function complete() {} });
 
@@ -27106,6 +27281,7 @@ __webpack_require__.r(__webpack_exports__);
         "cookie": uni.getStorageSync("userCookie") },
 
       success: function success(res) {
+        console.log(res, " at pages\\recruit\\add2\\add2.vue:422");
         _this2.resourceFormTypes = res.data;
       } });
 
@@ -27729,14 +27905,12 @@ var _default =
       this.currentNum++;
       this.loadStudentInfo();
 
-
     },
     prevent: function prevent()
     {
       this.currentNum--;
       this.loadStudentInfo();
     },
-
 
     loadStudentInfo: function loadStudentInfo()
     {var _this = this;
@@ -27765,7 +27939,7 @@ var _default =
         method: 'GET',
         data: {},
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:263");
+          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:261");
           if (res.data.status == 200)
           {
             uni.showToast({
@@ -27784,28 +27958,40 @@ var _default =
         complete: function complete() {} });
 
 
-    } },
+    },
+    //  跳转到回访页面
+    returnVisit: function returnVisit(id)
+    {
+      uni.navigateTo({
+        url: "../stu_return_visit/stu_return_visit?id=" + id });
+
+      console.log(id, " at pages\\recruit\\consultation\\holder\\holder.vue:287");
+    },
+    computed: {
+      hasPrevent: function hasPrevent() {
+        return {
+          'bg-red': true };
+
+      } },
+
+    //跳转到分配负责教师页面
+    allocationTeacher: function allocationTeacher(id, name)
+    {
+      uni.navigateTo({
+        url: "../stu_allocation_teacher/stu_allocation_teacher?id=" + id + "&name=" + name });
 
 
-  computed: {
-    hasPrevent: function hasPrevent() {
-      return {
-        'bg-red': true };
+    },
+    onShow: function onShow(param) {
+      var me = this;
+      this.loadStudentInfo();
 
-    } },
-
-  onShow: function onShow(param) {
-    var me = this;
-    this.loadStudentInfo();
-
-
-
-  },
-  onLoad: function onLoad(param)
-  {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\holder\\holder.vue:301");
-    this.pageType = param.type;
-  } };exports.default = _default;
+    },
+    onLoad: function onLoad(param)
+    {
+      console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\holder\\holder.vue:311");
+      this.pageType = param.type;
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
 /***/ }),
@@ -28921,6 +29107,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -28930,7 +29120,8 @@ var _default =
       pageNum: 1,
       dataType: null,
       billDetailList: null,
-      modalName: null };
+      modalName: null,
+      loadModal: false };
 
 
   },
@@ -28955,36 +29146,51 @@ var _default =
           url: this.serverUrl + '/sign_up/bill_info/un_complete/' + this.pageNum + '?name=&limit=1' }).
 
         then(function (data) {var _data = _slicedToArray(
+
           data, 2),error = _data[0],res = _data[1];
+          if (_this.billInfo != null && _this.billInfo.id == res.data[0].id)
+          {
+            uni.showToast({
+              title: "到底了!" });
+
+            _this.pageNum--;
+            _this.loadModal = false;
+            return;
+          }
           me.billInfo = res.data[0];
           _this.getBillDetailList();
+          _this.loadModal = false;
         });
       } else
 
       {
-        // uni.request({
-        // 	url: this.serverUrl + '/sign_up/bill_info/complete/' + this.pageNum + '?name=&limit=1',
-        // 	method: 'GET',
-        // 	data: {},
-        // 	success: res => {
-        // 		me.billInfo = res.data[0]
-        // 	},
-        // 	fail: () => {},
-        // 	complete: () => {}
-        // });
+
         uni.request({
           url: this.serverUrl + '/sign_up/bill_info/complete/' + this.pageNum + '?name=&limit=1' }).
 
         then(function (data) {var _data2 = _slicedToArray(
+
           data, 2),error = _data2[0],res = _data2[1];
+          if (_this.billInfo != null && _this.billInfo.id == res.data[0].id)
+          {
+            uni.showToast({
+              title: "到底了!" });
+
+            _this.pageNum--;
+            _this.loadModal = false;
+            return;
+          }
+
           me.billInfo = res.data[0];
           _this.getBillDetailList();
+          _this.loadModal = false;
         });
 
       }
     },
     next: function next()
     {
+      this.loadModal = true;
       this.pageNum++;
       this.loadData();
     },
@@ -28993,6 +29199,7 @@ var _default =
     {
       if (this.pageNum > 1)
       {
+        this.loadModal = true;
         this.pageNum--;
         this.loadData();
       }
@@ -29006,7 +29213,7 @@ var _default =
         data: {},
         success: function success(res) {
           _this2.billDetailList = res.data;
-          console.log(_this2.billDetailList.length, " at pages\\recruit\\consultation\\bill_form\\bill_form.vue:226");
+          console.log(_this2.billDetailList.length, " at pages\\recruit\\consultation\\bill_form\\bill_form.vue:247");
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -30981,24 +31188,44 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
       schoolInfo: null,
-      pageNum: 1 };
+      pageNum: 1,
+      loadModal: false };
 
   },
   methods: {
     loadData: function loadData()
-    {
+    {var _this = this;
       var me = this;
       uni.request({
         url: this.serverUrl + '/led/school/' + this.pageNum + '?name=&limit=1',
         method: 'GET',
         data: {},
         success: function success(res) {
+
+          if (_this.schoolInfo != null && _this.schoolInfo.id == res.data[0].id)
+          {
+            uni.showToast({
+              title: "到底了!" });
+
+            _this.pageNum--;
+            _this.loadModal = false;
+            return;
+          }
+
+
           me.schoolInfo = res.data[0];
+          _this.loadModal = false;
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -31009,11 +31236,13 @@ var _default =
       if (this.pageNum > 1)
       {
         this.pageNum--;
+        this.loadModal = true;
         this.loadData();
       }
     },
     next: function next()
     {
+      this.loadModal = true;
       this.pageNum++;
       this.loadData();
     },
@@ -31253,6 +31482,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -31262,7 +31496,8 @@ var _default =
       cultuerTeacherLedgerList: null,
       schoolId: null,
       pageNum: 1,
-      teacherInfo: null };
+      teacherInfo: null,
+      loadModal: false };
 
   },
   methods: {
@@ -31273,15 +31508,24 @@ var _default =
 
     },
     getTeacherInfo: function getTeacherInfo()
-    {
+    {var _this = this;
       var me = this;
       uni.request({
         url: this.serverUrl + '/led/school/teacher/' + this.schoolId + '/' + this.pageNum + '?limit=1',
         method: 'GET',
         data: {},
         success: function success(res) {
+          if (_this.teacherInfo != null && _this.teacherInfo.id == res.data[0].id)
+          {
+            uni.showToast({
+              title: "到底了!" });
 
+            _this.pageNum--;
+            _this.loadModal = false;
+            return;
+          }
           me.teacherInfo = res.data[0];
+          _this.loadModal = false;
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -31292,6 +31536,7 @@ var _default =
     {
       if (this.pageNum > 1)
       {
+        this.loadModal = true;
         this.pageNum--;
         this.getTeacherInfo();
       }
@@ -31299,18 +31544,19 @@ var _default =
     next: function next()
     {
       this.pageNum++;
+      this.loadModal = true;
       this.getTeacherInfo();
     } },
 
-  onLoad: function onLoad(param) {var _this = this;
+  onLoad: function onLoad(param) {var _this2 = this;
     this.schoolId = param.schoolId;
     uni.request({
       url: this.serverUrl + '/led/school/ledger/json/' + param.schoolId,
       method: 'GET',
       data: {},
       success: function success(res) {
-        _this.cultuerTeacherLedgerList = res.data.reverse();
-        console.log(res.data, " at pages\\recruit\\ledger\\ledger_school_detail\\ledger_school_detail.vue:169");
+        _this2.cultuerTeacherLedgerList = res.data.reverse();
+        console.log(res.data, " at pages\\recruit\\ledger\\ledger_school_detail\\ledger_school_detail.vue:186");
       },
       fail: function fail() {},
       complete: function complete() {} });
@@ -31435,7 +31681,13 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -31509,11 +31761,68 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 var _default =
 {
   data: function data() {
-    return {};
+    return {
+      pageNum: 1,
+      teacherInfo: null,
+      loadModal: false };
 
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    loadData: function loadData()
+    {var _this = this;
+      var me = this;
+      uni.request({
+        url: this.serverUrl + '/led/manager/teacher/' + this.pageNum + '?name=&limit=1',
+        method: 'GET',
+        data: {},
+        success: function success(res) {
+          if (_this.teacherInfo != null && _this.teacherInfo.id == res.data[0].id)
+          {
+            uni.showToast({
+              title: "到底了!" });
+
+            _this.pageNum--;
+            _this.loadModal = false;
+            return;
+          }
+
+          me.teacherInfo = res.data[0];
+          _this.loadModal = false;
+
+        },
+        fail: function fail() {},
+        complete: function complete() {} });
+
+    },
+    prevent: function prevent()
+    {
+
+      if (this.pageNum > 1)
+      {
+        this.loadModal = true;
+        this.pageNum--;
+        this.loadData();
+
+      }
+    },
+    next: function next()
+    {
+      this.loadModal = true;
+      this.pageNum++;
+      this.loadData();
+    },
+    showTeacherLedgerInfo: function showTeacherLedgerInfo()
+    {
+      uni.navigateTo({
+        url: "../ledger_teacher_detail/ledger_teacher_detail?id=" + this.teacherInfo.id });
+
+    } },
+
+  onLoad: function onLoad() {
+    this.loadData();
+  } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
 /***/ }),
 
@@ -31669,6 +31978,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -31749,6 +32068,761 @@ render._withStripped = true
 },[["../../../../../daocheng-app/main.js?{\"page\":\"pages%2Frecruit%2Fsurvey%2Fsurvey_school%2Fsurvey_school\"}","common/runtime","common/vendor"]]]);
 });
 require('pages/recruit/survey/survey_school/survey_school.js');
+__wxRoute = 'pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.js';
+
+define('pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
+(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail"],{
+
+/***/ "../../../../../daocheng-app/pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue":
+/*!********************************************************************************************!*\
+  !*** D:/daocheng-app/pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ledger_teacher_detail_vue_vue_type_template_id_2a253005___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ledger_teacher_detail.vue?vue&type=template&id=2a253005& */ "../../../../../daocheng-app/pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue?vue&type=template&id=2a253005&");
+/* harmony import */ var _ledger_teacher_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ledger_teacher_detail.vue?vue&type=script&lang=js& */ "../../../../../daocheng-app/pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue?vue&type=script&lang=js&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _ledger_teacher_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _ledger_teacher_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ledger_teacher_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ledger_teacher_detail_vue_vue_type_template_id_2a253005___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ledger_teacher_detail_vue_vue_type_template_id_2a253005___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "daocheng-app/pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "../../../../../daocheng-app/pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************!*\
+  !*** D:/daocheng-app/pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_ledger_teacher_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./ledger_teacher_detail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../../daocheng-app/pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_ledger_teacher_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_ledger_teacher_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_ledger_teacher_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_ledger_teacher_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_ledger_teacher_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "../../../../../daocheng-app/pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue?vue&type=template&id=2a253005&":
+/*!***************************************************************************************************************************!*\
+  !*** D:/daocheng-app/pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue?vue&type=template&id=2a253005& ***!
+  \***************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_ledger_teacher_detail_vue_vue_type_template_id_2a253005___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./ledger_teacher_detail.vue?vue&type=template&id=2a253005& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../../daocheng-app/pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue?vue&type=template&id=2a253005&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_ledger_teacher_detail_vue_vue_type_template_id_2a253005___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_ledger_teacher_detail_vue_vue_type_template_id_2a253005___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../../daocheng-app/pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!D:/daocheng-app/pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance");}function _iterableToArrayLimit(arr, i) {var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;} //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default =
+{
+  data: function data() {
+    return {
+      cultureTeacherLedgerList: null };
+
+
+  },
+  methods: {},
+
+
+  onLoad: function onLoad(param) {var _this = this;
+    console.log(param.id, " at pages\\recruit\\ledger\\ledger_teacher_detail\\ledger_teacher_detail.vue:32");
+    uni.request({
+      url: this.serverUrl + '/led/teacher/ledger/json/' + param.id }).
+
+
+    then(function (data) {var _data = _slicedToArray(
+      data, 2),error = _data[0],res = _data[1];
+      console.log(res.data.length, " at pages\\recruit\\ledger\\ledger_teacher_detail\\ledger_teacher_detail.vue:39");
+      _this.cultureTeacherLedgerList = res.data;
+    });
+
+  } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../../daocheng-app/pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue?vue&type=template&id=2a253005&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib??vue-loader-options!D:/daocheng-app/pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.vue?vue&type=template&id=2a253005& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+},[["../../../../../daocheng-app/main.js?{\"page\":\"pages%2Frecruit%2Fledger%2Fledger_teacher_detail%2Fledger_teacher_detail\"}","common/runtime","common/vendor"]]]);
+});
+require('pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail.js');
+__wxRoute = 'pages/recruit/consultation/stu_return_visit/stu_return_visit';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/recruit/consultation/stu_return_visit/stu_return_visit.js';
+
+define('pages/recruit/consultation/stu_return_visit/stu_return_visit.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
+(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/recruit/consultation/stu_return_visit/stu_return_visit"],{
+
+/***/ "../../../../../daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue":
+/*!****************************************************************************************!*\
+  !*** D:/daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _stu_return_visit_vue_vue_type_template_id_35f98a8a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./stu_return_visit.vue?vue&type=template&id=35f98a8a& */ "../../../../../daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=template&id=35f98a8a&");
+/* harmony import */ var _stu_return_visit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./stu_return_visit.vue?vue&type=script&lang=js& */ "../../../../../daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=script&lang=js&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _stu_return_visit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _stu_return_visit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _stu_return_visit_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./stu_return_visit.vue?vue&type=style&index=0&lang=css& */ "../../../../../daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _stu_return_visit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _stu_return_visit_vue_vue_type_template_id_35f98a8a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _stu_return_visit_vue_vue_type_template_id_35f98a8a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "../../../../../daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************!*\
+  !*** D:/daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_return_visit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./stu_return_visit.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../../daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_return_visit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_return_visit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_return_visit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_return_visit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_return_visit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "../../../../../daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=style&index=0&lang=css&":
+/*!*************************************************************************************************************************!*\
+  !*** D:/daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=style&index=0&lang=css& ***!
+  \*************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_return_visit_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-1!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/css-loader??ref--6-oneOf-1-2!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/postcss-loader/src??ref--6-oneOf-1-3!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./stu_return_visit.vue?vue&type=style&index=0&lang=css& */ "./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../../../../../daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_return_visit_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_return_visit_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_return_visit_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_return_visit_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_return_visit_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "../../../../../daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=template&id=35f98a8a&":
+/*!***********************************************************************************************************************!*\
+  !*** D:/daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=template&id=35f98a8a& ***!
+  \***********************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_return_visit_vue_vue_type_template_id_35f98a8a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./stu_return_visit.vue?vue&type=template&id=35f98a8a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../../daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=template&id=35f98a8a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_return_visit_vue_vue_type_template_id_35f98a8a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_return_visit_vue_vue_type_template_id_35f98a8a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../../daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!D:/daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var wPicker = function wPicker() {return Promise.all(/*! import() | components/w-picker/w-picker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/w-picker/w-picker")]).then(__webpack_require__.bind(null, /*! @/components/w-picker/w-picker.vue */ "../../../../../daocheng-app/components/w-picker/w-picker.vue"));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  data: function data() {
+    return {
+      dicCode: null,
+      dicCodeId: null,
+      dicCodeName: null,
+
+      visitType: ['电话', '微信', 'QQ'],
+      visitTypeId: null,
+
+      visitDirection: ['我联系学员', '学员联系我'],
+      visitDirectionId: null,
+
+      paidDate: null,
+      nextDate: null,
+
+      stuId: null,
+
+      // studentId:null,
+
+      tabList: [{
+        mode: "date",
+        name: "日期选择",
+        value: [0, 1, 3] },
+      {
+        mode: "yearMonth",
+        name: "年月",
+        value: [0, 1] },
+      {
+        mode: "dateTime",
+        name: "日期时间选择",
+        value: [1, 1, 1, 1, 2, 5] },
+      {
+        mode: "time",
+        name: "时间选择",
+        value: [1, 1, 0] },
+
+      {
+        mode: "selector",
+        name: "单列选择",
+        value: [1] }],
+
+      tabIndex: 0,
+      resultInfo: {
+        result: "" },
+
+      selectedMode: 'region' };
+
+  },
+  components: {
+    wPicker: wPicker },
+
+  methods: {
+    toggleTab: function toggleTab(index) {
+      this.tabIndex = index;
+      console.log(this.$refs.picker, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:125");
+      this.$refs.picker.show();
+    },
+    selectVisitType: function selectVisitType(e)
+    {
+      this.visitTypeId = this.visitType[e.detail.value];
+    },
+
+    selectVisitDirection: function selectVisitDirection(e)
+    {
+      this.visitDirectionId = this.visitDirection[e.detail.value];
+    },
+    visitReturnTime: function visitReturnTime(e)
+    {
+      this.paidDate = e.detail.value;
+    },
+    visitReturnTimeNext: function visitReturnTimeNext(e)
+    {
+      this.nextDate = e.detail.value;
+    },
+    // 提交表单
+    // 文化学校 紧急联系人关系 来源渠道 推荐班主任 意向专业 意向等级
+    formSubmit: function formSubmit(e) {
+      console.log(e.detail.value, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:148");
+      var data = e.detail.value;
+
+      data.paidStatus = this.dicCodeId;
+
+      uni.request({
+        header: {
+          "cookie": uni.getStorageSync("userCookie") },
+
+        url: this.serverUrl + '/stu/student_visit',
+        method: 'POST',
+        data: data,
+        success: function success(res) {
+          console.log(res.data, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:161");
+        },
+        fail: function fail() {},
+        complete: function complete() {} });
+
+
+
+    },
+    //回访状态
+    selectDicCodeId: function selectDicCodeId(e)
+    {
+      var index = e.detail.value;
+      var currentDicCode = this.dicCode[index];
+      this.dicCodeName = currentDicCode.dicName;
+      this.dicCodeId = currentDicCode.id;
+
+    },
+    computed: {
+      mode: function mode() {
+        return this.tabList[this.tabIndex].mode;
+
+      },
+      defaultVal: function defaultVal() {
+        return this.tabList[this.tabIndex].value;
+      } } },
+
+
+
+  onLoad: function onLoad(param)
+  {var _this = this;
+    var me = this;
+    console.log(this.studentId, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:192");
+    console.log(param.id, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:193");
+    this.stuId = param.id;
+    // 获取 回访状态
+    uni.request({
+      url: this.serverUrl + '/stu/select_dicCode',
+      method: 'GET',
+      data: {},
+      success: function success(res) {
+        console.log(res, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:201");
+        console.log(res.data, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:202");
+        _this.dicCode = res.data;
+      } });
+
+    console.log("zahuishixiaolaodi", " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:206");
+  } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../../../../../daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=style&index=0&lang=css&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-1!./node_modules/css-loader??ref--6-oneOf-1-2!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/vue-loader/lib??vue-loader-options!D:/daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=style&index=0&lang=css& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../../daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=template&id=35f98a8a&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib??vue-loader-options!D:/daocheng-app/pages/recruit/consultation/stu_return_visit/stu_return_visit.vue?vue&type=template&id=35f98a8a& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+},[["../../../../../daocheng-app/main.js?{\"page\":\"pages%2Frecruit%2Fconsultation%2Fstu_return_visit%2Fstu_return_visit\"}","common/runtime","common/vendor"]]]);
+});
+require('pages/recruit/consultation/stu_return_visit/stu_return_visit.js');
+__wxRoute = 'pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.js';
+
+define('pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
+(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher"],{
+
+/***/ "../../../../../daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue":
+/*!****************************************************************************************************!*\
+  !*** D:/daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _stu_allocation_teacher_vue_vue_type_template_id_d58da24a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./stu_allocation_teacher.vue?vue&type=template&id=d58da24a& */ "../../../../../daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=template&id=d58da24a&");
+/* harmony import */ var _stu_allocation_teacher_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./stu_allocation_teacher.vue?vue&type=script&lang=js& */ "../../../../../daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=script&lang=js&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _stu_allocation_teacher_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _stu_allocation_teacher_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _stu_allocation_teacher_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./stu_allocation_teacher.vue?vue&type=style&index=0&lang=css& */ "../../../../../daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _stu_allocation_teacher_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _stu_allocation_teacher_vue_vue_type_template_id_d58da24a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _stu_allocation_teacher_vue_vue_type_template_id_d58da24a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "../../../../../daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************!*\
+  !*** D:/daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_allocation_teacher_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./stu_allocation_teacher.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../../daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_allocation_teacher_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_allocation_teacher_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_allocation_teacher_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_allocation_teacher_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_allocation_teacher_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "../../../../../daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=style&index=0&lang=css&":
+/*!*************************************************************************************************************************************!*\
+  !*** D:/daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=style&index=0&lang=css& ***!
+  \*************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_allocation_teacher_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-1!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/css-loader??ref--6-oneOf-1-2!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/postcss-loader/src??ref--6-oneOf-1-3!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./stu_allocation_teacher.vue?vue&type=style&index=0&lang=css& */ "./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../../../../../daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_allocation_teacher_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_allocation_teacher_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_allocation_teacher_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_allocation_teacher_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_1_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_6_oneOf_1_2_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_allocation_teacher_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "../../../../../daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=template&id=d58da24a&":
+/*!***********************************************************************************************************************************!*\
+  !*** D:/daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=template&id=d58da24a& ***!
+  \***********************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_allocation_teacher_vue_vue_type_template_id_d58da24a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!../../../../../谷歌Download/HBuilderX.2.0.1.20190614.full/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./stu_allocation_teacher.vue?vue&type=template&id=d58da24a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../../daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=template&id=d58da24a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_allocation_teacher_vue_vue_type_template_id_d58da24a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Download_HBuilderX_2_0_1_20190614_full_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_stu_allocation_teacher_vue_vue_type_template_id_d58da24a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../../daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!D:/daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default =
+{
+  data: function data() {
+    return {
+      id: null,
+      name: null,
+
+      teacher: null,
+      currentTeacher: null,
+      holdId: null,
+      teacherName: null };
+
+
+
+  },
+  methods: {
+
+    //教师信息
+    selectTeacher: function selectTeacher(e)
+    {
+      var index = e.detail.value;
+      var currentTeacher = this.teacher[index];
+      this.teacherName = currentTeacher.name;
+      this.holdId = currentTeacher.id;
+
+    },
+
+
+    //提交表单
+    formSubmit: function formSubmit(e) {
+      console.log(e.detail.value, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:58");
+      var data = e.detail.value;
+
+      data.holdId = this.holdId;
+
+      uni.request({
+        header: {
+          "cookie": uni.getStorageSync("userCookie") },
+
+        url: this.serverUrl + '/stu/student_visit',
+        method: 'POST',
+        data: data,
+        success: function success(res) {
+          console.log(res.data, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:71");
+        },
+        fail: function fail() {},
+        complete: function complete() {} });
+
+
+
+    },
+
+
+
+    onLoad: function onLoad(param)
+    {var _this = this;
+      var me = this;
+      console.log(param.id, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:85");
+      console.log(this.id, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:86");
+      this.id = param.id;
+      console.log(param.name, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:88");
+      console.log(this.name, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:89");
+      this.name = param.name;
+
+      // 负责教师信息
+      uni.request({
+        url: this.serverUrl + '/stu/select_all_teacher',
+        method: 'GET',
+        data: {},
+        success: function success(res) {
+          _this.teacher = res.data;
+        } });
+
+      console.log("zahuishixiaolaodi", " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:101");
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!../../../../../daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=style&index=0&lang=css&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-1!./node_modules/css-loader??ref--6-oneOf-1-2!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/vue-loader/lib??vue-loader-options!D:/daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=style&index=0&lang=css& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../../daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=template&id=d58da24a&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib??vue-loader-options!D:/daocheng-app/pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.vue?vue&type=template&id=d58da24a& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+},[["../../../../../daocheng-app/main.js?{\"page\":\"pages%2Frecruit%2Fconsultation%2Fstu_allocation_teacher%2Fstu_allocation_teacher\"}","common/runtime","common/vendor"]]]);
+});
+require('pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher.js');
 ;(function(global) {
     __uni_launch_ready(function() {
         var entryPagePath = __wxConfig.entryPagePath.replace('.html', '')

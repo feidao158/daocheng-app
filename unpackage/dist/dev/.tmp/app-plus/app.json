@@ -20,7 +20,10 @@
     "pages/recruit/ledger/ledger_school/ledger_school",
     "pages/recruit/ledger/ledger_school_detail/ledger_school_detail",
     "pages/recruit/ledger/ledger_teacher/ledger_teacher",
-    "pages/recruit/survey/survey_school/survey_school"
+    "pages/recruit/survey/survey_school/survey_school",
+    "pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail",
+    "pages/recruit/consultation/stu_return_visit/stu_return_visit",
+    "pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher"
   ],
   "subPackages": [],
   "window": {

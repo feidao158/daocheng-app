@@ -165,7 +165,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 {
   data: function data() {
     return {
@@ -234,6 +233,13 @@ __webpack_require__.r(__webpack_exports__);
       this.showDrawer = false;
       uni.navigateTo({
         url: "../recruit/ledger/ledger_school/ledger_school" });
+
+    },
+    ledgerTeacher: function ledgerTeacher()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/ledger/ledger_teacher/ledger_teacher" });
 
     } },
 

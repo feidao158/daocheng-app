@@ -80,7 +80,13 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -154,11 +160,68 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 var _default =
 {
   data: function data() {
-    return {};
+    return {
+      pageNum: 1,
+      teacherInfo: null,
+      loadModal: false };
 
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    loadData: function loadData()
+    {var _this = this;
+      var me = this;
+      uni.request({
+        url: this.serverUrl + '/led/manager/teacher/' + this.pageNum + '?name=&limit=1',
+        method: 'GET',
+        data: {},
+        success: function success(res) {
+          if (_this.teacherInfo != null && _this.teacherInfo.id == res.data[0].id)
+          {
+            uni.showToast({
+              title: "到底了!" });
+
+            _this.pageNum--;
+            _this.loadModal = false;
+            return;
+          }
+
+          me.teacherInfo = res.data[0];
+          _this.loadModal = false;
+
+        },
+        fail: function fail() {},
+        complete: function complete() {} });
+
+    },
+    prevent: function prevent()
+    {
+
+      if (this.pageNum > 1)
+      {
+        this.loadModal = true;
+        this.pageNum--;
+        this.loadData();
+
+      }
+    },
+    next: function next()
+    {
+      this.loadModal = true;
+      this.pageNum++;
+      this.loadData();
+    },
+    showTeacherLedgerInfo: function showTeacherLedgerInfo()
+    {
+      uni.navigateTo({
+        url: "../ledger_teacher_detail/ledger_teacher_detail?id=" + this.teacherInfo.id });
+
+    } },
+
+  onLoad: function onLoad() {
+    this.loadData();
+  } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["default"]))
 
 /***/ }),
 

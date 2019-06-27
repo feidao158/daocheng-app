@@ -238,6 +238,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -247,7 +251,8 @@ var _default =
       pageNum: 1,
       dataType: null,
       billDetailList: null,
-      modalName: null };
+      modalName: null,
+      loadModal: false };
 
 
   },
@@ -272,36 +277,51 @@ var _default =
           url: this.serverUrl + '/sign_up/bill_info/un_complete/' + this.pageNum + '?name=&limit=1' }).
 
         then(function (data) {var _data = _slicedToArray(
+
           data, 2),error = _data[0],res = _data[1];
+          if (_this.billInfo != null && _this.billInfo.id == res.data[0].id)
+          {
+            uni.showToast({
+              title: "到底了!" });
+
+            _this.pageNum--;
+            _this.loadModal = false;
+            return;
+          }
           me.billInfo = res.data[0];
           _this.getBillDetailList();
+          _this.loadModal = false;
         });
       } else
 
       {
-        // uni.request({
-        // 	url: this.serverUrl + '/sign_up/bill_info/complete/' + this.pageNum + '?name=&limit=1',
-        // 	method: 'GET',
-        // 	data: {},
-        // 	success: res => {
-        // 		me.billInfo = res.data[0]
-        // 	},
-        // 	fail: () => {},
-        // 	complete: () => {}
-        // });
+
         uni.request({
           url: this.serverUrl + '/sign_up/bill_info/complete/' + this.pageNum + '?name=&limit=1' }).
 
         then(function (data) {var _data2 = _slicedToArray(
+
           data, 2),error = _data2[0],res = _data2[1];
+          if (_this.billInfo != null && _this.billInfo.id == res.data[0].id)
+          {
+            uni.showToast({
+              title: "到底了!" });
+
+            _this.pageNum--;
+            _this.loadModal = false;
+            return;
+          }
+
           me.billInfo = res.data[0];
           _this.getBillDetailList();
+          _this.loadModal = false;
         });
 
       }
     },
     next: function next()
     {
+      this.loadModal = true;
       this.pageNum++;
       this.loadData();
     },
@@ -310,6 +330,7 @@ var _default =
     {
       if (this.pageNum > 1)
       {
+        this.loadModal = true;
         this.pageNum--;
         this.loadData();
       }

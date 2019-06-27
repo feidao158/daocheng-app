@@ -191,6 +191,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -200,7 +205,8 @@ var _default =
       cultuerTeacherLedgerList: null,
       schoolId: null,
       pageNum: 1,
-      teacherInfo: null };
+      teacherInfo: null,
+      loadModal: false };
 
   },
   methods: {
@@ -211,15 +217,24 @@ var _default =
 
     },
     getTeacherInfo: function getTeacherInfo()
-    {
+    {var _this = this;
       var me = this;
       uni.request({
         url: this.serverUrl + '/led/school/teacher/' + this.schoolId + '/' + this.pageNum + '?limit=1',
         method: 'GET',
         data: {},
         success: function success(res) {
+          if (_this.teacherInfo != null && _this.teacherInfo.id == res.data[0].id)
+          {
+            uni.showToast({
+              title: "到底了!" });
 
+            _this.pageNum--;
+            _this.loadModal = false;
+            return;
+          }
           me.teacherInfo = res.data[0];
+          _this.loadModal = false;
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -230,6 +245,7 @@ var _default =
     {
       if (this.pageNum > 1)
       {
+        this.loadModal = true;
         this.pageNum--;
         this.getTeacherInfo();
       }
@@ -237,18 +253,19 @@ var _default =
     next: function next()
     {
       this.pageNum++;
+      this.loadModal = true;
       this.getTeacherInfo();
     } },
 
-  onLoad: function onLoad(param) {var _this = this;
+  onLoad: function onLoad(param) {var _this2 = this;
     this.schoolId = param.schoolId;
     uni.request({
       url: this.serverUrl + '/led/school/ledger/json/' + param.schoolId,
       method: 'GET',
       data: {},
       success: function success(res) {
-        _this.cultuerTeacherLedgerList = res.data.reverse();
-        console.log(res.data, " at pages\\recruit\\ledger\\ledger_school_detail\\ledger_school_detail.vue:169");
+        _this2.cultuerTeacherLedgerList = res.data.reverse();
+        console.log(res.data, " at pages\\recruit\\ledger\\ledger_school_detail\\ledger_school_detail.vue:186");
       },
       fail: function fail() {},
       complete: function complete() {} });

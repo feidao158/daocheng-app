@@ -150,24 +150,44 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
       schoolInfo: null,
-      pageNum: 1 };
+      pageNum: 1,
+      loadModal: false };
 
   },
   methods: {
     loadData: function loadData()
-    {
+    {var _this = this;
       var me = this;
       uni.request({
         url: this.serverUrl + '/led/school/' + this.pageNum + '?name=&limit=1',
         method: 'GET',
         data: {},
         success: function success(res) {
+
+          if (_this.schoolInfo != null && _this.schoolInfo.id == res.data[0].id)
+          {
+            uni.showToast({
+              title: "到底了!" });
+
+            _this.pageNum--;
+            _this.loadModal = false;
+            return;
+          }
+
+
           me.schoolInfo = res.data[0];
+          _this.loadModal = false;
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -178,11 +198,13 @@ var _default =
       if (this.pageNum > 1)
       {
         this.pageNum--;
+        this.loadModal = true;
         this.loadData();
       }
     },
     next: function next()
     {
+      this.loadModal = true;
       this.pageNum++;
       this.loadData();
     },

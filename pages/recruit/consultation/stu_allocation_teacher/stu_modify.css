@@ -1,0 +1,9 @@
+.form-item{
+		border:1upx solid #ccc; 
+		padding:12upx;
+		margin:26upx 0;
+		border-radius:8upx;
+	}
+	.gender label{
+		margin:0 30upx;
+	}

@@ -382,6 +382,13 @@ var _default =
     } },
 
 
+  //跳转到回访页面
+  returnVisit: function returnVisit()
+  {
+    uni.navigateTo({
+      url: "../stu_return_visit/stu_return_visit" });
+
+  },
   computed: {
     hasPrevent: function hasPrevent() {
       return {
