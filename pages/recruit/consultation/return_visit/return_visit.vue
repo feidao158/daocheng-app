@@ -79,9 +79,14 @@
 					</view>
 				</view>
 				
+				<view class="cu-load load-modal" v-if="loadModal" >
+				
+						<view class="gray-text">加载中...</view>
+				</view>
+				
 				<view class="flex">
-					<button @tap="prevent">上一页</button>
-					<button @tap="next">下一页</button>
+					<button @tap="prevent" :class="currentNum>1?'bg-red':''" >上一页</button>
+					<button @tap="next" class="bg-red">下一页</button>
 				</view>
 				
 			</view>
@@ -96,13 +101,15 @@
 				currentNum:1,
 				stu:null,
 				dataList:null,
-				pageType:null
+				pageType:null,
+				loadModal:false
 			}
 		},
 		methods: {
 			next()
 			{
 				this.currentNum++;
+				this.loadModal= true
 					if(this.pageType == 0){
 						this.validReturnLog()
 					}else if(this.pageType == 1){
@@ -111,12 +118,17 @@
 			},
 			prevent()
 			{
-				this.currentNum--;
-				if(this.pageType == 0){
-					this.validReturnLog()
-				}else if(this.pageType == 1){
-					this.invalidReturnLog()
+				if(this.currentNum>1){
+					this.currentNum--;
+					this.loadModal=true
+					if(this.pageType == 0){
+						this.validReturnLog()
+					}else if(this.pageType == 1){
+						this.invalidReturnLog()
+					}
 				}
+				
+				
 				
 			},
 			
@@ -128,11 +140,23 @@
 			    	url:this.serverUrl + '/stu/visit_info/valid/'  + this.currentNum + '?name=&limit=1',
 					method:'GET',
 					data:{},
-			
 					success: visitDate =>{
+						
+						if(this.stu != null && this.stu.id == visitDate.data[0].id){
+							uni.showToast({
+								title:"到底了！"
+							})
+							
+							this.currentNum--
+							this.loadModal=false
+							return
+						}
+						
+						
 						console.log(visitDate)
 						this.stu = visitDate.data[0]
-						console.log("复制成功了吗")
+						this.loadModal = false
+						
 					},
 					fail() {},
 					complete() {},
@@ -147,7 +171,19 @@
 					method:'GET',
 					data:{},
 					success: invalidVisitDate =>{
+						
+						if(this.stu != null && this.stu.id == invalidVisitDate.data[0].id){
+							
+							uni.showToast({
+								title:"到底了！"
+							})
+							this.currentNum--
+							this.loadModal=false
+							return	
+						}
+						
 						console.log(invalidVisitDate)
+						this.loadModal = false 
 						this.stu = invalidVisitDate.data[0]
 						console.log("stu:"+this.stu)
 					},
