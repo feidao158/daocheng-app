@@ -194,11 +194,38 @@ __webpack_require__.r(__webpack_exports__);
         url: "../recruit/consultation/router/router" });
 
     },
-    billInfoRouter: function billInfoRouter()
+    //我的回访
+    myReturnVisitRouter: function myReturnVisitRouter()
     {
       this.showDrawer = false;
       uni.navigateTo({
-        url: "../recruit/consultation/bill_router/bill_router" });
+        url: "../recruit/consultation/visit_router/visit_router" });
+
+    },
+    //回访提醒
+    returnVisitToRemind: function returnVisitToRemind()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/consultation/visit_remind_router/visit_remind_router" });
+
+    },
+    //生日提醒
+    birthdayReminder: function birthdayReminder()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/consultation/birthday_reminder_router/birthday_reminder_router" });
+
+    },
+    //学校调研
+    surveySchool: function surveySchool()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/survey/survey_school/survey_school" });
+
+
 
     },
     ledgerSchool: function ledgerSchool()
@@ -226,7 +253,7 @@ __webpack_require__.r(__webpack_exports__);
       method: 'GET',
       data: {},
       success: function success(res) {
-        console.log(res.data, " at pages\\index\\index.vue:129");
+        console.log(res.data, " at pages\\index\\index.vue:156");
         if (res.data.status == 200)
         {
           // 仍旧是登录状态
@@ -274,10 +301,10 @@ __webpack_require__.r(__webpack_exports__);
 
                 }
 
-                console.log(res.data, " at pages\\index\\index.vue:177");
+                console.log(res.data, " at pages\\index\\index.vue:204");
               },
               fail: function fail() {
-                console.log("出错了", " at pages\\index\\index.vue:180");
+                console.log("出错了", " at pages\\index\\index.vue:207");
               },
               complete: function complete() {} });
 

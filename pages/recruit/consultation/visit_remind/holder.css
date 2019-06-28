@@ -1,0 +1,43 @@
+.header{
+
+		display: flex;
+		justify-content: space-around;
+		margin-top:20upx;
+		padding:0 40upx;
+	}
+	.header text{
+		margin:0 20upx;
+		font-size:36upx;
+	}
+	.form-input{
+		border:1upx solid #ccc;
+		margin:0 30upx 0 10upx;
+		padding:8upx 0;
+		border-radius:6upx;
+		line-height: 100upx;
+	}
+	.header button{
+		line-height:52upx;
+		margin:0;
+		padding:10upx 30upx;
+		background-color:rgba(37,201,190,1);
+	}
+	.selected{
+		margin:60upx 0;
+		padding:0 30upx;
+	}
+	.selected-content{
+		width:100%;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom:30upx;
+	}
+	.selected-content span{
+		padding:10upx 32upx;
+		border:1upx solid #ccc;
+		border-radius:6upx;
+	}
+	
+	.border-grey{
+		border: #E5E5E5 solid 1upx;
+	}

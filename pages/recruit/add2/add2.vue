@@ -419,6 +419,7 @@
 					"cookie":uni.getStorageSync("userCookie")
 				},
 				success: res => {
+					console.log(res)
 					this.resourceFormTypes = res.data;
 				}
 			});

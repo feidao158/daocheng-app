@@ -519,6 +519,7 @@ __webpack_require__.r(__webpack_exports__);
         "cookie": uni.getStorageSync("userCookie") },
 
       success: function success(res) {
+        console.log(res, " at pages\\recruit\\add2\\add2.vue:422");
         _this2.resourceFormTypes = res.data;
       } });
 

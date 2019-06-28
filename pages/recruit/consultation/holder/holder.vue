@@ -36,12 +36,12 @@
 				<button class="cu-btn bg-cyan" @tap="stuModify(stu.id)">修改</button>
 				<button class="cu-btn bg-cyan">报名</button>
 				<button class="cu-btn bg-cyan">续报名</button>
-				<button class="cu-btn bg-cyan">回访</button>
+				<button class="cu-btn bg-cyan" @tap="returnVisit(stu.id)">回访</button>
 			</view>
 			
 			<view  v-if="pageType==0" class="padding flex flex-wrap justify-between align-center bg-white">
 				<button class="cu-btn bg-cyan" @tap="setGood">优生</button>
-				<button class="cu-btn bg-cyan">分配负责老师</button>
+				<button class="cu-btn bg-cyan" @tap="allocationTeacher(stu.id,stu.name)">分配负责老师</button>
 				<button class="cu-btn bg-cyan">学生状态修改</button>
 			</view>
 			
@@ -224,14 +224,12 @@
 				this.currentNum++;
 				this.loadStudentInfo()
 				
-				
 			},
 			prevent()
 			{
 				this.currentNum--;
 				this.loadStudentInfo()
 			},
-			
 			
 			loadStudentInfo()
 			{
@@ -279,9 +277,15 @@
 					complete: () => {}
 				});
 				
-			}
-			
-		},
+			},
+	    //  跳转到回访页面
+		returnVisit(id)	
+		   {
+				uni.navigateTo({
+					url:"../stu_return_visit/stu_return_visit?id=" + id
+				})
+				console.log(id)
+			},	
 		computed:{
 			hasPrevent:function(){
 				return{
@@ -289,11 +293,17 @@
 				}
 			}
 		},
+		//跳转到分配负责教师页面
+		allocationTeacher(id,name)
+		{
+			uni.navigateTo({
+				url:"../stu_allocation_teacher/stu_allocation_teacher?id=" + id + "&name=" + name
+			})
+			
+		},	
 		onShow(param) {
 			var me = this;
 			this.loadStudentInfo()
-			
-			
 			
 		},
 		onLoad(param)
@@ -301,7 +311,7 @@
 			console.log("load... type:" + param.type)
 			this.pageType = param.type
 		}
-		
+		}
 	}
 </script>
 

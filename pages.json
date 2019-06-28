@@ -54,6 +54,35 @@
             "style" : {}
         }
         ,{
+            "path" : "pages/recruit/consultation/visit_router/visit_router",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/recruit/consultation/return_visit/return_visit",
+            "style" : {}
+        }
+		
+		
+        ,{
+            "path" : "pages/recruit/consultation/visit_remind_router/visit_remind_router",
+            "style" : {}
+        }
+		,{
+		   "path" : "pages/recruit/consultation/visit_remind/visit_remind",
+		    "style" : {}
+		}
+		
+		 ,{
+		    "path" : "pages/recruit/consultation/birthday_reminder_router/birthday_reminder_router",
+		    "style" : {}
+		}
+		 ,{
+		    "path" : "pages/recruit/consultation/birthday_remind/birthday_remind",
+		    "style" : {}
+		}
+		
+		
+        ,{
             "path" : "pages/recruit/ledger/ledger_school/ledger_school",
             "style" : {}
         }
@@ -65,10 +94,22 @@
             "path" : "pages/recruit/ledger/ledger_teacher/ledger_teacher",
             "style" : {}
         }
+		 ,{
+		   "path" : "pages/recruit/survey/survey_school/survey_school",
+		    "style" : {}
+		}
         ,{
             "path" : "pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail",
             "style" : {}
         }
+        ,{
+            "path" : "pages/recruit/consultation/stu_return_visit/stu_return_visit",
+            "style" : {}
+        }
+		 ,{
+		    "path" : "pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher",
+		    "style" : {}
+		}
         ,{
             "path" : "pages/recruit/ledger/ledger_school_add_ledger/ledger_school_add_ledger",
             "style" : {}
@@ -101,6 +142,16 @@
 			"selectedIconPath":"static/tabBar/mySelected.png",
 			"text":"我的"
 		}]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
 	}
 	
 	

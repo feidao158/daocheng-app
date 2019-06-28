@@ -12,19 +12,19 @@
 						
 						<uni-collapse-item title="咨询" animation="true">
 						    <view  class="collapse-item-content" @tap="myStudentRouter">
-						        我的学员
+						       我的学员
 						    </view>
-							<view class="collapse-item-content" @tap="billInfoRouter">
+							<view class="collapse-item-content" >
 							   我的账单
 							</view>
-							<view class="collapse-item-content">
+							<view class="collapse-item-content" @tap="myReturnVisitRouter">
 							   我的回访
 							</view>
-							<view class="collapse-item-content">
+							<view class="collapse-item-content" @tap="returnVisitToRemind">
 							   回访提醒
 							</view>
-							<view class="collapse-item-content">
-							  生日提醒
+							<view class="collapse-item-content" @tap="birthdayReminder">
+							   生日提醒
 							</view>
 						</uni-collapse-item>
 						
@@ -40,7 +40,7 @@
 						</uni-collapse-item>
 						
 						<uni-collapse-item title="调研">
-							<view class="collapse-item-content">
+							<view class="collapse-item-content" @tap="surveySchool" >
 								学校调研
 							</view>
 							<view class="collapse-item-content">
@@ -94,12 +94,39 @@
 					url: "../recruit/consultation/router/router"
 				})
 			},
-			billInfoRouter()
+			//我的回访
+			myReturnVisitRouter()
 			{
 				this.showDrawer = false;
 				uni.navigateTo({
-					url: "../recruit/consultation/bill_router/bill_router"
+					url:"../recruit/consultation/visit_router/visit_router"
 				})
+			},
+			//回访提醒
+			returnVisitToRemind()
+			{
+				this.showDrawer = false;
+				uni.navigateTo({
+					url:"../recruit/consultation/visit_remind_router/visit_remind_router"
+				})
+			},
+			//生日提醒
+			birthdayReminder()
+			{
+				this.showDrawer = false;
+				uni.navigateTo({
+					url:"../recruit/consultation/birthday_reminder_router/birthday_reminder_router"
+				})
+			},
+			//学校调研
+			surveySchool()
+			{
+				this.showDrawer = false;
+				uni.navigateTo({
+					url:"../recruit/survey/survey_school/survey_school"
+				})
+				
+				
 			},
 			ledgerSchool()
 			{

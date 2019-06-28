@@ -196,8 +196,6 @@ var _default =
 
     } },
 
-
-
   onLoad: function onLoad() {
     var me = this;
 
@@ -219,7 +217,7 @@ var _default =
       method: 'GET',
       data: {},
       success: function success(res) {
-        console.log(res.data, " at pages\\my\\my.vue:140");
+        console.log(res.data, " at pages\\my\\my.vue:138");
         if (res.data.status == 200)
         {
           // 仍旧是登录状态
