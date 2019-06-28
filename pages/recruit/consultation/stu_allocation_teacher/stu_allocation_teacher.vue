@@ -37,6 +37,8 @@
 				holdId:null,
 				teacherName:null,
 				
+				students:[],
+			
 				
 			}
 		},
@@ -55,18 +57,25 @@
 			
 			//提交表单
 			formSubmit(e){
-				console.log(e.detail.value);
-				var data = e.detail.value;
-			
-				data.holdId = this.holdId
-				
+			// 	console.log(e.detail.value);
+			 // 	var data = e.detail.value;
+				// console.log(data)
+			// 
+			// 	data.holdId = this.holdId
+			// 	data.students = this.id
+			this.students.push(this.id)
+			console.log(this.holdId)
+		 	
 				uni.request({
 					header:{
 						"cookie":uni.getStorageSync("userCookie")
 					},
-					url: this.serverUrl +  '/stu/student_visit',
+					url: this.serverUrl +  '/stu/input_holder',
 					method: 'POST',
-					data: data,
+					data: {
+					  holdId:this.holdId,
+					  students:this.students
+					},
 					success: res => {
 						console.log(res.data)
 					},

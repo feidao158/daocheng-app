@@ -71,9 +71,14 @@
 					</view>
 				</view>
 				
+				<view class="cu-load load-modal" v-if="loadModal" >
+				
+						<view class="gray-text">加载中...</view>
+				</view>
+				
 				<view class="flex">
-					<button @tap="prevent">上一页</button>
-					<button @tap="next">下一页</button>
+					<button @tap="prevent" :class="currentNum>1?'bg-red':''">上一页</button>
+					<button @tap="next" class="bg-red">下一页</button>
 				</view>
 				
 			</view>
@@ -88,21 +93,26 @@
 				currentNum:1,
 				stu:null,
 				dataList:null,
-				pageType:null
+				pageType:null,
+				loadModal:false
 			}
 		},
 		methods: {
 			next()
 			{
 				this.currentNum++;
-				this.birthdayRemindData()
-				
-				
+				this.loadModal=true
+				this.birthdayRemindData()	
 			},
 			prevent()
 			{
-				this.currentNum--;
-				this.birthdayRemindData()
+				if(this.currentNum>1){
+					this.currentNum--;
+					this.loadModal=true
+					this.birthdayRemindData()
+					
+				}
+				
 			},
 			
 			birthdayRemindData()
@@ -112,8 +122,20 @@
 					method:"GET",
 					data:{},
 					success: birthdayData =>{
+					
+						if(this.stu!=null && this.stu.id == birthdayData.data[0].id){
+							
+							uni.showToast({
+								title:"到底了!"
+							})
+							this.currentNum--
+							this.loadModal=false
+							return
+							
+						}
 						console.log(birthdayData)
 						this.stu = birthdayData.data[0]
+						this.loadModal=false 
 					},
 					fail: () => {},
 					complete: () => {},

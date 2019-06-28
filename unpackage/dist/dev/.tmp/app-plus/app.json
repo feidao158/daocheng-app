@@ -23,7 +23,9 @@
     "pages/recruit/survey/survey_school/survey_school",
     "pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail",
     "pages/recruit/consultation/stu_return_visit/stu_return_visit",
-    "pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher"
+    "pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher",
+    "pages/recruit/ledger/ledger_school_add_ledger/ledger_school_add_ledger",
+    "pages/recruit/ledger/ledger_school_add_teacher/ledger_school_add_teacher"
   ],
   "subPackages": [],
   "window": {

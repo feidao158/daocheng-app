@@ -181,6 +181,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -188,21 +193,26 @@ var _default =
       currentNum: 1,
       stu: null,
       dataList: null,
-      pageType: null };
+      pageType: null,
+      loadModal: false };
 
   },
   methods: {
     next: function next()
     {
       this.currentNum++;
+      this.loadModal = true;
       this.birthdayRemindData();
-
-
     },
     prevent: function prevent()
     {
-      this.currentNum--;
-      this.birthdayRemindData();
+      if (this.currentNum > 1) {
+        this.currentNum--;
+        this.loadModal = true;
+        this.birthdayRemindData();
+
+      }
+
     },
 
     birthdayRemindData: function birthdayRemindData()
@@ -212,8 +222,20 @@ var _default =
         method: "GET",
         data: {},
         success: function success(birthdayData) {
-          console.log(birthdayData, " at pages\\recruit\\consultation\\birthday_remind\\birthday_remind.vue:115");
+
+          if (_this.stu != null && _this.stu.id == birthdayData.data[0].id) {
+
+            uni.showToast({
+              title: "到底了!" });
+
+            _this.currentNum--;
+            _this.loadModal = false;
+            return;
+
+          }
+          console.log(birthdayData, " at pages\\recruit\\consultation\\birthday_remind\\birthday_remind.vue:136");
           _this.stu = birthdayData.data[0];
+          _this.loadModal = false;
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -234,7 +256,7 @@ var _default =
   },
   onLoad: function onLoad(param)
   {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\birthday_remind\\birthday_remind.vue:137");
+    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\birthday_remind\\birthday_remind.vue:159");
     this.pageType = param.type;
 
   } };exports.default = _default;

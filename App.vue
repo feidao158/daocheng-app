@@ -171,4 +171,41 @@
 	.tab-list .tab-show{
 		display: block;
 	}
+	
+	.zw-container{
+		margin: 0 16%;
+	}
+	.zw-form-label{
+		display: block;
+		width: 100upx;
+		padding: 9upx 15upx;
+		font-weight: 400;
+		line-height: 20upx;
+	}
+	
+	
+	.list-teacher{
+		display: flex;
+		justify-content: space-between;
+		margin-top:40upx;
+	}
+	.list-left{
+		display: inline-block;
+		width:26%;
+		/* padding: 8upx 30upx; */
+		margin-top:16upx;
+		font-weight: 400;
+		line-height: 20upx;
+	}
+	.list-right{
+		display: inline-block;
+		/* margin-left:40upx; */
+		/* padding: 8upx 16upx; */
+		line-height: 20upx;
+	}
+	.list-right input{
+		border:1upx solid #ccc;
+		padding-left:6upx;
+		border-radius:4upx;
+	}
 </style>

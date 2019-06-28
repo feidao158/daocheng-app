@@ -194,6 +194,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -201,12 +206,14 @@ var _default =
       currentNum: 1,
       stu: null,
       dataList: null,
-      pageType: null };
+      pageType: null,
+      loadModal: false };
 
   },
   methods: {
     next: function next()
     {
+      this.loadModal = true;
       this.currentNum++;
       this.visitRemindDate();
 
@@ -214,20 +221,39 @@ var _default =
     },
     prevent: function prevent()
     {
-      this.currentNum--;
-      this.visitRemindDate();
+      if (this.currentNum > 1)
+      {
+        this.currentNum--;
+        this.loadModal = true;
+        this.visitRemindDate();
+      }
+
     },
 
     visitRemindDate: function visitRemindDate()
     {var _this = this;
-      console.log(this.pageType, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:123");
+      console.log(this.pageType, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:135");
       uni.request({
         url: this.serverUrl + '/stu/visit_remind/' + this.pageType + '/' + this.currentNum + '?limit=1',
         method: 'GET',
         data: {},
         success: function success(visitTimeDate) {
-          console.log(visitTimeDate, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:129");
+
+          if (_this.stu != null && _this.stu.id == visitTimeDate.data[0].id)
+          {
+            uni.showToast({
+              title: "到底了!" });
+
+            _this.currentNum--;
+            _this.loadModal = false;
+            return;
+          }
+
+
+          console.log(visitTimeDate, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:153");
           _this.stu = visitTimeDate.data[0];
+          _this.loadModal = false;
+
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -251,7 +277,7 @@ var _default =
   },
   onLoad: function onLoad(param)
   {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:154");
+    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:180");
     this.pageType = param.type;
 
   } };exports.default = _default;

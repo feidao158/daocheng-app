@@ -59,6 +59,19 @@
 				
 			</view>
 			
+			
+			<view class="cu-item">
+				<view class="half-content">
+					<text class="text-gray">新增台账</text>
+					<button class="cu-btn margin-left bg-blue" @tap="addSchoolLedger">click</button>
+				</view>
+				
+				<view class="half-content">
+					<text class="text-gray">新增教师:</text>
+					<button class="cu-btn margin-left bg-blue" @tap="addSchoolTeacher">click</button>
+				</view>
+			</view>
+			
 			<view class="cu-load load-modal" v-if="loadModal" >
 			
 					<view class="gray-text">加载中...</view>
@@ -130,6 +143,18 @@
 			{
 				uni.navigateTo({
 					url: "../ledger_school_detail/ledger_school_detail?schoolId=" + this.schoolInfo.id
+				})
+			},
+			addSchoolLedger()
+			{
+				uni.navigateTo({
+					url: "../ledger_school_add_ledger/ledger_school_add_ledger?id=" + this.schoolInfo.id
+				})
+			},
+			addSchoolTeacher()
+			{
+				uni.navigateTo({
+					url: "../ledger_school_add_teacher/ledger_school_add_teacher?id=" + this.schoolInfo.id
 				})
 			}
 		},

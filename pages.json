@@ -106,8 +106,16 @@
             "path" : "pages/recruit/consultation/stu_return_visit/stu_return_visit",
             "style" : {}
         }
+		 ,{
+		    "path" : "pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher",
+		    "style" : {}
+		}
         ,{
-            "path" : "pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher",
+            "path" : "pages/recruit/ledger/ledger_school_add_ledger/ledger_school_add_ledger",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/recruit/ledger/ledger_school_add_teacher/ledger_school_add_teacher",
             "style" : {}
         }
     ],
