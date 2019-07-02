@@ -189,6 +189,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -196,13 +201,15 @@ var _default =
       currentNum: 1,
       stu: null,
       dataList: null,
-      pageType: null };
+      pageType: null,
+      loadModal: false };
 
   },
   methods: {
     next: function next()
     {
       this.currentNum++;
+      this.loadModal = true;
       if (this.pageType == 0) {
         this.validReturnLog();
       } else if (this.pageType == 1) {
@@ -211,28 +218,45 @@ var _default =
     },
     prevent: function prevent()
     {
-      this.currentNum--;
-      if (this.pageType == 0) {
-        this.validReturnLog();
-      } else if (this.pageType == 1) {
-        this.invalidReturnLog();
+      if (this.currentNum > 1) {
+        this.currentNum--;
+        this.loadModal = true;
+        if (this.pageType == 0) {
+          this.validReturnLog();
+        } else if (this.pageType == 1) {
+          this.invalidReturnLog();
+        }
       }
+
+
 
     },
 
     // 有效回访日志
     validReturnLog: function validReturnLog()
     {var _this = this;
-      console.log("我进来了吗", " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:126");
+      console.log("我进来了吗", " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:138");
       uni.request({
         url: this.serverUrl + '/stu/visit_info/valid/' + this.currentNum + '?name=&limit=1',
         method: 'GET',
         data: {},
-
         success: function success(visitDate) {
-          console.log(visitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:133");
+
+          if (_this.stu != null && _this.stu.id == visitDate.data[0].id) {
+            uni.showToast({
+              title: "到底了！" });
+
+
+            _this.currentNum--;
+            _this.loadModal = false;
+            return;
+          }
+
+
+          console.log(visitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:156");
           _this.stu = visitDate.data[0];
-          console.log("复制成功了吗", " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:135");
+          _this.loadModal = false;
+
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -241,15 +265,27 @@ var _default =
     // 无效回访日志
     invalidReturnLog: function invalidReturnLog()
     {var _this2 = this;
-      console.log(this.currentNum, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:144");
+      console.log(this.currentNum, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:168");
       uni.request({
         url: this.serverUrl + '/stu/visit_info/invalid/' + this.currentNum + '?limit=1',
         method: 'GET',
         data: {},
         success: function success(invalidVisitDate) {
-          console.log(invalidVisitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:150");
+
+          if (_this2.stu != null && _this2.stu.id == invalidVisitDate.data[0].id) {
+
+            uni.showToast({
+              title: "到底了！" });
+
+            _this2.currentNum--;
+            _this2.loadModal = false;
+            return;
+          }
+
+          console.log(invalidVisitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:185");
+          _this2.loadModal = false;
           _this2.stu = invalidVisitDate.data[0];
-          console.log("stu:" + _this2.stu, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:152");
+          console.log("stu:" + _this2.stu, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:188");
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -268,7 +304,7 @@ var _default =
   },
   onLoad: function onLoad(param)
   {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:171");
+    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:207");
     this.pageType = param.type;
     if (this.pageType == 0) {
       this.validReturnLog();

@@ -146,7 +146,8 @@
 			{
 				this.showDrawer = false;
 				uni.navigateTo({
-					url: "../recruit/consultation/bill_router/bill_router"
+					url: "../recruit/consultation/bill_router/bill_router",
+					
 				})
 			}
 		},

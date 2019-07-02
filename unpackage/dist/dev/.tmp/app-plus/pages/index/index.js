@@ -248,6 +248,7 @@ __webpack_require__.r(__webpack_exports__);
       uni.navigateTo({
         url: "../recruit/consultation/bill_router/bill_router" });
 
+
     } },
 
   components: {
@@ -260,7 +261,7 @@ __webpack_require__.r(__webpack_exports__);
       method: 'GET',
       data: {},
       success: function success(res) {
-        console.log(res.data, " at pages\\index\\index.vue:163");
+        console.log(res.data, " at pages\\index\\index.vue:164");
         if (res.data.status == 200)
         {
           // 仍旧是登录状态
@@ -308,10 +309,10 @@ __webpack_require__.r(__webpack_exports__);
 
                 }
 
-                console.log(res.data, " at pages\\index\\index.vue:211");
+                console.log(res.data, " at pages\\index\\index.vue:212");
               },
               fail: function fail() {
-                console.log("出错了", " at pages\\index\\index.vue:214");
+                console.log("出错了", " at pages\\index\\index.vue:215");
               },
               complete: function complete() {} });
 

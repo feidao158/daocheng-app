@@ -1259,6 +1259,7 @@ function gz$gwx_16(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_16)return __WXML_GLOBAL__.ops_cached.$gwx_16
 __WXML_GLOBAL__.ops_cached.$gwx_16=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[7],[3,'loadModal']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_16);return __WXML_GLOBAL__.ops_cached.$gwx_16
 }
 function gz$gwx_17(){
@@ -1654,6 +1655,11 @@ e_[x[14]]={f:m14,j:[],i:[],ti:[],ic:[]}
 d_[x[15]]={}
 var m15=function(e,s,r,gg){
 var z=gz$gwx_16()
+var cZB=_v()
+_(r,cZB)
+if(_oz(z,0,e,s,gg)){cZB.wxVkey=1
+}
+cZB.wxXCkey=1
 return r
 }
 e_[x[15]]={f:m15,j:[],i:[],ti:[],ic:[]}
@@ -1672,44 +1678,44 @@ e_[x[17]]={f:m17,j:[],i:[],ti:[],ic:[]}
 d_[x[18]]={}
 var m18=function(e,s,r,gg){
 var z=gz$gwx_19()
-var c3B=_mz(z,'form',['bindsubmit',0,'class',1,'data-event-opts',1],[],e,s,gg)
-var o4B=_mz(z,'uni-collapse',['accordion',3,'animation',1,'bind:__l',2,'vueId',3,'vueSlots',4],[],e,s,gg)
-var l5B=_mz(z,'uni-collapse-item',['animation',8,'bind:__l',1,'title',2,'vueId',3,'vueSlots',4],[],e,s,gg)
-var a6B=_mz(z,'w-picker',['bind:__l',13,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'endYear',6,'mode',7,'selectList',8,'startYear',9,'step',10,'themeColor',11,'vueId',12],[],e,s,gg)
+var o4B=_mz(z,'form',['bindsubmit',0,'class',1,'data-event-opts',1],[],e,s,gg)
+var l5B=_mz(z,'uni-collapse',['accordion',3,'animation',1,'bind:__l',2,'vueId',3,'vueSlots',4],[],e,s,gg)
+var a6B=_mz(z,'uni-collapse-item',['animation',8,'bind:__l',1,'title',2,'vueId',3,'vueSlots',4],[],e,s,gg)
+var t7B=_mz(z,'w-picker',['bind:__l',13,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'endYear',6,'mode',7,'selectList',8,'startYear',9,'step',10,'themeColor',11,'vueId',12],[],e,s,gg)
+_(a6B,t7B)
 _(l5B,a6B)
+var e8B=_mz(z,'uni-collapse-item',['animation',26,'bind:__l',1,'class',2,'title',3,'vueId',4,'vueSlots',5],[],e,s,gg)
+_(l5B,e8B)
+var b9B=_mz(z,'uni-collapse-item',['animation',32,'bind:__l',1,'class',2,'title',3,'vueId',4,'vueSlots',5],[],e,s,gg)
+_(l5B,b9B)
 _(o4B,l5B)
-var t7B=_mz(z,'uni-collapse-item',['animation',26,'bind:__l',1,'class',2,'title',3,'vueId',4,'vueSlots',5],[],e,s,gg)
-_(o4B,t7B)
-var e8B=_mz(z,'uni-collapse-item',['animation',32,'bind:__l',1,'class',2,'title',3,'vueId',4,'vueSlots',5],[],e,s,gg)
-_(o4B,e8B)
-_(c3B,o4B)
-_(r,c3B)
+_(r,o4B)
 return r
 }
 e_[x[18]]={f:m18,j:[],i:[],ti:[],ic:[]}
 d_[x[19]]={}
 var m19=function(e,s,r,gg){
 var z=gz$gwx_20()
-var o0B=_mz(z,'form',['bindsubmit',0,'class',1,'data-event-opts',1],[],e,s,gg)
-var xAC=_n('view')
-_rz(z,xAC,'style',3,e,s,gg)
-var oBC=_mz(z,'w-picker',['bind:__l',4,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'endYear',6,'mode',7,'selectList',8,'startYear',9,'step',10,'themeColor',11,'vueId',12],[],e,s,gg)
+var xAC=_mz(z,'form',['bindsubmit',0,'class',1,'data-event-opts',1],[],e,s,gg)
+var oBC=_n('view')
+_rz(z,oBC,'style',3,e,s,gg)
+var fCC=_mz(z,'w-picker',['bind:__l',4,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'endYear',6,'mode',7,'selectList',8,'startYear',9,'step',10,'themeColor',11,'vueId',12],[],e,s,gg)
+_(oBC,fCC)
+var cDC=_mz(z,'w-picker',['bind:__l',17,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'defaultVal',6,'endYear',7,'mode',8,'selectList',9,'startYear',10,'themeColor',11,'vueId',12],[],e,s,gg)
+_(oBC,cDC)
 _(xAC,oBC)
-var fCC=_mz(z,'w-picker',['bind:__l',17,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'defaultVal',6,'endYear',7,'mode',8,'selectList',9,'startYear',10,'themeColor',11,'vueId',12],[],e,s,gg)
-_(xAC,fCC)
-_(o0B,xAC)
-_(r,o0B)
+_(r,xAC)
 return r
 }
 e_[x[19]]={f:m19,j:[],i:[],ti:[],ic:[]}
 d_[x[20]]={}
 var m20=function(e,s,r,gg){
 var z=gz$gwx_21()
-var hEC=_v()
-_(r,hEC)
-if(_oz(z,0,e,s,gg)){hEC.wxVkey=1
+var oFC=_v()
+_(r,oFC)
+if(_oz(z,0,e,s,gg)){oFC.wxVkey=1
 }
-hEC.wxXCkey=1
+oFC.wxXCkey=1
 return r
 }
 e_[x[20]]={f:m20,j:[],i:[],ti:[],ic:[]}
@@ -1728,11 +1734,11 @@ e_[x[22]]={f:m22,j:[],i:[],ti:[],ic:[]}
 d_[x[23]]={}
 var m23=function(e,s,r,gg){
 var z=gz$gwx_24()
-var lIC=_v()
-_(r,lIC)
-if(_oz(z,0,e,s,gg)){lIC.wxVkey=1
+var aJC=_v()
+_(r,aJC)
+if(_oz(z,0,e,s,gg)){aJC.wxVkey=1
 }
-lIC.wxXCkey=1
+aJC.wxXCkey=1
 return r
 }
 e_[x[23]]={f:m23,j:[],i:[],ti:[],ic:[]}
@@ -1751,22 +1757,22 @@ e_[x[25]]={f:m25,j:[],i:[],ti:[],ic:[]}
 d_[x[26]]={}
 var m26=function(e,s,r,gg){
 var z=gz$gwx_27()
-var bMC=_v()
-_(r,bMC)
-if(_oz(z,0,e,s,gg)){bMC.wxVkey=1
+var oNC=_v()
+_(r,oNC)
+if(_oz(z,0,e,s,gg)){oNC.wxVkey=1
 }
-bMC.wxXCkey=1
+oNC.wxXCkey=1
 return r
 }
 e_[x[26]]={f:m26,j:[],i:[],ti:[],ic:[]}
 d_[x[27]]={}
 var m27=function(e,s,r,gg){
 var z=gz$gwx_28()
-var xOC=_v()
-_(r,xOC)
-if(_oz(z,0,e,s,gg)){xOC.wxVkey=1
+var oPC=_v()
+_(r,oPC)
+if(_oz(z,0,e,s,gg)){oPC.wxVkey=1
 }
-xOC.wxXCkey=1
+oPC.wxXCkey=1
 return r
 }
 e_[x[27]]={f:m27,j:[],i:[],ti:[],ic:[]}
@@ -25994,6 +26000,7 @@ __webpack_require__.r(__webpack_exports__);
       uni.navigateTo({
         url: "../recruit/consultation/bill_router/bill_router" });
 
+
     } },
 
   components: {
@@ -26006,7 +26013,7 @@ __webpack_require__.r(__webpack_exports__);
       method: 'GET',
       data: {},
       success: function success(res) {
-        console.log(res.data, " at pages\\index\\index.vue:163");
+        console.log(res.data, " at pages\\index\\index.vue:164");
         if (res.data.status == 200)
         {
           // 仍旧是登录状态
@@ -26054,10 +26061,10 @@ __webpack_require__.r(__webpack_exports__);
 
                 }
 
-                console.log(res.data, " at pages\\index\\index.vue:211");
+                console.log(res.data, " at pages\\index\\index.vue:212");
               },
               fail: function fail() {
-                console.log("出错了", " at pages\\index\\index.vue:214");
+                console.log("出错了", " at pages\\index\\index.vue:215");
               },
               complete: function complete() {} });
 
@@ -30073,6 +30080,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -30080,13 +30092,15 @@ var _default =
       currentNum: 1,
       stu: null,
       dataList: null,
-      pageType: null };
+      pageType: null,
+      loadModal: false };
 
   },
   methods: {
     next: function next()
     {
       this.currentNum++;
+      this.loadModal = true;
       if (this.pageType == 0) {
         this.validReturnLog();
       } else if (this.pageType == 1) {
@@ -30095,28 +30109,45 @@ var _default =
     },
     prevent: function prevent()
     {
-      this.currentNum--;
-      if (this.pageType == 0) {
-        this.validReturnLog();
-      } else if (this.pageType == 1) {
-        this.invalidReturnLog();
+      if (this.currentNum > 1) {
+        this.currentNum--;
+        this.loadModal = true;
+        if (this.pageType == 0) {
+          this.validReturnLog();
+        } else if (this.pageType == 1) {
+          this.invalidReturnLog();
+        }
       }
+
+
 
     },
 
     // 有效回访日志
     validReturnLog: function validReturnLog()
     {var _this = this;
-      console.log("我进来了吗", " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:126");
+      console.log("我进来了吗", " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:138");
       uni.request({
         url: this.serverUrl + '/stu/visit_info/valid/' + this.currentNum + '?name=&limit=1',
         method: 'GET',
         data: {},
-
         success: function success(visitDate) {
-          console.log(visitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:133");
+
+          if (_this.stu != null && _this.stu.id == visitDate.data[0].id) {
+            uni.showToast({
+              title: "到底了！" });
+
+
+            _this.currentNum--;
+            _this.loadModal = false;
+            return;
+          }
+
+
+          console.log(visitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:156");
           _this.stu = visitDate.data[0];
-          console.log("复制成功了吗", " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:135");
+          _this.loadModal = false;
+
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -30125,15 +30156,27 @@ var _default =
     // 无效回访日志
     invalidReturnLog: function invalidReturnLog()
     {var _this2 = this;
-      console.log(this.currentNum, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:144");
+      console.log(this.currentNum, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:168");
       uni.request({
         url: this.serverUrl + '/stu/visit_info/invalid/' + this.currentNum + '?limit=1',
         method: 'GET',
         data: {},
         success: function success(invalidVisitDate) {
-          console.log(invalidVisitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:150");
+
+          if (_this2.stu != null && _this2.stu.id == invalidVisitDate.data[0].id) {
+
+            uni.showToast({
+              title: "到底了！" });
+
+            _this2.currentNum--;
+            _this2.loadModal = false;
+            return;
+          }
+
+          console.log(invalidVisitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:185");
+          _this2.loadModal = false;
           _this2.stu = invalidVisitDate.data[0];
-          console.log("stu:" + _this2.stu, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:152");
+          console.log("stu:" + _this2.stu, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:188");
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -30152,7 +30195,7 @@ var _default =
   },
   onLoad: function onLoad(param)
   {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:171");
+    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:207");
     this.pageType = param.type;
     if (this.pageType == 0) {
       this.validReturnLog();
