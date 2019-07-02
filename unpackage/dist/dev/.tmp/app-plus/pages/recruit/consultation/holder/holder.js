@@ -308,6 +308,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -315,20 +320,27 @@ var _default =
       currentNum: 1,
       stu: null,
       dataList: null,
-      pageType: null };
+      pageType: null,
+      loadModal: false };
 
   },
   methods: {
     next: function next()
     {
+      this.loadModal = true;
       this.currentNum++;
       this.loadStudentInfo();
 
     },
     prevent: function prevent()
     {
-      this.currentNum--;
-      this.loadStudentInfo();
+
+      if (this.currentNum > 1)
+      {
+        this.currentNum--;
+        this.loadModal = true;
+        this.loadStudentInfo();
+      }
     },
 
     loadStudentInfo: function loadStudentInfo()
@@ -338,7 +350,20 @@ var _default =
         method: 'GET',
         data: {},
         success: function success(res) {
+
+          if (_this.stu != null && _this.stu.id == res.data[0].id)
+          {
+            uni.showToast({
+              title: "到底了!" });
+
+            _this.currentNum--;
+            _this.loadModal = false;
+            return;
+
+          }
+
           _this.stu = res.data[0];
+          _this.loadModal = false;
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -358,7 +383,7 @@ var _default =
         method: 'GET',
         data: {},
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:261");
+          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:286");
           if (res.data.status == 200)
           {
             uni.showToast({
@@ -384,15 +409,15 @@ var _default =
       uni.navigateTo({
         url: "../stu_return_visit/stu_return_visit?id=" + id });
 
-      console.log(id, " at pages\\recruit\\consultation\\holder\\holder.vue:287");
+      console.log(id, " at pages\\recruit\\consultation\\holder\\holder.vue:312");
     },
-    computed: {
-      hasPrevent: function hasPrevent() {
-        return {
-          'bg-red': true };
-
-      } },
-
+    // computed:{
+    // 	hasPrevent:function(){
+    // 		return{
+    // 			'bg-red': true
+    // 		}
+    // 	}
+    // },
     //跳转到分配负责教师页面
     allocationTeacher: function allocationTeacher(id, name)
     {
@@ -403,13 +428,14 @@ var _default =
     },
     onShow: function onShow(param) {
       var me = this;
-      this.loadStudentInfo();
+
 
     },
     onLoad: function onLoad(param)
     {
-      console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\holder\\holder.vue:311");
+
       this.pageType = param.type;
+      this.loadStudentInfo();
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 

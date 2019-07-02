@@ -178,8 +178,13 @@
 				</view>
 				
 				<view class="flex">
-					<button @tap="prevent">上一页</button>
-					<button @tap="next">下一页</button>
+					<button @tap="prevent" :class="currentNum>1? 'bg-red':''" >上一页</button>
+					<button @tap="next" class="bg-red">下一页</button>
+				</view>
+				
+					<view class="cu-load load-modal" v-if="loadModal" >
+				
+						<view class="gray-text">加载中...</view>
 				</view>
 				
 			</view>
@@ -215,20 +220,27 @@
 				currentNum:1,
 				stu:null,
 				dataList:null,
-				pageType:null
+				pageType:null,
+				loadModal:false
 			}
 		},
 		methods: {
 			next()
 			{
+				this.loadModal=true;
 				this.currentNum++;
 				this.loadStudentInfo()
 				
 			},
 			prevent()
 			{
-				this.currentNum--;
-				this.loadStudentInfo()
+			
+				if(this.currentNum>1)
+				{
+					this.currentNum--;
+					this.loadModal = true;
+					this.loadStudentInfo()
+				}
 			},
 			
 			loadStudentInfo()
@@ -238,7 +250,20 @@
 					method: 'GET',
 					data: {},
 					success: res => {
+						
+						if(this.stu!=null && this.stu.id==res.data[0].id)
+						{
+							uni.showToast({
+								title: "到底了!"
+							})
+							this.currentNum--
+							this.loadModal = false
+							return
+							
+						}
+						
 						this.stu = res.data[0]
+						this.loadModal = false
 					},
 					fail: () => {},
 					complete: () => {}
@@ -286,13 +311,13 @@
 				})
 				console.log(id)
 			},	
-		computed:{
-			hasPrevent:function(){
-				return{
-					'bg-red': true
-				}
-			}
-		},
+		// computed:{
+		// 	hasPrevent:function(){
+		// 		return{
+		// 			'bg-red': true
+		// 		}
+		// 	}
+		// },
 		//跳转到分配负责教师页面
 		allocationTeacher(id,name)
 		{
@@ -303,13 +328,14 @@
 		},	
 		onShow(param) {
 			var me = this;
-			this.loadStudentInfo()
+			
 			
 		},
 		onLoad(param)
 		{
-			console.log("load... type:" + param.type)
+			
 			this.pageType = param.type
+			this.loadStudentInfo()
 		}
 		}
 	}

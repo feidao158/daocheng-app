@@ -1246,6 +1246,7 @@ __WXML_GLOBAL__.ops_cached.$gwx_14=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[2,'=='],[[7],[3,'pageType']],[1,0]])
 Z(z[0])
+Z([[7],[3,'loadModal']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_14);return __WXML_GLOBAL__.ops_cached.$gwx_14
 }
 function gz$gwx_15(){
@@ -1633,8 +1634,13 @@ var oVB=_v()
 _(eTB,oVB)
 if(_oz(z,1,e,s,gg)){oVB.wxVkey=1
 }
+var xWB=_v()
+_(eTB,xWB)
+if(_oz(z,2,e,s,gg)){xWB.wxVkey=1
+}
 bUB.wxXCkey=1
 oVB.wxXCkey=1
+xWB.wxXCkey=1
 _(r,eTB)
 return r
 }
@@ -1666,44 +1672,44 @@ e_[x[17]]={f:m17,j:[],i:[],ti:[],ic:[]}
 d_[x[18]]={}
 var m18=function(e,s,r,gg){
 var z=gz$gwx_19()
-var o2B=_mz(z,'form',['bindsubmit',0,'class',1,'data-event-opts',1],[],e,s,gg)
-var c3B=_mz(z,'uni-collapse',['accordion',3,'animation',1,'bind:__l',2,'vueId',3,'vueSlots',4],[],e,s,gg)
-var o4B=_mz(z,'uni-collapse-item',['animation',8,'bind:__l',1,'title',2,'vueId',3,'vueSlots',4],[],e,s,gg)
-var l5B=_mz(z,'w-picker',['bind:__l',13,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'endYear',6,'mode',7,'selectList',8,'startYear',9,'step',10,'themeColor',11,'vueId',12],[],e,s,gg)
+var c3B=_mz(z,'form',['bindsubmit',0,'class',1,'data-event-opts',1],[],e,s,gg)
+var o4B=_mz(z,'uni-collapse',['accordion',3,'animation',1,'bind:__l',2,'vueId',3,'vueSlots',4],[],e,s,gg)
+var l5B=_mz(z,'uni-collapse-item',['animation',8,'bind:__l',1,'title',2,'vueId',3,'vueSlots',4],[],e,s,gg)
+var a6B=_mz(z,'w-picker',['bind:__l',13,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'endYear',6,'mode',7,'selectList',8,'startYear',9,'step',10,'themeColor',11,'vueId',12],[],e,s,gg)
+_(l5B,a6B)
 _(o4B,l5B)
+var t7B=_mz(z,'uni-collapse-item',['animation',26,'bind:__l',1,'class',2,'title',3,'vueId',4,'vueSlots',5],[],e,s,gg)
+_(o4B,t7B)
+var e8B=_mz(z,'uni-collapse-item',['animation',32,'bind:__l',1,'class',2,'title',3,'vueId',4,'vueSlots',5],[],e,s,gg)
+_(o4B,e8B)
 _(c3B,o4B)
-var a6B=_mz(z,'uni-collapse-item',['animation',26,'bind:__l',1,'class',2,'title',3,'vueId',4,'vueSlots',5],[],e,s,gg)
-_(c3B,a6B)
-var t7B=_mz(z,'uni-collapse-item',['animation',32,'bind:__l',1,'class',2,'title',3,'vueId',4,'vueSlots',5],[],e,s,gg)
-_(c3B,t7B)
-_(o2B,c3B)
-_(r,o2B)
+_(r,c3B)
 return r
 }
 e_[x[18]]={f:m18,j:[],i:[],ti:[],ic:[]}
 d_[x[19]]={}
 var m19=function(e,s,r,gg){
 var z=gz$gwx_20()
-var b9B=_mz(z,'form',['bindsubmit',0,'class',1,'data-event-opts',1],[],e,s,gg)
-var o0B=_n('view')
-_rz(z,o0B,'style',3,e,s,gg)
-var xAC=_mz(z,'w-picker',['bind:__l',4,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'endYear',6,'mode',7,'selectList',8,'startYear',9,'step',10,'themeColor',11,'vueId',12],[],e,s,gg)
+var o0B=_mz(z,'form',['bindsubmit',0,'class',1,'data-event-opts',1],[],e,s,gg)
+var xAC=_n('view')
+_rz(z,xAC,'style',3,e,s,gg)
+var oBC=_mz(z,'w-picker',['bind:__l',4,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'endYear',6,'mode',7,'selectList',8,'startYear',9,'step',10,'themeColor',11,'vueId',12],[],e,s,gg)
+_(xAC,oBC)
+var fCC=_mz(z,'w-picker',['bind:__l',17,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'defaultVal',6,'endYear',7,'mode',8,'selectList',9,'startYear',10,'themeColor',11,'vueId',12],[],e,s,gg)
+_(xAC,fCC)
 _(o0B,xAC)
-var oBC=_mz(z,'w-picker',['bind:__l',17,'bind:confirm',1,'class',2,'current',3,'data-event-opts',4,'data-ref',5,'defaultVal',6,'endYear',7,'mode',8,'selectList',9,'startYear',10,'themeColor',11,'vueId',12],[],e,s,gg)
-_(o0B,oBC)
-_(b9B,o0B)
-_(r,b9B)
+_(r,o0B)
 return r
 }
 e_[x[19]]={f:m19,j:[],i:[],ti:[],ic:[]}
 d_[x[20]]={}
 var m20=function(e,s,r,gg){
 var z=gz$gwx_21()
-var cDC=_v()
-_(r,cDC)
-if(_oz(z,0,e,s,gg)){cDC.wxVkey=1
+var hEC=_v()
+_(r,hEC)
+if(_oz(z,0,e,s,gg)){hEC.wxVkey=1
 }
-cDC.wxXCkey=1
+hEC.wxXCkey=1
 return r
 }
 e_[x[20]]={f:m20,j:[],i:[],ti:[],ic:[]}
@@ -1722,11 +1728,11 @@ e_[x[22]]={f:m22,j:[],i:[],ti:[],ic:[]}
 d_[x[23]]={}
 var m23=function(e,s,r,gg){
 var z=gz$gwx_24()
-var oHC=_v()
-_(r,oHC)
-if(_oz(z,0,e,s,gg)){oHC.wxVkey=1
+var lIC=_v()
+_(r,lIC)
+if(_oz(z,0,e,s,gg)){lIC.wxVkey=1
 }
-oHC.wxXCkey=1
+lIC.wxXCkey=1
 return r
 }
 e_[x[23]]={f:m23,j:[],i:[],ti:[],ic:[]}
@@ -1745,22 +1751,22 @@ e_[x[25]]={f:m25,j:[],i:[],ti:[],ic:[]}
 d_[x[26]]={}
 var m26=function(e,s,r,gg){
 var z=gz$gwx_27()
-var eLC=_v()
-_(r,eLC)
-if(_oz(z,0,e,s,gg)){eLC.wxVkey=1
+var bMC=_v()
+_(r,bMC)
+if(_oz(z,0,e,s,gg)){bMC.wxVkey=1
 }
-eLC.wxXCkey=1
+bMC.wxXCkey=1
 return r
 }
 e_[x[26]]={f:m26,j:[],i:[],ti:[],ic:[]}
 d_[x[27]]={}
 var m27=function(e,s,r,gg){
 var z=gz$gwx_28()
-var oNC=_v()
-_(r,oNC)
-if(_oz(z,0,e,s,gg)){oNC.wxVkey=1
+var xOC=_v()
+_(r,xOC)
+if(_oz(z,0,e,s,gg)){xOC.wxVkey=1
 }
-oNC.wxXCkey=1
+xOC.wxXCkey=1
 return r
 }
 e_[x[27]]={f:m27,j:[],i:[],ti:[],ic:[]}
@@ -1799,7 +1805,7 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/index/index","pages/my/my","pages/login/login","pages/setting/setting","pages/recruit/add2/add2","pages/recruit/consultation/router/router","pages/recruit/consultation/holder/holder","pages/recruit/consultation/input/input","pages/recruit/consultation/stu_modify/stu_modify","pages/recruit/consultation/bill_form/bill_form","pages/recruit/consultation/bill_router/bill_router","pages/recruit/consultation/visit_router/visit_router","pages/recruit/consultation/return_visit/return_visit","pages/recruit/consultation/visit_remind_router/visit_remind_router","pages/recruit/consultation/visit_remind/visit_remind","pages/recruit/consultation/birthday_reminder_router/birthday_reminder_router","pages/recruit/consultation/birthday_remind/birthday_remind","pages/recruit/ledger/ledger_school/ledger_school","pages/recruit/ledger/ledger_school_detail/ledger_school_detail","pages/recruit/ledger/ledger_teacher/ledger_teacher","pages/recruit/survey/survey_school/survey_school","pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail","pages/recruit/consultation/stu_return_visit/stu_return_visit","pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher","pages/recruit/ledger/ledger_school_add_ledger/ledger_school_add_ledger","pages/recruit/ledger/ledger_school_add_teacher/ledger_school_add_teacher"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"到成教育云平台","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"},"tabBar":{"color":"#7A7E83","selectedColor":"#3cc51f","borderStyle":"black","backgroundColor":"#ffffff","list":[{"pagePath":"pages/index/index","iconPath":"static/tabBar/index.png","selectedIconPath":"static/tabBar/indexSelected.png","text":"首页"},{"pagePath":"pages/my/my","iconPath":"static/tabBar/my.png","selectedIconPath":"static/tabBar/mySelected.png","text":"我的"}]},"nvueCompiler":"weex","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"daocheng","compilerVersion":"2.0.1","usingComponents":{}};
+__wxAppCode__['app.json']={"pages":["pages/index/index","pages/my/my","pages/login/login","pages/setting/setting","pages/recruit/add2/add2","pages/recruit/consultation/router/router","pages/recruit/consultation/holder/holder","pages/recruit/consultation/input/input","pages/recruit/consultation/stu_modify/stu_modify","pages/recruit/consultation/bill_form/bill_form","pages/recruit/consultation/bill_router/bill_router","pages/recruit/consultation/visit_router/visit_router","pages/recruit/consultation/return_visit/return_visit","pages/recruit/consultation/visit_remind_router/visit_remind_router","pages/recruit/consultation/visit_remind/visit_remind","pages/recruit/consultation/birthday_reminder_router/birthday_reminder_router","pages/recruit/consultation/birthday_remind/birthday_remind","pages/recruit/ledger/ledger_school/ledger_school","pages/recruit/ledger/ledger_school_detail/ledger_school_detail","pages/recruit/ledger/ledger_teacher/ledger_teacher","pages/recruit/survey/survey_school/survey_school","pages/recruit/ledger/ledger_teacher_detail/ledger_teacher_detail","pages/recruit/consultation/stu_return_visit/stu_return_visit","pages/recruit/consultation/stu_allocation_teacher/stu_allocation_teacher","pages/recruit/ledger/ledger_school_add_ledger/ledger_school_add_ledger","pages/recruit/ledger/ledger_school_add_teacher/ledger_school_add_teacher"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"到成教育云平台","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"},"tabBar":{"color":"#7A7E83","selectedColor":"#3cc51f","borderStyle":"black","backgroundColor":"#ffffff","list":[{"pagePath":"pages/index/index","iconPath":"static/tabBar/index.png","selectedIconPath":"static/tabBar/indexSelected.png","text":"首页"},{"pagePath":"pages/my/my","iconPath":"static/tabBar/my.png","selectedIconPath":"static/tabBar/mySelected.png","text":"我的"}]},"nvueCompiler":"weex","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"到成教育CRM系统","compilerVersion":"2.0.1","usingComponents":{}};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
 __wxAppCode__['components/uni-drawer/uni-drawer.json']={"usingComponents":{},"component":true};
@@ -25979,7 +25985,14 @@ __webpack_require__.r(__webpack_exports__);
     {
       this.showDrawer = false;
       uni.navigateTo({
-        url: "../recruit/ledger/ledger_teacher/ledger_teacher" });
+        url: "../recruit/consultation/bill_router/bill_router" });
+
+    },
+    billInfo: function billInfo()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/consultation/bill_router/bill_router" });
 
     } },
 
@@ -25993,7 +26006,7 @@ __webpack_require__.r(__webpack_exports__);
       method: 'GET',
       data: {},
       success: function success(res) {
-        console.log(res.data, " at pages\\index\\index.vue:156");
+        console.log(res.data, " at pages\\index\\index.vue:163");
         if (res.data.status == 200)
         {
           // 仍旧是登录状态
@@ -26041,10 +26054,10 @@ __webpack_require__.r(__webpack_exports__);
 
                 }
 
-                console.log(res.data, " at pages\\index\\index.vue:204");
+                console.log(res.data, " at pages\\index\\index.vue:211");
               },
               fail: function fail() {
-                console.log("出错了", " at pages\\index\\index.vue:207");
+                console.log("出错了", " at pages\\index\\index.vue:214");
               },
               complete: function complete() {} });
 
@@ -27965,6 +27978,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -27972,20 +27990,27 @@ var _default =
       currentNum: 1,
       stu: null,
       dataList: null,
-      pageType: null };
+      pageType: null,
+      loadModal: false };
 
   },
   methods: {
     next: function next()
     {
+      this.loadModal = true;
       this.currentNum++;
       this.loadStudentInfo();
 
     },
     prevent: function prevent()
     {
-      this.currentNum--;
-      this.loadStudentInfo();
+
+      if (this.currentNum > 1)
+      {
+        this.currentNum--;
+        this.loadModal = true;
+        this.loadStudentInfo();
+      }
     },
 
     loadStudentInfo: function loadStudentInfo()
@@ -27995,7 +28020,20 @@ var _default =
         method: 'GET',
         data: {},
         success: function success(res) {
+
+          if (_this.stu != null && _this.stu.id == res.data[0].id)
+          {
+            uni.showToast({
+              title: "到底了!" });
+
+            _this.currentNum--;
+            _this.loadModal = false;
+            return;
+
+          }
+
           _this.stu = res.data[0];
+          _this.loadModal = false;
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -28015,7 +28053,7 @@ var _default =
         method: 'GET',
         data: {},
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:261");
+          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:286");
           if (res.data.status == 200)
           {
             uni.showToast({
@@ -28041,15 +28079,15 @@ var _default =
       uni.navigateTo({
         url: "../stu_return_visit/stu_return_visit?id=" + id });
 
-      console.log(id, " at pages\\recruit\\consultation\\holder\\holder.vue:287");
+      console.log(id, " at pages\\recruit\\consultation\\holder\\holder.vue:312");
     },
-    computed: {
-      hasPrevent: function hasPrevent() {
-        return {
-          'bg-red': true };
-
-      } },
-
+    // computed:{
+    // 	hasPrevent:function(){
+    // 		return{
+    // 			'bg-red': true
+    // 		}
+    // 	}
+    // },
     //跳转到分配负责教师页面
     allocationTeacher: function allocationTeacher(id, name)
     {
@@ -28060,13 +28098,14 @@ var _default =
     },
     onShow: function onShow(param) {
       var me = this;
-      this.loadStudentInfo();
+
 
     },
     onLoad: function onLoad(param)
     {
-      console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\holder\\holder.vue:311");
+
       this.pageType = param.type;
+      this.loadStudentInfo();
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
@@ -28444,7 +28483,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var wPicker = function wPicker() {return Promise.all(/*! import() | components/w-picker/w-picker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/w-picker/w-picker")]).then(__webpack_require__.bind(null, /*! @/components/w-picker/w-picker.vue */ "../../../../uniapp/daocheng/components/w-picker/w-picker.vue"));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance");}function _iterableToArrayLimit(arr, i) {var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}var wPicker = function wPicker() {return Promise.all(/*! import() | components/w-picker/w-picker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/w-picker/w-picker")]).then(__webpack_require__.bind(null, /*! @/components/w-picker/w-picker.vue */ "../../../../uniapp/daocheng/components/w-picker/w-picker.vue"));};var _default =
 
 
 
@@ -28649,6 +28688,7 @@ __webpack_require__.r(__webpack_exports__);
 {
   data: function data() {
     return {
+      id: null,
       stuInfo: null,
       selectedIntentionLevel: null,
       intentionLevel: ['A', 'B', 'C'],
@@ -28669,7 +28709,7 @@ __webpack_require__.r(__webpack_exports__);
       birthday: null,
       selectedSchoolName: null,
       selectedSchoolId: null,
-      selectedSchoolIndex: null,
+      selectedSchoolIndex: 4,
       array: ['中国', '美国', '巴西', '日本'],
       schools: null,
       location: '',
@@ -28721,12 +28761,12 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     toggleTab: function toggleTab(index) {
       this.tabIndex = index;
-      console.log(this.$refs.picker, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:278");
+      console.log(this.$refs.picker, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:279");
       this.$refs.picker.show();
     },
     // 省市区
     onConfirm: function onConfirm(val) {
-      console.log(val, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:283");
+      console.log(val, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:284");
       this.location = val.checkArr[0] + '/' + val.checkArr[1] + '/' + val.checkArr[2];
       this.province = val.checkArr[0];
       this.city = val.checkArr[1];
@@ -28746,7 +28786,7 @@ __webpack_require__.r(__webpack_exports__);
         method: 'GET',
         data: {},
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:303");
+          console.log(res.data, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:304");
           _this.cultureSchoolTeachers = res.data;
         },
         fail: function fail() {},
@@ -28757,8 +28797,9 @@ __webpack_require__.r(__webpack_exports__);
     // 提交表单
     // 文化学校 紧急联系人关系 来源渠道 推荐班主任 意向专业 意向等级
     formSubmit: function formSubmit(e) {
-      console.log(e.detail.value, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:314");
+      console.log(e.detail.value, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:315");
       var data = e.detail.value;
+      data.id = this.id;
       data.province = this.province;
       data.city = this.city;
       data.area = this.area;
@@ -28768,17 +28809,21 @@ __webpack_require__.r(__webpack_exports__);
       data.recommend_id = this.selectedCultureTeacherId;
       data.grade = this.grade;
 
+
+      // 提交修改表单
       uni.request({
         header: {
           "cookie": uni.getStorageSync("userCookie") },
 
-        url: this.serverUrl + '/userAdd',
+        url: this.serverUrl + '/stu/mystudent',
         method: 'POST',
         data: data,
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:333");
+          console.log(res.data, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:337");
         },
-        fail: function fail() {},
+        fail: function fail() {
+
+        },
         complete: function complete() {} });
 
 
@@ -28788,6 +28833,7 @@ __webpack_require__.r(__webpack_exports__);
     selectedBirthday: function selectedBirthday(e)
     {
       this.birthday = e.detail.value;
+      this.stuInfo.birthday = e.detail.value;
     },
     selectResourceFrom: function selectResourceFrom(e)
     {
@@ -28807,6 +28853,7 @@ __webpack_require__.r(__webpack_exports__);
     selectVisitDate: function selectVisitDate(e)
     {
       this.selectedVisitDate = e.detail.value;
+      this.stuInfo.visitDate = e.detail.value;
     },
     selectClassNumber: function selectClassNumber(e)
     {
@@ -28829,6 +28876,8 @@ __webpack_require__.r(__webpack_exports__);
     } },
 
 
+
+
   computed: {
     mode: function mode() {
       return this.tabList[this.tabIndex].mode;
@@ -28840,6 +28889,10 @@ __webpack_require__.r(__webpack_exports__);
 
   onLoad: function onLoad(param) {var _this2 = this;
     var me = this;
+    this.id = param.id;
+
+
+
 
     // 获取所有文化学校信息
     uni.request({
@@ -28856,46 +28909,100 @@ __webpack_require__.r(__webpack_exports__);
       } });
 
     // 获取来源渠道信息
+    // uni.request({
+    // 	url:  this.serverUrl + '/sys/dic_info/type/10',
+    // 	method: 'GET',
+    // 	data: {},
+    // 	header:{
+    // 		"cookie":uni.getStorageSync("userCookie")
+    // 	},
+    // 	success: res => {
+    // 		this.resourceFormTypes = res.data;
+    // 	}
+    // });
+
     uni.request({
-      url: this.serverUrl + '/sys/dic_info/type/10',
-      method: 'GET',
-      data: {},
-      header: {
-        "cookie": uni.getStorageSync("userCookie") },
+      url: this.serverUrl + '/sys/dic_info/type/10' }).
 
-      success: function success(res) {
-        _this2.resourceFormTypes = res.data;
-      } });
-
-
-    uni.request({
-      url: this.serverUrl + '/stu/mystudent/json/' + param.id,
-      method: 'GET',
-      data: {},
-      success: function success(res) {
-        _this2.stuInfo = res.data;
-        _this2.location = res.data.province + '/' + res.data.city + '/' + res.data.area;
-        if (res.data.cultureSchool != null)
-        {
-          // this.selectedSchoolIndex = me.schools.findIndex(item => item === res.data.cultureSchool.id );
-          for (var item in _this2.schools)
+    then(function (data) {var _data = _slicedToArray(
+      data, 2),error = _data[0],res = _data[1];
+      _this2.resourceFormTypes = res.data;
+      uni.request({
+        url: _this2.serverUrl + '/stu/mystudent/json/' + param.id,
+        method: 'GET',
+        data: {},
+        success: function success(res) {
+          console.log(res.data, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:450");
+          _this2.stuInfo = res.data;
+          _this2.location = res.data.province + '/' + res.data.city + '/' + res.data.area;
+          var hasCommandTeacher = res.data.holder != null;
+          var response = res;
+          // 学生的文化学校信息不为空
+          if (res.data.cultureSchool != null)
           {
-            console.log(_this2.schools[item], " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:437");
-            if (res.data.cultureSchool.id == _this2.schools[item].id)
-            {
-              me.selectedSchoolIndex = item;
-              break;
-            }
+
+            _this2.selectedSchoolId = res.data.cultureSchool.id;
+            _this2.selectedSchoolName = res.data.cultureSchool.schoolName;
+            // 根据文化学校id 查询此文化学校下的所有教师 header info可删除 如项目移植小程序请自行实现
+            // 
+            uni.request({
+              header: {
+                "cookie": uni.getStorageSync("userCookie") },
+
+              // url: 'http://localhost:8080/stu/school/teacher/' + this.selectedSchoolId,
+              url: _this2.serverUrl + '/stu/school/teacher/' + _this2.selectedSchoolId,
+              method: 'GET',
+              data: {},
+              success: function success(res) {
+                console.log(res.data, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:472");
+                _this2.cultureSchoolTeachers = res.data;
+
+                // 存在推荐教师
+                if (response.data.recommendId != null)
+                {
+                  var teacherId = response.data.recommendId;
+                  var teacherIndex = _this2.cultureSchoolTeachers.findIndex(function (item) {return item.id == teacherId;});
+                  _this2.selectedCultureTeacherId = response.data.recommendId;
+                  _this2.selectedCultureTeacherName = _this2.cultureSchoolTeachers[teacherIndex].name;
+
+                }
+              },
+              fail: function fail() {},
+              complete: function complete() {} });
 
           }
+          // 学生的来源渠道不为空
+          if (res.data.dicCode != null)
+          {
+            var fromId = res.data.dicCode.id;
 
-        }
+            var fromIndex = _this2.resourceFormTypes.findIndex(function (item) {return item.id == fromId;});
+            _this2.selectedResourceFromId = fromId;
+            _this2.selectedResourceFromName = _this2.resourceFormTypes[fromIndex].dicName;
+          }
+
+
+          if (res.data.intentionLevel != null)
+          {
+            var index = _this2.intentionLevel.findIndex(function (item) {return item == res.data.intentionLevel;});
+
+            _this2.selectedIntentionLevel = _this2.intentionLevel[index];
+          }
 
 
 
-      },
-      fail: function fail() {},
-      complete: function complete() {} });
+        },
+        fail: function fail() {},
+        complete: function complete() {} });
+
+
+
+
+    });
+
+
+
+    // 获取学生信息
 
 
   } };exports.default = _default;

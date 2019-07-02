@@ -1,0 +1,24 @@
+
+.half-content{
+	
+	width: 50%;
+}
+.border-yellow{
+	border-top: #eee solid 10rpx;
+}
+.border-yellow > .cu-item{
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding-right: 10rpx;
+	height: 80rpx;
+	background-color: #ffffff;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center
+}
+
+

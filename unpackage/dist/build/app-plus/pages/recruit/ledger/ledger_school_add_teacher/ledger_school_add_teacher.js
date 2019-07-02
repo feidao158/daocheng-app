@@ -1,0 +1,1 @@
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/recruit/ledger/ledger_school_add_teacher/ledger_school_add_teacher.wxml') } }));

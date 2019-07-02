@@ -87,7 +87,7 @@
 			
 			<view style="padding: 16upx;">
 				<view class="form-item">
-				  <picker mode="selector" :range="schools" :value="2" range-key="schoolName" @change="selectSchool" >
+				  <picker mode="selector" :range="schools" :value="selectedSchoolIndex" range-key="schoolName" @change="selectSchool" >
 						<input type="text" :value="selectedSchoolName"  placeholder="文化学校" />
 				   </picker>
 				</view>
@@ -179,8 +179,8 @@
 				</view>
 				
 				<view class="form-item">
-					<picker mode="date" @change="selectVisitDate">
-						<input type="text" name="visitDate" :value="stuInfo.visit_date" placeholder="参观时间"/>
+					<picker mode="date" @change="selectVisitDate" @confirm="selectVisit">
+						<input type="text" name="visitDate" :value="stuInfo.visitDate" placeholder="参观时间"/>
 					</picker>
 				</view>
 				
@@ -203,6 +203,7 @@
 	export default {
 		data() {
 			return {
+				id:null,
 				stuInfo:null,
 				selectedIntentionLevel:null,
 				intentionLevel:['A','B','C'],
@@ -223,7 +224,7 @@
 				birthday:null,
 				selectedSchoolName:null,
 				selectedSchoolId:null,
-				selectedSchoolIndex:null,
+				selectedSchoolIndex:4,
 				array: ['中国', '美国', '巴西', '日本'],
 				schools:null,
 				location:'',
@@ -313,6 +314,7 @@
 			formSubmit(e){
 				console.log(e.detail.value);
 				var data = e.detail.value;
+				data.id = this.id;
 				data.province = this.province;
 				data.city = this.city;
 				data.area = this.area;
@@ -322,17 +324,21 @@
 				data.recommend_id = this.selectedCultureTeacherId
 				data.grade = this.grade;
 				
+				
+				// 提交修改表单
 				uni.request({
 					header:{
 						"cookie":uni.getStorageSync("userCookie")
 					},
-					url: this.serverUrl +  '/userAdd',
+					url: this.serverUrl +  '/stu/mystudent',
 					method: 'POST',
 					data: data,
 					success: res => {
 						console.log(res.data)
 					},
-					fail: () => {},
+					fail: () => {
+						
+					},
 					complete: () => {}
 				});
 				
@@ -342,6 +348,7 @@
 			selectedBirthday(e)
 			{
 				this.birthday = e.detail.value;
+				this.stuInfo.birthday = e.detail.value;
 			},
 			selectResourceFrom(e)
 			{
@@ -361,6 +368,7 @@
 			selectVisitDate(e)
 			{
 				this.selectedVisitDate = e.detail.value;
+				this.stuInfo.visitDate = e.detail.value;
 			},
 			selectClassNumber(e)
 			{
@@ -382,6 +390,8 @@
 				this.selectedIntentionLevel = this.intentionLevel[e.detail.value];
 			}
 			
+			
+			
 		},
 		computed:{
 			mode(){
@@ -394,6 +404,10 @@
 		},
 		onLoad(param) {
 			var me  = this;
+			this.id = param.id
+			
+			
+			
 			
 			// 获取所有文化学校信息
 			uni.request({
@@ -410,47 +424,101 @@
 				}
 			});
 			// 获取来源渠道信息
-			uni.request({
-				url:  this.serverUrl + '/sys/dic_info/type/10',
-				method: 'GET',
-				data: {},
-				header:{
-					"cookie":uni.getStorageSync("userCookie")
-				},
-				success: res => {
-					this.resourceFormTypes = res.data;
-				}
-			});
+			// uni.request({
+			// 	url:  this.serverUrl + '/sys/dic_info/type/10',
+			// 	method: 'GET',
+			// 	data: {},
+			// 	header:{
+			// 		"cookie":uni.getStorageSync("userCookie")
+			// 	},
+			// 	success: res => {
+			// 		this.resourceFormTypes = res.data;
+			// 	}
+			// });
 			
 			uni.request({
-				url: this.serverUrl + '/stu/mystudent/json/' + param.id,
-				method: 'GET',
-				data: {},
-				success: res => {
-					this.stuInfo = res.data;
-					this.location = res.data.province + '/' + res.data.city + '/' + res.data.area;
-					if(res.data.cultureSchool!=null)
-					{
-						// this.selectedSchoolIndex = me.schools.findIndex(item => item === res.data.cultureSchool.id );
-						for(var item in this.schools)
+				url: this.serverUrl + '/sys/dic_info/type/10'
+			})
+			.then(data =>{
+				var [error, res]  = data;
+				this.resourceFormTypes = res.data;
+					uni.request({
+					url: this.serverUrl + '/stu/mystudent/json/' + param.id,
+					method: 'GET',
+					data: {},
+					success: res => {
+						console.log(res.data)
+						this.stuInfo = res.data;
+						this.location = res.data.province + '/' + res.data.city + '/' + res.data.area;
+						let hasCommandTeacher = res.data.holder!=null
+						let response = res
+						// 学生的文化学校信息不为空
+						if(res.data.cultureSchool!=null)
 						{
-							console.log(this.schools[item])
-							if(res.data.cultureSchool.id == this.schools[item].id)
-							{
-								me.selectedSchoolIndex = item;
-								break;
-							}
 							
+							this.selectedSchoolId = res.data.cultureSchool.id
+							this.selectedSchoolName = res.data.cultureSchool.schoolName
+							// 根据文化学校id 查询此文化学校下的所有教师 header info可删除 如项目移植小程序请自行实现
+							// 
+							uni.request({
+								header:{
+									"cookie":uni.getStorageSync("userCookie")
+								},
+								// url: 'http://localhost:8080/stu/school/teacher/' + this.selectedSchoolId,
+								url: this.serverUrl + '/stu/school/teacher/' + this.selectedSchoolId,
+								method: 'GET',
+								data: {},
+								success: res => {
+									console.log(res.data)
+									this.cultureSchoolTeachers = res.data;
+									
+									// 存在推荐教师
+									if(response.data.recommendId!=null)
+									{
+										let teacherId = response.data.recommendId
+										let teacherIndex = this.cultureSchoolTeachers.findIndex(item => item.id==teacherId)
+										this.selectedCultureTeacherId = response.data.recommendId
+										this.selectedCultureTeacherName = this.cultureSchoolTeachers[teacherIndex].name
+										
+									}
+								},
+								fail: () => {},
+								complete: () => {}
+							});
+						}
+						// 学生的来源渠道不为空
+						if(res.data.dicCode!=null)
+						{
+							let fromId = res.data.dicCode.id
+							
+							var fromIndex = this.resourceFormTypes.findIndex(item => item.id ==fromId)
+							this.selectedResourceFromId = fromId
+							this.selectedResourceFromName = this.resourceFormTypes[fromIndex].dicName
 						}
 						
-					}
-					
-					
-					
-				},
-				fail: () => {},
-				complete: () => {}
-			});
+						
+						if(res.data.intentionLevel!=null)
+						{
+							let index = this.intentionLevel.findIndex(item =>item ==res.data.intentionLevel)
+							
+							this.selectedIntentionLevel = this.intentionLevel[index]
+						}
+						
+						
+						
+					},
+					fail: () => {},
+					complete: () => {}
+				});
+				
+				
+
+			})
+			
+			
+			
+			// 获取学生信息
+		
 			
 		}
 	}

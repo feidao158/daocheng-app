@@ -239,7 +239,14 @@ __webpack_require__.r(__webpack_exports__);
     {
       this.showDrawer = false;
       uni.navigateTo({
-        url: "../recruit/ledger/ledger_teacher/ledger_teacher" });
+        url: "../recruit/consultation/bill_router/bill_router" });
+
+    },
+    billInfo: function billInfo()
+    {
+      this.showDrawer = false;
+      uni.navigateTo({
+        url: "../recruit/consultation/bill_router/bill_router" });
 
     } },
 
@@ -253,7 +260,7 @@ __webpack_require__.r(__webpack_exports__);
       method: 'GET',
       data: {},
       success: function success(res) {
-        console.log(res.data, " at pages\\index\\index.vue:156");
+        console.log(res.data, " at pages\\index\\index.vue:163");
         if (res.data.status == 200)
         {
           // 仍旧是登录状态
@@ -301,10 +308,10 @@ __webpack_require__.r(__webpack_exports__);
 
                 }
 
-                console.log(res.data, " at pages\\index\\index.vue:204");
+                console.log(res.data, " at pages\\index\\index.vue:211");
               },
               fail: function fail() {
-                console.log("出错了", " at pages\\index\\index.vue:207");
+                console.log("出错了", " at pages\\index\\index.vue:214");
               },
               complete: function complete() {} });
 
