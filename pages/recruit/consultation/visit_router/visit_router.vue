@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="header">
-			<image class="header-image" src="../../../../static/vist_remind_header.jpg" mode="scaleToFill"></image>
+			<image class="header-image" src="../../../../static/my_visit_header.jpg" mode="scaleToFill"></image>
 		</view>
 		
 		
