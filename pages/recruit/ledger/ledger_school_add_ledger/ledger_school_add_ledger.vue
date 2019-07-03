@@ -26,8 +26,15 @@
 				</picker>
 			</view>
 			
-			<view class="uni-textarea">
+		<!-- 	<view class="uni-textarea">
 				 <textarea style="height: 300upx;border:solid red 1upx;padding-right: 10upx;" class="margin-top margin-bottom"  placeholder-style="color:#F76260" placeholder="详情内容" v-model="content"  />
+			</view> -->
+			<view class="list-teacher">
+				<span class="list-left">内容:</span>
+				<view class="list-right">
+					<textarea v-model="content" name="" id=""  ></textarea>
+				</view>
+			
 			</view>
 			
 			<button type="primary" @tap="submit">提交</button>

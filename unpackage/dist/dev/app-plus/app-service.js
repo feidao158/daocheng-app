@@ -25991,7 +25991,7 @@ __webpack_require__.r(__webpack_exports__);
     {
       this.showDrawer = false;
       uni.navigateTo({
-        url: "../recruit/consultation/bill_router/bill_router" });
+        url: "../recruit/ledger/ledger_teacher/ledger_teacher" });
 
     },
     billInfo: function billInfo()
@@ -29567,7 +29567,28 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -29602,62 +29623,36 @@ var _default =
         name: '已收齐',
         color: 'blue',
         cuIcon: 'colorlens',
-        url: '/pages/recruit/consultation/bill_form/bill_form?type=1'
+        url: '/pages/recruit/consultation/bill_form/bill_form?type=1' }] };
 
-        // },
-        // {
-        // 	title: '文本',
-        // 	name: 'text',
-        // 	color: 'purple',
-        // 	cuIcon: 'font'
-        // },
-        // {
-        // 	title: '图标 ',
-        // 	name: 'icon',
-        // 	color: 'mauve',
-        // 	cuIcon: 'cuIcon'
-        // },
-        // {
-        // 	title: '按钮',
-        // 	name: 'button',
-        // 	color: 'pink',
-        // 	cuIcon: 'btn'
-        // },
-        // {
-        // 	title: '标签',
-        // 	name: 'tag',
-        // 	color: 'brown',
-        // 	cuIcon: 'tagfill'
-        // },
-        // {
-        // 	title: '头像',
-        // 	name: 'avatar',
-        // 	color: 'red',
-        // 	cuIcon: 'myfill'
-        // },
-        // {
-        // 	title: '进度条',
-        // 	name: 'progress',
-        // 	color: 'orange',
-        // 	cuIcon: 'icloading'
-        // },
-        // {
-        // 	title: '边框阴影',
-        // 	name: 'shadow',
-        // 	color: 'olive',
-        // 	cuIcon: 'copy'
-        // },
-        // {
-        // 	title: '加载',
-        // 	name: 'loading',
-        // 	color: 'green',
-        // 	cuIcon: 'loading2'
-        // }
-      }] };
+
 
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    toDetail: function toDetail(index)
+    {
+      // switch(index)
+      // {
+      // 	case 0 : 
+      // 		uni.navigateTo({
+      // 			url: "/pages/recruit/consultation/bill_form/bill_form?type=0"
+      // 		})
+      // 		break;
+      // 	case 1 :
+      // 		uni.navigateTo({
+      // 			url: "/pages/recruit/consultation/bill_form/bill_form?type=1"
+      // 		})
+      // 		break;
+      // 	default : 
+      // 		break;
+      // }
+
+      uni.navigateTo({
+        url: '/pages/recruit/consultation/bill_form/bill_form?type=' + index });
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
 /***/ }),
 
@@ -33256,6 +33251,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -33306,7 +33308,7 @@ var _default =
 
         return;
       }
-      console.log(this.content, " at pages\\recruit\\ledger\\ledger_school_add_ledger\\ledger_school_add_ledger.vue:91");
+      console.log(this.content, " at pages\\recruit\\ledger\\ledger_school_add_ledger\\ledger_school_add_ledger.vue:98");
 
 
       uni.request({
@@ -33321,7 +33323,7 @@ var _default =
           schoolId: this.schoolId },
 
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\ledger\\ledger_school_add_ledger\\ledger_school_add_ledger.vue:106");
+          console.log(res.data, " at pages\\recruit\\ledger\\ledger_school_add_ledger\\ledger_school_add_ledger.vue:113");
           uni.navigateBack({
             delta: 1 });
 

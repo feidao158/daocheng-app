@@ -120,6 +120,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -170,7 +177,7 @@ var _default =
 
         return;
       }
-      console.log(this.content, " at pages\\recruit\\ledger\\ledger_school_add_ledger\\ledger_school_add_ledger.vue:91");
+      console.log(this.content, " at pages\\recruit\\ledger\\ledger_school_add_ledger\\ledger_school_add_ledger.vue:98");
 
 
       uni.request({
@@ -185,7 +192,7 @@ var _default =
           schoolId: this.schoolId },
 
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\ledger\\ledger_school_add_ledger\\ledger_school_add_ledger.vue:106");
+          console.log(res.data, " at pages\\recruit\\ledger\\ledger_school_add_ledger\\ledger_school_add_ledger.vue:113");
           uni.navigateBack({
             delta: 1 });
 
