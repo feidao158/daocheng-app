@@ -16612,7 +16612,7 @@ var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../../
 
 _vue.default.config.productionTip = false;
 
-_vue.default.prototype.serverUrl = 'http://daocheng.natapp1.cc';
+_vue.default.prototype.serverUrl = 'http://121.42.11.227:8080';
 
 _App.default.mpType = 'app';
 

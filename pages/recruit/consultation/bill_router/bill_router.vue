@@ -14,7 +14,7 @@
 			<view class="cu-tabbar-height"></view>
 		</scroll-view> -->
 		<view class="header">
-			<image class="header-image" src="../../../../static/consultation/header.jpg" mode="scaleToFill"></image>
+			<image class="header-image" src="../../../../static/bill_header.jpg" mode="scaleToFill"></image>
 		</view>
 		
 		<view class="row">
