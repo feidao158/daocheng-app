@@ -3,7 +3,7 @@ import App from './App'
 
 Vue.config.productionTip = false
 
-Vue.prototype.serverUrl = 'http://121.42.11.227:8080'
+Vue.prototype.serverUrl = 'http://daocheng.natapp1.cc'
 
 App.mpType = 'app'
 

@@ -181,19 +181,21 @@ var _default =
     return {
       schoolInfo: null,
       pageNum: 1,
-      loadModal: false };
+      loadModal: false,
+      inputValue: '' };
 
   },
   methods: {
     loadData: function loadData()
     {var _this = this;
       var me = this;
+      var convertStr = encodeURI(this.inputValue);
       uni.request({
-        url: this.serverUrl + '/led/school/' + this.pageNum + '?name=&limit=1',
+        url: this.serverUrl + '/led/school/' + this.pageNum + '?name=' + convertStr + '&limit=1',
         method: 'GET',
         data: {},
         success: function success(res) {
-
+          console.log(res.data, " at pages\\recruit\\ledger\\ledger_school\\ledger_school.vue:116");
           if (_this.schoolInfo != null && _this.schoolInfo.id == res.data[0].id)
           {
             uni.showToast({
@@ -244,7 +246,15 @@ var _default =
       uni.navigateTo({
         url: "../ledger_school_add_teacher/ledger_school_add_teacher?id=" + this.schoolInfo.id });
 
+    },
+    search: function search()
+    {
+
+      this.pageNum = 1;
+      console.log("开始搜素", " at pages\\recruit\\ledger\\ledger_school\\ledger_school.vue:172");
+      this.loadData();
     } },
+
 
   onLoad: function onLoad() {
     this.loadData();

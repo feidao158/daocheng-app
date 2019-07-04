@@ -16612,7 +16612,7 @@ var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../../
 
 _vue.default.config.productionTip = false;
 
-_vue.default.prototype.serverUrl = 'http://121.42.11.227:8080';
+_vue.default.prototype.serverUrl = 'http://daocheng.natapp1.cc';
 
 _App.default.mpType = 'app';
 
@@ -31566,19 +31566,21 @@ var _default =
     return {
       schoolInfo: null,
       pageNum: 1,
-      loadModal: false };
+      loadModal: false,
+      inputValue: '' };
 
   },
   methods: {
     loadData: function loadData()
     {var _this = this;
       var me = this;
+      var convertStr = encodeURI(this.inputValue);
       uni.request({
-        url: this.serverUrl + '/led/school/' + this.pageNum + '?name=&limit=1',
+        url: this.serverUrl + '/led/school/' + this.pageNum + '?name=' + convertStr + '&limit=1',
         method: 'GET',
         data: {},
         success: function success(res) {
-
+          console.log(res.data, " at pages\\recruit\\ledger\\ledger_school\\ledger_school.vue:116");
           if (_this.schoolInfo != null && _this.schoolInfo.id == res.data[0].id)
           {
             uni.showToast({
@@ -31629,7 +31631,15 @@ var _default =
       uni.navigateTo({
         url: "../ledger_school_add_teacher/ledger_school_add_teacher?id=" + this.schoolInfo.id });
 
+    },
+    search: function search()
+    {
+
+      this.pageNum = 1;
+      console.log("开始搜素", " at pages\\recruit\\ledger\\ledger_school\\ledger_school.vue:172");
+      this.loadData();
     } },
+
 
   onLoad: function onLoad() {
     this.loadData();
@@ -32148,7 +32158,8 @@ var _default =
     return {
       pageNum: 1,
       teacherInfo: null,
-      loadModal: false };
+      loadModal: false,
+      inputValue: '' };
 
 
   },
@@ -32156,8 +32167,9 @@ var _default =
     loadData: function loadData()
     {var _this = this;
       var me = this;
+      var convertStr = encodeURI(this.inputValue);
       uni.request({
-        url: this.serverUrl + '/led/manager/teacher/' + this.pageNum + '?name=&limit=1',
+        url: this.serverUrl + '/led/manager/teacher/' + this.pageNum + '?name=' + convertStr + '&limit=1',
         method: 'GET',
         data: {},
         success: function success(res) {
@@ -32201,6 +32213,13 @@ var _default =
       uni.navigateTo({
         url: "../ledger_teacher_detail/ledger_teacher_detail?id=" + this.teacherInfo.id });
 
+    },
+    search: function search()
+    {
+
+      this.pageNum = 1;
+
+      this.loadData();
     } },
 
   onLoad: function onLoad() {

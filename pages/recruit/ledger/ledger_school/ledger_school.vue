@@ -3,8 +3,8 @@
 		
 			<view class="flex flex-wrap" style="margin:26upx;">
 				<text style="margin-top:10upx;">姓名:</text>
-				<input style="width:400upx;border: #CCE6FF 1upx solid;" type="text" value="" />
-				<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 12upx;" class="cu-btn bg-blue">click</button>
+				<input style="width:400upx;border: #CCE6FF 1upx solid;" type="text" v-model="inputValue" />
+				<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 12upx;" class="cu-btn bg-blue" @tap="search">搜索</button>
 			</view>
 		<view class="cu-list menu">
 			<view class="cu-item">
@@ -99,19 +99,21 @@
 			return {
 				schoolInfo:null,
 				pageNum:1,
-				loadModal:false
+				loadModal:false,
+				inputValue:''
 			}
 		},
 		methods: {
 			loadData()
 			{
-				var me = this
+				let me = this
+				let convertStr = encodeURI(this.inputValue)
 				uni.request({
-					url: this.serverUrl + '/led/school/' + this.pageNum + '?name=&limit=1',
+					url: this.serverUrl + '/led/school/' + this.pageNum + '?name=' + convertStr +  '&limit=1',
 					method: 'GET',
 					data: {},
 					success: res => {
-						
+						console.log(res.data)
 						if(this.schoolInfo!=null && this.schoolInfo.id == res.data[0].id)
 						{
 							uni.showToast({
@@ -162,7 +164,15 @@
 				uni.navigateTo({
 					url: "../ledger_school_add_teacher/ledger_school_add_teacher?id=" + this.schoolInfo.id
 				})
+			},
+			search()
+			{
+				
+				this.pageNum=1
+				console.log("开始搜素")
+				this.loadData()
 			}
+			
 		},
 		onLoad() {
 			this.loadData()

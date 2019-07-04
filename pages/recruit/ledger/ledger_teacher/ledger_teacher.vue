@@ -3,8 +3,8 @@
 		
 		<view class="flex flex-wrap" style="margin:26upx;">
 			<text style="margin-top:10upx;">姓名:</text>
-			<input style="width:400upx;border: #CCE6FF 1upx solid;" type="text" value="" />
-			<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 12upx;" class="cu-btn bg-blue">click</button>
+			<input style="width:400upx;border: #CCE6FF 1upx solid;" type="text" value="" v-model="inputValue" />
+			<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 12upx;" class="cu-btn bg-blue" @tap="search">搜索</button>
 		</view>
 		<view class="cu-list menu">
 			<view class="cu-item">
@@ -87,7 +87,8 @@
 			return {
 				pageNum:1,
 				teacherInfo:null,
-				loadModal:false
+				loadModal:false,
+				inputValue:''
 				
 			}
 		},
@@ -95,8 +96,9 @@
 			loadData()
 			{
 				var me = this
+				var convertStr = encodeURI(this.inputValue)
 				uni.request({
-					url: this.serverUrl + '/led/manager/teacher/' + this.pageNum + '?name=&limit=1',
+					url: this.serverUrl + '/led/manager/teacher/' + this.pageNum + '?name=' + convertStr + '&limit=1',
 					method: 'GET',
 					data: {},
 					success: res => {
@@ -140,6 +142,13 @@
 				uni.navigateTo({
 					url: "../ledger_teacher_detail/ledger_teacher_detail?id=" + this.teacherInfo.id
 				})
+			},
+			search()
+			{
+				
+				this.pageNum=1
+				
+				this.loadData()
 			}
 		},
 		onLoad() {
