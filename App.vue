@@ -283,4 +283,9 @@
 		font-size: 16px;
 	}
 	
+	
+	.yg-margin-top{
+		margin-top: 14upx;
+	}
+	
 </style>

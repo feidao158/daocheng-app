@@ -40,7 +40,7 @@
 						</uni-collapse-item>
 						
 						<uni-collapse-item title="调研">
-							<view class="collapse-item-content" @tap="surveySchool" >
+							<view class="collapse-item-content" >
 								学校调研
 							</view>
 							<view class="collapse-item-content">

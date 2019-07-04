@@ -89,7 +89,7 @@
 				teacherInfo:null,
 				loadModal:false,
 				inputValue:''
-				
+	
 			}
 		},
 		methods: {
