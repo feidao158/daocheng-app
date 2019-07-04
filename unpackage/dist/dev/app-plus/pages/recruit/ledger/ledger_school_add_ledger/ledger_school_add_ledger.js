@@ -1,2 +1,1 @@
-setCssToHead([".",[1],"yg-margin-top{ margin-top: ",[0,14],"; }\n",],undefined,{path:"./pages/recruit/ledger/ledger_school_add_ledger/ledger_school_add_ledger.wxss"})();
 document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/recruit/ledger/ledger_school_add_ledger/ledger_school_add_ledger.wxml') } }));

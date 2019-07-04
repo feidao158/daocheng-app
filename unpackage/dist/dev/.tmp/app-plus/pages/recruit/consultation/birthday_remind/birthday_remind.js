@@ -167,25 +167,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 var _default =
 {
   data: function data() {
@@ -233,7 +214,7 @@ var _default =
             return;
 
           }
-          console.log(birthdayData, " at pages\\recruit\\consultation\\birthday_remind\\birthday_remind.vue:136");
+          console.log(birthdayData, " at pages\\recruit\\consultation\\birthday_remind\\birthday_remind.vue:117");
           _this.stu = birthdayData.data[0];
           _this.loadModal = false;
         },
@@ -256,7 +237,7 @@ var _default =
   },
   onLoad: function onLoad(param)
   {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\birthday_remind\\birthday_remind.vue:159");
+    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\birthday_remind\\birthday_remind.vue:140");
     this.pageType = param.type;
 
   } };exports.default = _default;
