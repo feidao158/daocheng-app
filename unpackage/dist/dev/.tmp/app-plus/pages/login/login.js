@@ -181,9 +181,12 @@ var _default =
           if (res.data.status == 200)
           {
             //登录成功
+            uni.setStorageSync("username", me.username);
+            uni.setStorageSync("password", me.password);
             uni.setStorageSync('userInfo', res.data.data);
-            uni.navigateBack({
-              delta: 1 });
+            uni.redirectTo({
+              url: "../index/index" });
+
 
           } else
           {
@@ -194,10 +197,10 @@ var _default =
 
           }
 
-          console.log(res.data, " at pages\\login\\login.vue:97");
+          console.log(res.data, " at pages\\login\\login.vue:100");
         },
         fail: function fail() {
-          console.log("出错了", " at pages\\login\\login.vue:100");
+          console.log("出错了", " at pages\\login\\login.vue:103");
         },
         complete: function complete() {} });
 
@@ -207,7 +210,58 @@ var _default =
 
 
 
-  components: {} };exports.default = _default;
+  components: {},
+
+
+  onLoad: function onLoad() {
+    var me = this;
+    var username = uni.getStorageSync("username");
+    var password = uni.getStorageSync("password");
+    if (username == '' || password == '' || username == null || password == null)
+    {
+
+    } else
+    {
+      me.loadModal = true;
+      uni.request({
+        url: me.serverUrl + '/login/mobile',
+        method: 'POST',
+        header: {
+          "content-type": 'application/x-www-form-urlencoded' },
+
+        data: {
+          username: username,
+          password: password },
+
+        success: function success(res) {
+          me.loadModal = false;
+          if (res.data.status == 200)
+          {
+            // 登录成功
+
+            uni.setStorageSync('userInfo', res.data.data);
+            uni.redirectTo({
+              url: '../index/index' });
+
+          } else
+          {
+
+            me.username = '';
+            me.password = '';
+            uni.showToast({
+              title: res.data.msg,
+              duration: 2000 });
+
+          }
+
+
+        },
+        fail: function fail() {},
+        complete: function complete() {} });
+
+    }
+
+  } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
 /***/ }),

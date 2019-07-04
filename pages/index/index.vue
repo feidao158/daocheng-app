@@ -210,6 +210,7 @@
 									}
 									
 									console.log(res.data)
+									console.log("我到达首页了")
 								},
 								fail: () => {
 									console.log("出错了")
@@ -217,8 +218,7 @@
 								complete: () => {}
 							});
 						}
-						
-						
+
 					}
 					
 				},

@@ -310,14 +310,14 @@ __webpack_require__.r(__webpack_exports__);
                 }
 
                 console.log(res.data, " at pages\\index\\index.vue:212");
+                console.log("我到达首页了", " at pages\\index\\index.vue:213");
               },
               fail: function fail() {
-                console.log("出错了", " at pages\\index\\index.vue:215");
+                console.log("出错了", " at pages\\index\\index.vue:216");
               },
               complete: function complete() {} });
 
           }
-
 
         }
 

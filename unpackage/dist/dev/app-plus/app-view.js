@@ -2755,7 +2755,7 @@ __WXML_GLOBAL__.ops_cached.$gwx_23=[];
 Z([3,'header'])
 Z([3,'header-image'])
 Z([3,'scaleToFill'])
-Z([3,'../../../../static/vist_remind_header.jpg'])
+Z([3,'../../../../static/my_visit_header.jpg'])
 Z([3,'row'])
 Z([3,'col-md-4'])
 Z([3,'__e'])

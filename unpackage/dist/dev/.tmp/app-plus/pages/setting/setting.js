@@ -147,6 +147,9 @@ var _default =
     },
     logout: function logout()
     {
+
+      uni.removeStorageSync('username');
+      uni.removeStorageSync('password');
       uni.request({
         url: this.serverUrl + '/logout',
         method: 'GET',
