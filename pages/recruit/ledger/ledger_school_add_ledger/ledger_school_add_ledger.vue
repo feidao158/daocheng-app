@@ -5,7 +5,7 @@
 			<view class="list-teacher">
 				<span class="list-left">教师:</span>
 				<picker class="list-right" mode="selector" :range="cultureTeacherInfoList"  range-key="name" @change="cultureTeacherSelected">
-					<input type="text" :value="selectedTeacherName" placeholder="请选择" />
+					<view class="yg-margin-top">{{selectedTeacherName==null? '请选择': selectedTeacherName}}</view>
 				</picker>
 			</view>
 			
@@ -13,7 +13,7 @@
 			<view class="list-teacher">
 				<span class="list-left">方式:</span>
 				<picker class="list-right" mode="selector" :range="dicCodeList"  range-key="dicName" @change="dicCodeSelected">
-					<input type="text" :value="selectedDicCodeName" placeholder="请选择" />
+					<view class="yg-margin-top">{{selectedDicCodeName==null? '请选择': selectedDicCodeName}}</view>
 				</picker>
 			</view>
 			
@@ -22,7 +22,7 @@
 			<view class="list-teacher">
 				<span class="list-left">对接人:</span>
 				<picker class="list-right" mode="selector" :range="actorList" range-key="name" @change="actorSelected">
-					<input type="text" :value="selectedActorName" placeholder="请选择" />
+					<view class="yg-margin-top">{{selectedActorName==null? '请选择': selectedActorName}}</view>
 				</picker>
 			</view>
 			
@@ -138,6 +138,8 @@
 </script>
 
 <style>
+	
+	
 	
 
 </style>

@@ -171,7 +171,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 var _default =
 {
   data: function data() {
@@ -217,7 +216,7 @@ var _default =
       method: 'GET',
       data: {},
       success: function success(res) {
-        console.log(res.data, " at pages\\my\\my.vue:138");
+        console.log(res.data, " at pages\\my\\my.vue:137");
         if (res.data.status == 200)
         {
           // 仍旧是登录状态

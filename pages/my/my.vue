@@ -32,7 +32,6 @@
 			
 			
 			
-			
 		<view class="cu-list menu ">
 			
 			<view class="cu-item">

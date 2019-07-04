@@ -18,11 +18,12 @@
 				<view class="list-teacher">
 					<span class="list-left">职位:</span>
 					<picker class="list-right" mode="selector" :range="positionList"   @change="positionSelected">
-						<input type="text" name="position" :value="position" placeholder="请选择" />
+						<!-- <input type="text" name="position" :value="position" placeholder="请选择" /> -->
+						<view class="yg-margin-top">{{position==null? '请选择': position }}</view>
 					</picker>
 				</view>
 				
-			<view class="form-item">
+			<view class="form-item margin-top">
 				<view class="uni-title">负责年级</view>
 				<view>
 					<slider name="grade" min="2015" max="2025" value="2018" show-value @change="selectGrade"/>
@@ -71,7 +72,7 @@
 				grade:null,
 				classNumber:null,
 				schoolId:null
-				
+
 			}
 		},
 		methods: {
@@ -94,6 +95,7 @@
 			
 				var object = e.detail.value
 				object.schoolId = this.schoolId
+				obj.position = this.position
 				
 				uni.request({
 					url: this.serverUrl + '/led/teacher_info/form',

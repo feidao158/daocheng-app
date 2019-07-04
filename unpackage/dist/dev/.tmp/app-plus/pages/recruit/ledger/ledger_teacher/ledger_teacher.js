@@ -169,7 +169,8 @@ var _default =
     return {
       pageNum: 1,
       teacherInfo: null,
-      loadModal: false };
+      loadModal: false,
+      inputValue: '' };
 
 
   },
@@ -177,8 +178,9 @@ var _default =
     loadData: function loadData()
     {var _this = this;
       var me = this;
+      var convertStr = encodeURI(this.inputValue);
       uni.request({
-        url: this.serverUrl + '/led/manager/teacher/' + this.pageNum + '?name=&limit=1',
+        url: this.serverUrl + '/led/manager/teacher/' + this.pageNum + '?name=' + convertStr + '&limit=1',
         method: 'GET',
         data: {},
         success: function success(res) {
@@ -222,6 +224,13 @@ var _default =
       uni.navigateTo({
         url: "../ledger_teacher_detail/ledger_teacher_detail?id=" + this.teacherInfo.id });
 
+    },
+    search: function search()
+    {
+
+      this.pageNum = 1;
+
+      this.loadData();
     } },
 
   onLoad: function onLoad() {
