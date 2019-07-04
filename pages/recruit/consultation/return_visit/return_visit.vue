@@ -13,7 +13,7 @@
 					<view class="flex flex-wrap" style="margin:26upx;">
 						<text style="margin-top:10upx;">姓名:</text>
 						<input style="width:400upx;border: #CCE6FF 1upx solid;" type="text" value="" />
-						<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 12upx;" class="cu-btn bg-blue">click</button>
+						<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 12upx;" class="cu-btn bg-blue" @tap="validVisitSearch()" >click</button>
 					</view>
 			
 		<!-- #endif -->
