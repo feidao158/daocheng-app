@@ -28057,6 +28057,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -28127,7 +28133,7 @@ var _default =
         method: 'GET',
         data: {},
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:286");
+          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:292");
           if (res.data.status == 200)
           {
             uni.showToast({
@@ -28153,7 +28159,7 @@ var _default =
       uni.navigateTo({
         url: "../stu_return_visit/stu_return_visit?id=" + id });
 
-      console.log(id, " at pages\\recruit\\consultation\\holder\\holder.vue:312");
+      console.log(id, " at pages\\recruit\\consultation\\holder\\holder.vue:318");
     },
     // computed:{
     // 	hasPrevent:function(){
@@ -29368,6 +29374,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -29470,7 +29483,7 @@ var _default =
         data: {},
         success: function success(res) {
           _this2.billDetailList = res.data;
-          console.log(_this2.billDetailList.length, " at pages\\recruit\\consultation\\bill_form\\bill_form.vue:247");
+          console.log(_this2.billDetailList.length, " at pages\\recruit\\consultation\\bill_form\\bill_form.vue:254");
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -30145,8 +30158,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 var _default =
 {
   data: function data() {
@@ -30188,7 +30199,7 @@ var _default =
     // 有效回访日志
     validReturnLog: function validReturnLog()
     {var _this = this;
-      console.log("我进来了吗", " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:138");
+      console.log("我进来了吗", " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:136");
       uni.request({
         url: this.serverUrl + '/stu/visit_info/valid/' + this.currentNum + '?name=&limit=1',
         method: 'GET',
@@ -30206,7 +30217,7 @@ var _default =
           }
 
 
-          console.log(visitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:156");
+          console.log(visitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:154");
           _this.stu = visitDate.data[0];
           _this.loadModal = false;
 
@@ -30218,7 +30229,7 @@ var _default =
     // 无效回访日志
     invalidReturnLog: function invalidReturnLog()
     {var _this2 = this;
-      console.log(this.currentNum, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:168");
+      console.log(this.currentNum, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:166");
       uni.request({
         url: this.serverUrl + '/stu/visit_info/invalid/' + this.currentNum + '?limit=1',
         method: 'GET',
@@ -30235,10 +30246,10 @@ var _default =
             return;
           }
 
-          console.log(invalidVisitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:185");
+          console.log(invalidVisitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:183");
           _this2.loadModal = false;
           _this2.stu = invalidVisitDate.data[0];
-          console.log("stu:" + _this2.stu, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:188");
+          console.log("stu:" + _this2.stu, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:186");
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -30257,7 +30268,7 @@ var _default =
   },
   onLoad: function onLoad(param)
   {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:207");
+    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:205");
     this.pageType = param.type;
     if (this.pageType == 0) {
       this.validReturnLog();
@@ -31543,6 +31554,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -32043,6 +32060,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
 //
 //
 //

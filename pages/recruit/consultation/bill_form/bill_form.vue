@@ -1,5 +1,12 @@
 <template>
 	<view>
+		
+			<view class="flex flex-wrap" style="margin:26upx;">
+				<text style="margin-top:10upx;">姓名:</text>
+				<input style="width:400upx;border: #CCE6FF 1upx solid;" type="text" value="" />
+				<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 12upx;" class="cu-btn bg-blue">click</button>
+			</view>
+		
 		<view class="cu-list menu" >
 			<view class="cu-item" >
 				<view class="half-content">

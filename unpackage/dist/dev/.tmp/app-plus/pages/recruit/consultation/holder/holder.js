@@ -313,6 +313,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -383,7 +389,7 @@ var _default =
         method: 'GET',
         data: {},
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:286");
+          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:292");
           if (res.data.status == 200)
           {
             uni.showToast({
@@ -409,7 +415,7 @@ var _default =
       uni.navigateTo({
         url: "../stu_return_visit/stu_return_visit?id=" + id });
 
-      console.log(id, " at pages\\recruit\\consultation\\holder\\holder.vue:312");
+      console.log(id, " at pages\\recruit\\consultation\\holder\\holder.vue:318");
     },
     // computed:{
     // 	hasPrevent:function(){

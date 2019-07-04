@@ -10,13 +10,11 @@
 		<!-- #endif -->
 		
 		<!-- #ifdef APP-PLUS -->
-		
-			<view>
-				<span style="border: #007AFF solid 1upx;float:left;margin-left:60upx;">姓名:</span>
-				<input type="text" value="" style="border: #007AFF solid 1upx;width:400upx;float:left;margin:0 20upx;"/>
-				<button style="width:120upx;float:left;margin-right:60upx;">查询</button>
-				<view style="clear:both;"></view>
-			</view>
+					<view class="flex flex-wrap" style="margin:26upx;">
+						<text style="margin-top:10upx;">姓名:</text>
+						<input style="width:400upx;border: #CCE6FF 1upx solid;" type="text" value="" />
+						<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 12upx;" class="cu-btn bg-blue">click</button>
+					</view>
 			
 		<!-- #endif -->
 			
