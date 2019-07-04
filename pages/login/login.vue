@@ -84,8 +84,9 @@
 							uni.setStorageSync("username",me.username)
 							uni.setStorageSync("password",me.password)
 							uni.setStorageSync('userInfo',res.data.data)
-							uni.redirectTo({
-								url: "../index/index"
+							console.log("登陆成功 准备跳转")
+							uni.navigateBack({
+								delta:1
 							})
 							
 						}else
@@ -114,52 +115,52 @@
 			
 		},
 		onLoad() {
-			let me = this
-			let username = uni.getStorageSync("username")
-			let password = uni.getStorageSync("password")
-			if(username=='' || password=='' || username==null || password ==null)
-			{
-				
-			}else
-			{
-				me.loadModal = true
-				uni.request({
-					url: me.serverUrl + '/login/mobile' ,
-					method: 'POST',
-					header:{
-						"content-type":'application/x-www-form-urlencoded'
-					},
-					data: {
-						username:username,
-						password:password
-					},
-					success: res => {
-						me.loadModal = false
-						if(res.data.status==200)
-						{
-							// 登录成功
-						
-							uni.setStorageSync('userInfo',res.data.data)
-							uni.redirectTo({
-								url: '../index/index'
-							});
-						}else
-						{
-							
-							me.username = ''
-							me.password = ''
-							uni.showToast({
-								title:res.data.msg,
-								duration: 2000
-							})
-						}
-						
-						
-					},
-					fail: () => {},
-					complete: () => {}
-				});
-			}
+			// let me = this
+			// let username = uni.getStorageSync("username")
+			// let password = uni.getStorageSync("password")
+			// if(username=='' || password=='' || username==null || password ==null)
+			// {
+			// 	
+			// }else
+			// {
+			// 	me.loadModal = true
+			// 	uni.request({
+			// 		url: me.serverUrl + '/login/mobile' ,
+			// 		method: 'POST',
+			// 		header:{
+			// 			"content-type":'application/x-www-form-urlencoded'
+			// 		},
+			// 		data: {
+			// 			username:username,
+			// 			password:password
+			// 		},
+			// 		success: res => {
+			// 			me.loadModal = false
+			// 			if(res.data.status==200)
+			// 			{
+			// 				// 登录成功
+			// 				
+			// 				uni.setStorageSync('userInfo',res.data.data)
+			// 				uni.redirectTo({
+			// 					url: '../index/index'
+			// 				});
+			// 			}else
+			// 			{
+			// 				
+			// 				me.username = ''
+			// 				me.password = ''
+			// 				uni.showToast({
+			// 					title:res.data.msg,
+			// 					duration: 2000
+			// 				})
+			// 			}
+			// 			
+			// 			
+			// 		},
+			// 		fail: () => {},
+			// 		complete: () => {}
+			// 	});
+			
 			
 		}
 	}

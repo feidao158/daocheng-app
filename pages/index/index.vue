@@ -192,6 +192,10 @@
 											title: "服务器超时",
 											duration:2000
 										})
+										
+										uni.navigateTo({
+											url: '../login/login'
+										})
 									}
 									
 									
@@ -207,13 +211,18 @@
 											title:res.data.msg,
 											duration: 2000
 										})
+										
+										uni.navigateTo({
+											url: '../login/login'
+										})
 									}
 									
-									console.log(res.data)
-									console.log("我到达首页了")
+									
+								
 								},
 								fail: () => {
 									console.log("出错了")
+									
 								},
 								complete: () => {}
 							});
@@ -226,6 +235,7 @@
 				complete: () => {}
 			});
 		}
+		
 	}
 </script>
 

@@ -292,6 +292,10 @@ __webpack_require__.r(__webpack_exports__);
                     title: "服务器超时",
                     duration: 2000 });
 
+
+                  uni.navigateTo({
+                    url: '../login/login' });
+
                 }
 
 
@@ -307,13 +311,18 @@ __webpack_require__.r(__webpack_exports__);
                     title: res.data.msg,
                     duration: 2000 });
 
+
+                  uni.navigateTo({
+                    url: '../login/login' });
+
                 }
 
-                console.log(res.data, " at pages\\index\\index.vue:212");
-                console.log("我到达首页了", " at pages\\index\\index.vue:213");
+
+
               },
               fail: function fail() {
-                console.log("出错了", " at pages\\index\\index.vue:216");
+                console.log("出错了", " at pages\\index\\index.vue:224");
+
               },
               complete: function complete() {} });
 
