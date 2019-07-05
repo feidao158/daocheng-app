@@ -13,7 +13,8 @@
 		
 				<view class="form-item">
 				   <picker mode="selector" :range="teacher" range-key="name" @change="selectTeacher" >
-						<input type="text" :value="teacherName"  placeholder="负责教师" />
+					<!-- 	<input type="text" :value="teacherName"  placeholder="负责教师" /> -->
+					负责教师:<text>{{teacherName == null? '' : teacherName}}</text>
 				   </picker>
 				</view>
 				

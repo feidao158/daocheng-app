@@ -41,7 +41,10 @@
 				<view class="form-item">
 	<!-- 				<view class="tab" :class="[{'active':index==tabIndex}]" @tap="toggleTab(4)" v-for="(item,index) in tabList" :key="index">{{item.name}}</view>
 	 -->
-					<input type="text" :value="location" @tap="toggleTab(4)"   placeholder="省市区" />
+					<!-- <input type="text" :value="location" @tap="toggleTab(4)"   placeholder="省市区" /> -->		
+					<span @tap="toggleTab(4)" >
+					省市区:<text>{{location}}</text>
+					</span>		
 			<w-picker 
 				:mode="selectedMode" 
 				startYear="2019" 
@@ -58,7 +61,8 @@
 				
 				<view class="form-item">
 					<picker mode="date" @change="selectedBirthday">
-						<input type="text"  name="birthday" :value="stuInfo.birthday" placeholder="出生日期"/>
+						<!-- <input type="text"  name="birthday" :value="stuInfo.birthday" placeholder="出生日期"/> -->
+						出生日期:<text>{{birthday == null? '': birthday}}</text>
 					</picker>
 				</view>
 				
@@ -88,7 +92,8 @@
 			<view style="padding: 16upx;">
 				<view class="form-item">
 				  <picker mode="selector" :range="schools" :value="selectedSchoolIndex" range-key="schoolName" @change="selectSchool" >
-						<input type="text" :value="selectedSchoolName"  placeholder="文化学校" />
+					<!-- 	<input type="text" :value="selectedSchoolName"  placeholder="文化学校" /> -->
+						文化学校:<text>{{selectedSchoolName ==null? '':selectedSchoolName}}</text>
 				   </picker>
 				</view>
 				
@@ -153,13 +158,14 @@
 			<view style="padding: 16upx;">
 				<view class="form-item">
 					<picker mode="selector" :range="resourceFormTypes" range-key="dicName" @change="selectResourceFrom">
-						<input type="text" :value="selectedResourceFromName" placeholder="来源渠道" />
+						<!-- <input type="text" :value="selectedResourceFromName" placeholder="来源渠道" /> -->
+						来源渠道:<text>{{selectedResourceFromName ==null? '':selectedResourceFromName}}</text>
 					</picker>
 				</view>
 				
 				<view class="form-item">
 					<picker mode="selector" :range="cultureSchoolTeachers" range-key="name" @change="selecteTeacher">
-						<input type="text" :value="selectedCultureTeacherName" placeholder="推荐班主任" />
+						推荐班主任:<text>{{selectedCultureTeacherName == null? '':selectedCultureTeacherName}}</text>
 					</picker>
 					
 				</view>
@@ -174,13 +180,15 @@
 				
 				<view class="form-item">
 					<picker mode="selector" :range="intentionLevel" @change="selectIntentionLevel">
-						<input type="text" :value="selectedIntentionLevel" name="intentionLevel" placeholder="意向等级" />
+					<!-- 	<input type="text" :value="selectedIntentionLevel" name="intentionLevel" placeholder="意向等级" /> -->
+						意向等级:<text>{{selectedIntentionLevel == null? '':selectedIntentionLevel}}</text>
 					</picker>
 				</view>
 				
 				<view class="form-item">
 					<picker mode="date" @change="selectVisitDate" @confirm="selectVisit">
-						<input type="text" name="visitDate" :value="stuInfo.visitDate" placeholder="参观时间"/>
+						<!-- <input type="text" name="visitDate" :value="stuInfo.visitDate" placeholder="参观时间"/> -->
+						参观时间:<text>{{selectedVisitDate == null? '':selectedVisitDate}}</text>
 					</picker>
 				</view>
 				

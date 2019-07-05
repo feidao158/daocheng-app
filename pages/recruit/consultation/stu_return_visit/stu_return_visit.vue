@@ -20,13 +20,15 @@
 			
 			<view class="form-item">
 			   <picker mode="selector" :range="visitType" @change="selectVisitType">
-					<input type="text" :value="visitTypeId" name="visitType" placeholder="回访类型" />
+					<!-- <input type="text" :value="visitTypeId" name="visitType" placeholder="回访类型" /> -->
+					回访类型:<text>{{visitTypeId == null? '':visitTypeId}}</text>
 			   </picker>
 			</view>
 			
 			<view class="form-item">
 			   <picker mode="selector" :range="visitDirection" @change="selectVisitDirection" >
-					<input type="text" :value="visitDirectionId" name="visitDirection"  placeholder="回访方向" />
+					<!-- <input type="text" :value="visitDirectionId" name="visitDirection"  placeholder="回访方向" /> -->
+					回访方向:<text>{{visitDirectionId == null? '':visitDirectionId}}</text>
 			   </picker>
 			</view>
 			
@@ -38,13 +40,15 @@
 		
 			<view class="form-item">
 				<picker mode="date" @change="visitReturnTime">
-					<input type="text"  name="paidDate" :value="paidDate" placeholder="回访时间"/>
+					<!-- <input type="text"  name="paidDate" :value="paidDate" placeholder="回访时间"/> -->
+					回访时间:<text>{{paidDate == null? '' : paidDate}}</text>
 				</picker>
 			</view>
 			
 			<view class="form-item">
 			   <picker mode="selector" :range="dicCode" range-key="dicName" @change="selectDicCodeId" >
-					<input type="text" :value="dicCodeName"  placeholder="回访状态" />
+					<!-- <input type="text" :value="dicCodeName"  placeholder="回访状态" /> -->
+					回访状态:<text>{{dicCodeName == null? '': dicCodeName}}</text>
 			   </picker>
 			</view>
 			
@@ -55,7 +59,8 @@
 
 			<view class="form-item">
 				<picker mode="date" @change="visitReturnTimeNext">
-					<input type="text"  name="nextDate" :value="nextDate" placeholder="下次回访"/>
+				<!-- 	<input type="text"  name="nextDate" :value="nextDate" placeholder="下次回访"/> -->
+				下次回访:<text>{{nextDate == null? '' : nextDate}}</text>
 				</picker>
 			</view>
 			</view>

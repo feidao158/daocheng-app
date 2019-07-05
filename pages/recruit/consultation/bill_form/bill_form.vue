@@ -3,8 +3,8 @@
 		
 			<view class="flex flex-wrap" style="margin:26upx;">
 				<text style="margin-top:10upx;">姓名:</text>
-				<input style="width:400upx;border: #CCE6FF 1upx solid;" type="text" value="" />
-				<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 12upx;" class="cu-btn bg-blue">click</button>
+				<input style="width:400upx;border: #CCE6FF 1upx solid;" type="text" v-model="inputValue" />
+				<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 12upx;" class="cu-btn bg-blue" @tap="search" >click</button>
 			</view>
 		
 		<view class="cu-list menu" >
@@ -159,7 +159,8 @@
 				dataType:null,
 				billDetailList:null,
 				modalName: null,
-				loadModal:false
+				loadModal:false,
+				inputValue:''
 				
 			}
 		},
@@ -167,7 +168,8 @@
 			
 			loadData()
 			{
-				var me = this
+				let me = this
+				let inputStr = encodeURI(this.inputValue)
 				if(this.dataType==0)
 				{
 					// uni.request({
@@ -180,8 +182,9 @@
 					// 	fail: () => {},
 					// 	complete: () => {}
 					// });
+					
 					uni.request({
-						url: this.serverUrl + '/sign_up/bill_info/un_complete/' + this.pageNum + '?name=&limit=1'
+						url: this.serverUrl + '/sign_up/bill_info/un_complete/' + this.pageNum + '?name=' + inputStr + '&limit=1'
 					})
 					.then(data =>{
 						
@@ -204,7 +207,7 @@
 				{
 					
 					uni.request({
-						url: this.serverUrl + '/sign_up/bill_info/complete/' + this.pageNum + '?name=&limit=1'
+						url: this.serverUrl + '/sign_up/bill_info/complete/' + this.pageNum + '?name=' +inputStr+ '&limit=1'
 					})
 					.then(data =>{
 						
@@ -225,6 +228,12 @@
 					})
 					
 				}			
+			},
+			search()
+			{
+				this.pageNum=1
+				console.log("开始搜素")
+				this.loadData()
 			},
 			next()
 			{
