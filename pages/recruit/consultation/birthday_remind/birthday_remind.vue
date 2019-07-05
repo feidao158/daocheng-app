@@ -1,25 +1,6 @@
 <template>
-	<view >
-		
-		<!-- #ifdef MP-WEIXIN -->
-		<view class=" margin-top padding flex flex-wrap justify-between align-center bg-white">
-				<text>姓名:</text>
-				<input type="text" value="" class="form-input" />
-				<button class="cu-btn bg-green">查询</button>
-		</view>
-		<!-- #endif -->
-		
-		<!-- #ifdef APP-PLUS -->
-		
-			<view>
-				<span style="border: #007AFF solid 1upx;float:left;margin-left:60upx;">姓名:</span>
-				<input type="text" value="" style="border: #007AFF solid 1upx;width:400upx;float:left;margin:0 20upx;"/>
-				<button style="width:120upx;float:left;margin-right:60upx;">查询</button>
-				<view style="clear:both;"></view>
-			</view>
-			
-		<!-- #endif -->
-			
+	<view>
+	
 			<view class="bg-white">
 				<view class="flex">
 					<view class="flex-sub border-grey  padding-sm margin-xs radius text-lg">
