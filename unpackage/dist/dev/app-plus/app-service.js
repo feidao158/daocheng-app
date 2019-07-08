@@ -27175,6 +27175,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
+
+
+
 {
   data: function data() {
     return {
@@ -27253,12 +27263,12 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     toggleTab: function toggleTab(index) {
       this.tabIndex = index;
-      console.log(this.$refs.picker, " at pages\\recruit\\add2\\add2.vue:285");
+      console.log(this.$refs.picker, " at pages\\recruit\\add2\\add2.vue:295");
       this.$refs.picker.show();
     },
     // 省市区
     onConfirm: function onConfirm(val) {
-      console.log(val, " at pages\\recruit\\add2\\add2.vue:290");
+      console.log(val, " at pages\\recruit\\add2\\add2.vue:300");
       this.location = val.checkArr[0] + '/' + val.checkArr[1] + '/' + val.checkArr[2];
       this.province = val.checkArr[0];
       this.city = val.checkArr[1];
@@ -27282,7 +27292,7 @@ __webpack_require__.r(__webpack_exports__);
         method: 'GET',
         data: {},
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\add2\\add2.vue:314");
+          console.log(res.data, " at pages\\recruit\\add2\\add2.vue:324");
           _this.cultureSchoolTeachers = res.data;
         },
         fail: function fail() {},
@@ -27293,7 +27303,7 @@ __webpack_require__.r(__webpack_exports__);
     // 提交表单
     // 文化学校 紧急联系人关系 来源渠道 推荐班主任 意向专业 意向等级
     formSubmit: function formSubmit(e) {
-      console.log(e.detail.value, " at pages\\recruit\\add2\\add2.vue:325");
+      console.log(e.detail.value, " at pages\\recruit\\add2\\add2.vue:335");
       var data = e.detail.value;
       data.province = this.province;
       data.city = this.city;
@@ -27312,7 +27322,7 @@ __webpack_require__.r(__webpack_exports__);
         method: 'POST',
         data: data,
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\add2\\add2.vue:344");
+          console.log(res.data, " at pages\\recruit\\add2\\add2.vue:354");
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -27390,7 +27400,7 @@ __webpack_require__.r(__webpack_exports__);
         "cookie": uni.getStorageSync("userCookie") },
 
       success: function success(res) {
-        console.log(res, " at pages\\recruit\\add2\\add2.vue:422");
+        console.log(res, " at pages\\recruit\\add2\\add2.vue:432");
         _this2.resourceFormTypes = res.data;
       } });
 
@@ -28017,7 +28027,8 @@ var _default =
       stu: null,
       dataList: null,
       pageType: null,
-      loadModal: false };
+      loadModal: false,
+      inputValue: '' };
 
   },
   methods: {
@@ -28041,8 +28052,11 @@ var _default =
 
     loadStudentInfo: function loadStudentInfo()
     {var _this = this;
+      var me = this;
+      var inputStr = encodeURI(this.inputValue);
+
       uni.request({
-        url: this.serverUrl + '/stu/mystudent/' + this.pageType + '/' + this.currentNum + '?name=&limit=1',
+        url: this.serverUrl + '/stu/mystudent/' + this.pageType + '/' + this.currentNum + '?name=' + inputStr + '&limit=1',
         method: 'GET',
         data: {},
         success: function success(res) {
@@ -28079,7 +28093,7 @@ var _default =
         method: 'GET',
         data: {},
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:292");
+          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:296");
           if (res.data.status == 200)
           {
             uni.showToast({
@@ -28105,7 +28119,7 @@ var _default =
       uni.navigateTo({
         url: "../stu_return_visit/stu_return_visit?id=" + id });
 
-      console.log(id, " at pages\\recruit\\consultation\\holder\\holder.vue:318");
+      console.log(id, " at pages\\recruit\\consultation\\holder\\holder.vue:322");
     },
     // computed:{
     // 	hasPrevent:function(){
@@ -28131,6 +28145,12 @@ var _default =
     {
 
       this.pageType = param.type;
+      this.loadStudentInfo();
+    },
+    search: function search()
+    {
+      this.currentNum = 1;
+      console.log("开始搜素", " at pages\\recruit\\consultation\\holder\\holder.vue:353");
       this.loadStudentInfo();
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
@@ -28711,6 +28731,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
+
 {
   data: function data() {
     return {
@@ -28787,12 +28815,12 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     toggleTab: function toggleTab(index) {
       this.tabIndex = index;
-      console.log(this.$refs.picker, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:279");
+      console.log(this.$refs.picker, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:287");
       this.$refs.picker.show();
     },
     // 省市区
     onConfirm: function onConfirm(val) {
-      console.log(val, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:284");
+      console.log(val, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:292");
       this.location = val.checkArr[0] + '/' + val.checkArr[1] + '/' + val.checkArr[2];
       this.province = val.checkArr[0];
       this.city = val.checkArr[1];
@@ -28812,7 +28840,7 @@ __webpack_require__.r(__webpack_exports__);
         method: 'GET',
         data: {},
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:304");
+          console.log(res.data, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:312");
           _this.cultureSchoolTeachers = res.data;
         },
         fail: function fail() {},
@@ -28823,7 +28851,7 @@ __webpack_require__.r(__webpack_exports__);
     // 提交表单
     // 文化学校 紧急联系人关系 来源渠道 推荐班主任 意向专业 意向等级
     formSubmit: function formSubmit(e) {
-      console.log(e.detail.value, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:315");
+      console.log(e.detail.value, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:323");
       var data = e.detail.value;
       data.id = this.id;
       data.province = this.province;
@@ -28845,7 +28873,7 @@ __webpack_require__.r(__webpack_exports__);
         method: 'POST',
         data: data,
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:337");
+          console.log(res.data, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:345");
         },
         fail: function fail() {
 
@@ -28958,7 +28986,7 @@ __webpack_require__.r(__webpack_exports__);
         method: 'GET',
         data: {},
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:450");
+          console.log(res.data, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:458");
           _this2.stuInfo = res.data;
           _this2.location = res.data.province + '/' + res.data.city + '/' + res.data.area;
           var hasCommandTeacher = res.data.holder != null;
@@ -28980,7 +29008,7 @@ __webpack_require__.r(__webpack_exports__);
               method: 'GET',
               data: {},
               success: function success(res) {
-                console.log(res.data, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:472");
+                console.log(res.data, " at pages\\recruit\\consultation\\stu_modify\\stu_modify.vue:480");
                 _this2.cultureSchoolTeachers = res.data;
 
                 // 存在推荐教师
@@ -29337,7 +29365,8 @@ var _default =
       dataType: null,
       billDetailList: null,
       modalName: null,
-      loadModal: false };
+      loadModal: false,
+      inputValue: '' };
 
 
   },
@@ -29346,6 +29375,7 @@ var _default =
     loadData: function loadData()
     {var _this = this;
       var me = this;
+      var inputStr = encodeURI(this.inputValue);
       if (this.dataType == 0)
       {
         // uni.request({
@@ -29358,8 +29388,9 @@ var _default =
         // 	fail: () => {},
         // 	complete: () => {}
         // });
+
         uni.request({
-          url: this.serverUrl + '/sign_up/bill_info/un_complete/' + this.pageNum + '?name=&limit=1' }).
+          url: this.serverUrl + '/sign_up/bill_info/un_complete/' + this.pageNum + '?name=' + inputStr + '&limit=1' }).
 
         then(function (data) {var _data = _slicedToArray(
 
@@ -29382,7 +29413,7 @@ var _default =
       {
 
         uni.request({
-          url: this.serverUrl + '/sign_up/bill_info/complete/' + this.pageNum + '?name=&limit=1' }).
+          url: this.serverUrl + '/sign_up/bill_info/complete/' + this.pageNum + '?name=' + inputStr + '&limit=1' }).
 
         then(function (data) {var _data2 = _slicedToArray(
 
@@ -29403,6 +29434,12 @@ var _default =
         });
 
       }
+    },
+    search: function search()
+    {
+      this.pageNum = 1;
+      console.log("开始搜素", " at pages\\recruit\\consultation\\bill_form\\bill_form.vue:235");
+      this.loadData();
     },
     next: function next()
     {
@@ -29429,7 +29466,7 @@ var _default =
         data: {},
         success: function success(res) {
           _this2.billDetailList = res.data;
-          console.log(_this2.billDetailList.length, " at pages\\recruit\\consultation\\bill_form\\bill_form.vue:254");
+          console.log(_this2.billDetailList.length, " at pages\\recruit\\consultation\\bill_form\\bill_form.vue:263");
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -30112,7 +30149,8 @@ var _default =
       stu: null,
       dataList: null,
       pageType: null,
-      loadModal: false };
+      loadModal: false,
+      inputValue: '' };
 
   },
   methods: {
@@ -30145,9 +30183,10 @@ var _default =
     // 有效回访日志
     validReturnLog: function validReturnLog()
     {var _this = this;
-      console.log("我进来了吗", " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:136");
+      var me = this;
+      var inputStr = encodeURI(this.inputValue);
       uni.request({
-        url: this.serverUrl + '/stu/visit_info/valid/' + this.currentNum + '?name=&limit=1',
+        url: this.serverUrl + '/stu/visit_info/valid/' + this.currentNum + '?name=' + inputStr + '&limit=1',
         method: 'GET',
         data: {},
         success: function success(visitDate) {
@@ -30163,7 +30202,7 @@ var _default =
           }
 
 
-          console.log(visitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:154");
+          console.log(visitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:156");
           _this.stu = visitDate.data[0];
           _this.loadModal = false;
 
@@ -30172,10 +30211,16 @@ var _default =
         complete: function complete() {} });
 
     },
+    search: function search()
+    {
+      this.currentNum = 1;
+      console.log("开始搜素", " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:168");
+      this.validReturnLog();
+    },
     // 无效回访日志
     invalidReturnLog: function invalidReturnLog()
     {var _this2 = this;
-      console.log(this.currentNum, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:166");
+      console.log(this.currentNum, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:174");
       uni.request({
         url: this.serverUrl + '/stu/visit_info/invalid/' + this.currentNum + '?limit=1',
         method: 'GET',
@@ -30192,10 +30237,10 @@ var _default =
             return;
           }
 
-          console.log(invalidVisitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:183");
+          console.log(invalidVisitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:191");
           _this2.loadModal = false;
           _this2.stu = invalidVisitDate.data[0];
-          console.log("stu:" + _this2.stu, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:186");
+          console.log("stu:" + _this2.stu, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:194");
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -30214,7 +30259,7 @@ var _default =
   },
   onLoad: function onLoad(param)
   {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:205");
+    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:213");
     this.pageType = param.type;
     if (this.pageType == 0) {
       this.validReturnLog();
@@ -32709,6 +32754,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
 {
   data: function data() {
     return {
@@ -32764,7 +32814,7 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     toggleTab: function toggleTab(index) {
       this.tabIndex = index;
-      console.log(this.$refs.picker, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:125");
+      console.log(this.$refs.picker, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:130");
       this.$refs.picker.show();
     },
     selectVisitType: function selectVisitType(e)
@@ -32787,7 +32837,7 @@ __webpack_require__.r(__webpack_exports__);
     // 提交表单
     // 文化学校 紧急联系人关系 来源渠道 推荐班主任 意向专业 意向等级
     formSubmit: function formSubmit(e) {
-      console.log(e.detail.value, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:148");
+      console.log(e.detail.value, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:153");
       var data = e.detail.value;
 
       data.paidStatus = this.dicCodeId;
@@ -32800,7 +32850,7 @@ __webpack_require__.r(__webpack_exports__);
         method: 'POST',
         data: data,
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:161");
+          console.log(res.data, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:166");
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -32831,8 +32881,8 @@ __webpack_require__.r(__webpack_exports__);
   onLoad: function onLoad(param)
   {var _this = this;
     var me = this;
-    console.log(this.studentId, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:192");
-    console.log(param.id, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:193");
+    console.log(this.studentId, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:197");
+    console.log(param.id, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:198");
     this.stuId = param.id;
     // 获取 回访状态
     uni.request({
@@ -32840,12 +32890,12 @@ __webpack_require__.r(__webpack_exports__);
       method: 'GET',
       data: {},
       success: function success(res) {
-        console.log(res, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:201");
-        console.log(res.data, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:202");
+        console.log(res, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:206");
+        console.log(res.data, " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:207");
         _this.dicCode = res.data;
       } });
 
-    console.log("zahuishixiaolaodi", " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:206");
+    console.log("zahuishixiaolaodi", " at pages\\recruit\\consultation\\stu_return_visit\\stu_return_visit.vue:211");
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
@@ -33018,6 +33068,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 var _default =
 {
   data: function data() {
@@ -33057,7 +33108,7 @@ var _default =
       // 	data.holdId = this.holdId
       // 	data.students = this.id
       this.students.push(this.id);
-      console.log(this.holdId, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:67");
+      console.log(this.holdId, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:68");
 
       uni.request({
         header: {
@@ -33070,7 +33121,7 @@ var _default =
           students: this.students },
 
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:80");
+          console.log(res.data, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:81");
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -33084,11 +33135,11 @@ var _default =
     onLoad: function onLoad(param)
     {var _this = this;
       var me = this;
-      console.log(param.id, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:94");
-      console.log(this.id, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:95");
+      console.log(param.id, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:95");
+      console.log(this.id, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:96");
       this.id = param.id;
-      console.log(param.name, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:97");
-      console.log(this.name, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:98");
+      console.log(param.name, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:98");
+      console.log(this.name, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:99");
       this.name = param.name;
 
       // 负责教师信息
@@ -33100,7 +33151,7 @@ var _default =
           _this.teacher = res.data;
         } });
 
-      console.log("zahuishixiaolaodi", " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:110");
+      console.log("zahuishixiaolaodi", " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:111");
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 

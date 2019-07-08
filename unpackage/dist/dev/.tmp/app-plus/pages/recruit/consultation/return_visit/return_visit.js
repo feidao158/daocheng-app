@@ -200,7 +200,8 @@ var _default =
       stu: null,
       dataList: null,
       pageType: null,
-      loadModal: false };
+      loadModal: false,
+      inputValue: '' };
 
   },
   methods: {
@@ -233,9 +234,10 @@ var _default =
     // 有效回访日志
     validReturnLog: function validReturnLog()
     {var _this = this;
-      console.log("我进来了吗", " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:136");
+      var me = this;
+      var inputStr = encodeURI(this.inputValue);
       uni.request({
-        url: this.serverUrl + '/stu/visit_info/valid/' + this.currentNum + '?name=&limit=1',
+        url: this.serverUrl + '/stu/visit_info/valid/' + this.currentNum + '?name=' + inputStr + '&limit=1',
         method: 'GET',
         data: {},
         success: function success(visitDate) {
@@ -251,7 +253,7 @@ var _default =
           }
 
 
-          console.log(visitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:154");
+          console.log(visitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:156");
           _this.stu = visitDate.data[0];
           _this.loadModal = false;
 
@@ -260,10 +262,16 @@ var _default =
         complete: function complete() {} });
 
     },
+    search: function search()
+    {
+      this.currentNum = 1;
+      console.log("开始搜素", " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:168");
+      this.validReturnLog();
+    },
     // 无效回访日志
     invalidReturnLog: function invalidReturnLog()
     {var _this2 = this;
-      console.log(this.currentNum, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:166");
+      console.log(this.currentNum, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:174");
       uni.request({
         url: this.serverUrl + '/stu/visit_info/invalid/' + this.currentNum + '?limit=1',
         method: 'GET',
@@ -280,10 +288,10 @@ var _default =
             return;
           }
 
-          console.log(invalidVisitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:183");
+          console.log(invalidVisitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:191");
           _this2.loadModal = false;
           _this2.stu = invalidVisitDate.data[0];
-          console.log("stu:" + _this2.stu, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:186");
+          console.log("stu:" + _this2.stu, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:194");
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -302,7 +310,7 @@ var _default =
   },
   onLoad: function onLoad(param)
   {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:205");
+    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:213");
     this.pageType = param.type;
     if (this.pageType == 0) {
       this.validReturnLog();

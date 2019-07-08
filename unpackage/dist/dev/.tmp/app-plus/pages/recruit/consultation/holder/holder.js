@@ -327,7 +327,8 @@ var _default =
       stu: null,
       dataList: null,
       pageType: null,
-      loadModal: false };
+      loadModal: false,
+      inputValue: '' };
 
   },
   methods: {
@@ -351,8 +352,11 @@ var _default =
 
     loadStudentInfo: function loadStudentInfo()
     {var _this = this;
+      var me = this;
+      var inputStr = encodeURI(this.inputValue);
+
       uni.request({
-        url: this.serverUrl + '/stu/mystudent/' + this.pageType + '/' + this.currentNum + '?name=&limit=1',
+        url: this.serverUrl + '/stu/mystudent/' + this.pageType + '/' + this.currentNum + '?name=' + inputStr + '&limit=1',
         method: 'GET',
         data: {},
         success: function success(res) {
@@ -389,7 +393,7 @@ var _default =
         method: 'GET',
         data: {},
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:292");
+          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:296");
           if (res.data.status == 200)
           {
             uni.showToast({
@@ -415,7 +419,7 @@ var _default =
       uni.navigateTo({
         url: "../stu_return_visit/stu_return_visit?id=" + id });
 
-      console.log(id, " at pages\\recruit\\consultation\\holder\\holder.vue:318");
+      console.log(id, " at pages\\recruit\\consultation\\holder\\holder.vue:322");
     },
     // computed:{
     // 	hasPrevent:function(){
@@ -441,6 +445,12 @@ var _default =
     {
 
       this.pageType = param.type;
+      this.loadStudentInfo();
+    },
+    search: function search()
+    {
+      this.currentNum = 1;
+      console.log("开始搜素", " at pages\\recruit\\consultation\\holder\\holder.vue:353");
       this.loadStudentInfo();
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))

@@ -259,7 +259,8 @@ var _default =
       dataType: null,
       billDetailList: null,
       modalName: null,
-      loadModal: false };
+      loadModal: false,
+      inputValue: '' };
 
 
   },
@@ -268,6 +269,7 @@ var _default =
     loadData: function loadData()
     {var _this = this;
       var me = this;
+      var inputStr = encodeURI(this.inputValue);
       if (this.dataType == 0)
       {
         // uni.request({
@@ -280,8 +282,9 @@ var _default =
         // 	fail: () => {},
         // 	complete: () => {}
         // });
+
         uni.request({
-          url: this.serverUrl + '/sign_up/bill_info/un_complete/' + this.pageNum + '?name=&limit=1' }).
+          url: this.serverUrl + '/sign_up/bill_info/un_complete/' + this.pageNum + '?name=' + inputStr + '&limit=1' }).
 
         then(function (data) {var _data = _slicedToArray(
 
@@ -304,7 +307,7 @@ var _default =
       {
 
         uni.request({
-          url: this.serverUrl + '/sign_up/bill_info/complete/' + this.pageNum + '?name=&limit=1' }).
+          url: this.serverUrl + '/sign_up/bill_info/complete/' + this.pageNum + '?name=' + inputStr + '&limit=1' }).
 
         then(function (data) {var _data2 = _slicedToArray(
 
@@ -325,6 +328,12 @@ var _default =
         });
 
       }
+    },
+    search: function search()
+    {
+      this.pageNum = 1;
+      console.log("开始搜素", " at pages\\recruit\\consultation\\bill_form\\bill_form.vue:235");
+      this.loadData();
     },
     next: function next()
     {
@@ -351,7 +360,7 @@ var _default =
         data: {},
         success: function success(res) {
           _this2.billDetailList = res.data;
-          console.log(_this2.billDetailList.length, " at pages\\recruit\\consultation\\bill_form\\bill_form.vue:254");
+          console.log(_this2.billDetailList.length, " at pages\\recruit\\consultation\\bill_form\\bill_form.vue:263");
         },
         fail: function fail() {},
         complete: function complete() {} });

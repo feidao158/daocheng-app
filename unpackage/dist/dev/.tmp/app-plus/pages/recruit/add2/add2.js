@@ -304,6 +304,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
+
+
+
 {
   data: function data() {
     return {
@@ -382,12 +392,12 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     toggleTab: function toggleTab(index) {
       this.tabIndex = index;
-      console.log(this.$refs.picker, " at pages\\recruit\\add2\\add2.vue:285");
+      console.log(this.$refs.picker, " at pages\\recruit\\add2\\add2.vue:295");
       this.$refs.picker.show();
     },
     // 省市区
     onConfirm: function onConfirm(val) {
-      console.log(val, " at pages\\recruit\\add2\\add2.vue:290");
+      console.log(val, " at pages\\recruit\\add2\\add2.vue:300");
       this.location = val.checkArr[0] + '/' + val.checkArr[1] + '/' + val.checkArr[2];
       this.province = val.checkArr[0];
       this.city = val.checkArr[1];
@@ -411,7 +421,7 @@ __webpack_require__.r(__webpack_exports__);
         method: 'GET',
         data: {},
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\add2\\add2.vue:314");
+          console.log(res.data, " at pages\\recruit\\add2\\add2.vue:324");
           _this.cultureSchoolTeachers = res.data;
         },
         fail: function fail() {},
@@ -422,7 +432,7 @@ __webpack_require__.r(__webpack_exports__);
     // 提交表单
     // 文化学校 紧急联系人关系 来源渠道 推荐班主任 意向专业 意向等级
     formSubmit: function formSubmit(e) {
-      console.log(e.detail.value, " at pages\\recruit\\add2\\add2.vue:325");
+      console.log(e.detail.value, " at pages\\recruit\\add2\\add2.vue:335");
       var data = e.detail.value;
       data.province = this.province;
       data.city = this.city;
@@ -441,7 +451,7 @@ __webpack_require__.r(__webpack_exports__);
         method: 'POST',
         data: data,
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\add2\\add2.vue:344");
+          console.log(res.data, " at pages\\recruit\\add2\\add2.vue:354");
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -519,7 +529,7 @@ __webpack_require__.r(__webpack_exports__);
         "cookie": uni.getStorageSync("userCookie") },
 
       success: function success(res) {
-        console.log(res, " at pages\\recruit\\add2\\add2.vue:422");
+        console.log(res, " at pages\\recruit\\add2\\add2.vue:432");
         _this2.resourceFormTypes = res.data;
       } });
 

@@ -125,6 +125,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 var _default =
 {
   data: function data() {
@@ -164,7 +165,7 @@ var _default =
       // 	data.holdId = this.holdId
       // 	data.students = this.id
       this.students.push(this.id);
-      console.log(this.holdId, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:67");
+      console.log(this.holdId, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:68");
 
       uni.request({
         header: {
@@ -177,7 +178,7 @@ var _default =
           students: this.students },
 
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:80");
+          console.log(res.data, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:81");
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -191,11 +192,11 @@ var _default =
     onLoad: function onLoad(param)
     {var _this = this;
       var me = this;
-      console.log(param.id, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:94");
-      console.log(this.id, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:95");
+      console.log(param.id, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:95");
+      console.log(this.id, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:96");
       this.id = param.id;
-      console.log(param.name, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:97");
-      console.log(this.name, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:98");
+      console.log(param.name, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:98");
+      console.log(this.name, " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:99");
       this.name = param.name;
 
       // 负责教师信息
@@ -207,7 +208,7 @@ var _default =
           _this.teacher = res.data;
         } });
 
-      console.log("zahuishixiaolaodi", " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:110");
+      console.log("zahuishixiaolaodi", " at pages\\recruit\\consultation\\stu_allocation_teacher\\stu_allocation_teacher.vue:111");
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
