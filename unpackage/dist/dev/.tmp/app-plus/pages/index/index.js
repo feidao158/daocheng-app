@@ -256,84 +256,84 @@ __webpack_require__.r(__webpack_exports__);
 
   onLoad: function onLoad() {
     var me = this;
-    uni.request({
-      url: me.serverUrl + '/login/status',
-      method: 'GET',
-      data: {},
-      success: function success(res) {
-        console.log(res.data, " at pages\\index\\index.vue:164");
-        if (res.data.status == 200)
-        {
-          // 仍旧是登录状态
-
-        } else
-        {
-          // me.login = false;
-          // uni.removeStorageSync('userInfo')
-          var username = uni.getStorageSync("username");
-          var password = uni.getStorageSync("password");
-          if (username != null & password != null)
-          {
-            uni.request({
-              url: me.serverUrl + '/login/mobile',
-              method: 'POST',
-              header: {
-                "content-type": 'application/x-www-form-urlencoded' },
-
-              data: {
-                username: username,
-                password: password },
-
-              success: function success(res) {
-                me.loadModal = false;
-                if (res.statusCode == 404)
-                {
-                  uni.showToast({
-                    title: "服务器超时",
-                    duration: 2000 });
-
-
-                  uni.navigateTo({
-                    url: '../login/login' });
-
-                }
-
-
-                if (res.data.status == 200)
-                {
-                  //登录成功
-                  uni.setStorageSync('userInfo', res.data.data);
-
-                } else
-                {
-
-                  uni.showToast({
-                    title: res.data.msg,
-                    duration: 2000 });
-
-
-                  uni.navigateTo({
-                    url: '../login/login' });
-
-                }
-
-
-
-              },
-              fail: function fail() {
-                console.log("出错了", " at pages\\index\\index.vue:224");
-
-              },
-              complete: function complete() {} });
-
-          }
-
-        }
-
-      },
-      fail: function fail() {},
-      complete: function complete() {} });
-
+    // 			uni.request({
+    // 				url: me.serverUrl + '/login/status',
+    // 				method: 'GET',
+    // 				data: {},
+    // 				success: res => {
+    // 					console.log(res.data)
+    // 					if(res.data.status==200)
+    // 					{
+    // 						// 仍旧是登录状态
+    // 					
+    // 					}else
+    // 					{
+    // 						// me.login = false;
+    // 						// uni.removeStorageSync('userInfo')
+    // 						var username = uni.getStorageSync("username")
+    // 						var password = uni.getStorageSync("password")
+    // 						if(username!=null & password !=null)
+    // 						{
+    // 							uni.request({
+    // 								url: me.serverUrl + '/login/mobile' ,
+    // 								method: 'POST',
+    // 								header:{
+    // 									"content-type":'application/x-www-form-urlencoded'
+    // 								},
+    // 								data: {
+    // 									username:username,
+    // 									password:password
+    // 								},
+    // 								success: res => {
+    // 									me.loadModal = false
+    // 									if(res.statusCode==404)
+    // 									{
+    // 										uni.showToast({
+    // 											title: "服务器超时",
+    // 											duration:2000
+    // 										})
+    // 										
+    // 										uni.navigateTo({
+    // 											url: '../login/login'
+    // 										})
+    // 									}
+    // 									
+    // 									
+    // 									if(res.data.status==200)
+    // 									{
+    // 										//登录成功
+    // 										uni.setStorageSync('userInfo',res.data.data)
+    // 										
+    // 									}else
+    // 									{
+    // 										
+    // 										uni.showToast({
+    // 											title:res.data.msg,
+    // 											duration: 2000
+    // 										})
+    // 										
+    // 										uni.navigateTo({
+    // 											url: '../login/login'
+    // 										})
+    // 									}
+    // 									
+    // 									
+    // 								
+    // 								},
+    // 								fail: () => {
+    // 									console.log("出错了")
+    // 									
+    // 								},
+    // 								complete: () => {}
+    // 							});
+    // 						}
+    // 
+    // 					}
+    // 					
+    // 				},
+    // 				fail: () => {},
+    // 				complete: () => {}
+    // 			});
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 

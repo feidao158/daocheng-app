@@ -106,8 +106,58 @@
 			
 		},
 		onLoad() {
+			var me = this;
 			// 1.首先判断用户登录状态是否为已登录 如果为已登录 直接跳转index页面 
 			// 2.如果用户状态为未登录 判断localStorage中是否保存有用户的账号密码 如果有 尝试登录 登录成功 跳转页面 如果服务器返回密码错误 localStorage清空数据 其他错误不清空
+			uni.request({
+				url: me.serverUrl + '/login/status',
+				success(res) {
+					console.log(res.data.msg)
+					if(res.data.status==500 && res.data.msg== '未登录')
+					{
+						var username =  uni.getStorageSync('username');
+						var password = uni.getStorageSync('password');
+						console.log("username:" + username)
+						console.log("password:" + password)
+						if(username!='' && password!='')
+						{
+							uni.request({
+								url: me.serverUrl + '/login/mobile',
+								method: 'POST',
+								header:{
+									"content-type":'application/x-www-form-urlencoded'
+								},
+								data: {
+									username:username,
+									password:password
+								}
+							})
+							.then(data=>{
+							
+								var [error,res] = data
+								// console.log(res.data)
+								// console.log(JSON.stringify(data))
+								if(res.data.status==200)
+								{
+									uni.setStorageSync('userInfo',res.data.data)
+									uni.switchTab({
+										url: "../index/index"
+									})
+								}
+							})
+						}
+					}else if (res.data.status==200)
+					{
+						uni.switchTab({
+							url: "../index/index"
+						})
+						
+					}
+					
+					
+				}
+			})
+			
 			
 		}
 	}

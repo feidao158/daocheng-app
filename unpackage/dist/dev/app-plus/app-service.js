@@ -25850,7 +25850,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance");}function _iterableToArrayLimit(arr, i) {var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;} //
 //
 //
 //
@@ -25958,8 +25958,58 @@ var _default =
 
 
   onLoad: function onLoad() {
+    var me = this;
     // 1.首先判断用户登录状态是否为已登录 如果为已登录 直接跳转index页面 
     // 2.如果用户状态为未登录 判断localStorage中是否保存有用户的账号密码 如果有 尝试登录 登录成功 跳转页面 如果服务器返回密码错误 localStorage清空数据 其他错误不清空
+    uni.request({
+      url: me.serverUrl + '/login/status',
+      success: function success(res) {
+        console.log(res.data.msg, " at pages\\login\\login.vue:115");
+        if (res.data.status == 500 && res.data.msg == '未登录')
+        {
+          var username = uni.getStorageSync('username');
+          var password = uni.getStorageSync('password');
+          console.log("username:" + username, " at pages\\login\\login.vue:120");
+          console.log("password:" + password, " at pages\\login\\login.vue:121");
+          if (username != '' && password != '')
+          {
+            uni.request({
+              url: me.serverUrl + '/login/mobile',
+              method: 'POST',
+              header: {
+                "content-type": 'application/x-www-form-urlencoded' },
+
+              data: {
+                username: username,
+                password: password } }).
+
+
+            then(function (data) {var _data = _slicedToArray(
+
+              data, 2),error = _data[0],res = _data[1];
+              // console.log(res.data)
+              // console.log(JSON.stringify(data))
+              if (res.data.status == 200)
+              {
+                uni.setStorageSync('userInfo', res.data.data);
+                uni.switchTab({
+                  url: "../index/index" });
+
+              }
+            });
+          }
+        } else if (res.data.status == 200)
+        {
+          uni.switchTab({
+            url: "../index/index" });
+
+
+        }
+
+
+      } });
+
+
 
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
@@ -26532,84 +26582,84 @@ __webpack_require__.r(__webpack_exports__);
 
   onLoad: function onLoad() {
     var me = this;
-    uni.request({
-      url: me.serverUrl + '/login/status',
-      method: 'GET',
-      data: {},
-      success: function success(res) {
-        console.log(res.data, " at pages\\index\\index.vue:164");
-        if (res.data.status == 200)
-        {
-          // 仍旧是登录状态
-
-        } else
-        {
-          // me.login = false;
-          // uni.removeStorageSync('userInfo')
-          var username = uni.getStorageSync("username");
-          var password = uni.getStorageSync("password");
-          if (username != null & password != null)
-          {
-            uni.request({
-              url: me.serverUrl + '/login/mobile',
-              method: 'POST',
-              header: {
-                "content-type": 'application/x-www-form-urlencoded' },
-
-              data: {
-                username: username,
-                password: password },
-
-              success: function success(res) {
-                me.loadModal = false;
-                if (res.statusCode == 404)
-                {
-                  uni.showToast({
-                    title: "服务器超时",
-                    duration: 2000 });
-
-
-                  uni.navigateTo({
-                    url: '../login/login' });
-
-                }
-
-
-                if (res.data.status == 200)
-                {
-                  //登录成功
-                  uni.setStorageSync('userInfo', res.data.data);
-
-                } else
-                {
-
-                  uni.showToast({
-                    title: res.data.msg,
-                    duration: 2000 });
-
-
-                  uni.navigateTo({
-                    url: '../login/login' });
-
-                }
-
-
-
-              },
-              fail: function fail() {
-                console.log("出错了", " at pages\\index\\index.vue:224");
-
-              },
-              complete: function complete() {} });
-
-          }
-
-        }
-
-      },
-      fail: function fail() {},
-      complete: function complete() {} });
-
+    // 			uni.request({
+    // 				url: me.serverUrl + '/login/status',
+    // 				method: 'GET',
+    // 				data: {},
+    // 				success: res => {
+    // 					console.log(res.data)
+    // 					if(res.data.status==200)
+    // 					{
+    // 						// 仍旧是登录状态
+    // 					
+    // 					}else
+    // 					{
+    // 						// me.login = false;
+    // 						// uni.removeStorageSync('userInfo')
+    // 						var username = uni.getStorageSync("username")
+    // 						var password = uni.getStorageSync("password")
+    // 						if(username!=null & password !=null)
+    // 						{
+    // 							uni.request({
+    // 								url: me.serverUrl + '/login/mobile' ,
+    // 								method: 'POST',
+    // 								header:{
+    // 									"content-type":'application/x-www-form-urlencoded'
+    // 								},
+    // 								data: {
+    // 									username:username,
+    // 									password:password
+    // 								},
+    // 								success: res => {
+    // 									me.loadModal = false
+    // 									if(res.statusCode==404)
+    // 									{
+    // 										uni.showToast({
+    // 											title: "服务器超时",
+    // 											duration:2000
+    // 										})
+    // 										
+    // 										uni.navigateTo({
+    // 											url: '../login/login'
+    // 										})
+    // 									}
+    // 									
+    // 									
+    // 									if(res.data.status==200)
+    // 									{
+    // 										//登录成功
+    // 										uni.setStorageSync('userInfo',res.data.data)
+    // 										
+    // 									}else
+    // 									{
+    // 										
+    // 										uni.showToast({
+    // 											title:res.data.msg,
+    // 											duration: 2000
+    // 										})
+    // 										
+    // 										uni.navigateTo({
+    // 											url: '../login/login'
+    // 										})
+    // 									}
+    // 									
+    // 									
+    // 								
+    // 								},
+    // 								fail: () => {
+    // 									console.log("出错了")
+    // 									
+    // 								},
+    // 								complete: () => {}
+    // 							});
+    // 						}
+    // 
+    // 					}
+    // 					
+    // 				},
+    // 				fail: () => {},
+    // 				complete: () => {}
+    // 			});
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
@@ -26812,8 +26862,8 @@ var _default =
         method: 'GET',
         data: {},
         success: function success(res) {
-          uni.navigateBack({
-            delta: 1 });
+          uni.redirectTo({
+            url: '../login/login' });
 
         },
         fail: function fail() {},

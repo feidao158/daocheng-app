@@ -55,9 +55,9 @@
 					method: 'GET',
 					data: {},
 					success: res => {
-						uni.navigateBack({
-							delta: 1
-						})
+						uni.redirectTo({
+							url: '../login/login'
+						});
 					},
 					fail: () => {},
 					complete: () => {}

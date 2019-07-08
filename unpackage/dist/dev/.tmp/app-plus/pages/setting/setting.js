@@ -155,8 +155,8 @@ var _default =
         method: 'GET',
         data: {},
         success: function success(res) {
-          uni.navigateBack({
-            delta: 1 });
+          uni.redirectTo({
+            url: '../login/login' });
 
         },
         fail: function fail() {},
