@@ -130,9 +130,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 var _default =
 
 {
@@ -147,14 +144,8 @@ var _default =
   methods: {
     login: function login()
     {var _this = this;
-      // this.loadModal = true
-      // uni.showToast({
-      // 	title: this.username + this.password,
-      // 	duration: 2000
-      // })
       this.loadModal = true;
       var me = this;
-
       uni.setStorageSync("username", this.username);
       uni.setStorageSync("password", this.password);
       uni.request({
@@ -184,9 +175,9 @@ var _default =
             uni.setStorageSync("username", me.username);
             uni.setStorageSync("password", me.password);
             uni.setStorageSync('userInfo', res.data.data);
-            console.log("登陆成功 准备跳转", " at pages\\login\\login.vue:87");
-            uni.navigateBack({
-              delta: 1 });
+            console.log("登陆成功 准备跳转", " at pages\\login\\login.vue:78");
+            uni.switchTab({
+              url: "../index/index" });
 
 
           } else
@@ -198,10 +189,10 @@ var _default =
 
           }
 
-          console.log(res.data, " at pages\\login\\login.vue:101");
+          console.log(res.data, " at pages\\login\\login.vue:92");
         },
         fail: function fail() {
-          console.log("出错了", " at pages\\login\\login.vue:104");
+          console.log("出错了", " at pages\\login\\login.vue:95");
         },
         complete: function complete() {} });
 
@@ -215,52 +206,8 @@ var _default =
 
 
   onLoad: function onLoad() {
-    // let me = this
-    // let username = uni.getStorageSync("username")
-    // let password = uni.getStorageSync("password")
-    // if(username=='' || password=='' || username==null || password ==null)
-    // {
-    // 	
-    // }else
-    // {
-    // 	me.loadModal = true
-    // 	uni.request({
-    // 		url: me.serverUrl + '/login/mobile' ,
-    // 		method: 'POST',
-    // 		header:{
-    // 			"content-type":'application/x-www-form-urlencoded'
-    // 		},
-    // 		data: {
-    // 			username:username,
-    // 			password:password
-    // 		},
-    // 		success: res => {
-    // 			me.loadModal = false
-    // 			if(res.data.status==200)
-    // 			{
-    // 				// 登录成功
-    // 				
-    // 				uni.setStorageSync('userInfo',res.data.data)
-    // 				uni.redirectTo({
-    // 					url: '../index/index'
-    // 				});
-    // 			}else
-    // 			{
-    // 				
-    // 				me.username = ''
-    // 				me.password = ''
-    // 				uni.showToast({
-    // 					title:res.data.msg,
-    // 					duration: 2000
-    // 				})
-    // 			}
-    // 			
-    // 			
-    // 		},
-    // 		fail: () => {},
-    // 		complete: () => {}
-    // 	});
-
+    // 1.首先判断用户登录状态是否为已登录 如果为已登录 直接跳转index页面 
+    // 2.如果用户状态为未登录 判断localStorage中是否保存有用户的账号密码 如果有 尝试登录 登录成功 跳转页面 如果服务器返回密码错误 localStorage清空数据 其他错误不清空
 
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
