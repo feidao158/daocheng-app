@@ -20,10 +20,15 @@
 					<view class="cu-time">{{item.inputDate}}</view>
 				
 					<view class="cu-item text-blue">
-						<view class="bg-blue content">
-							<text>{{item.joint.name + "--"}}</text>
+						<view class="bg-grey content">
+							<!-- <text>{{item.joint.name + "--"}}</text>
 							<text>{{item.cultureTeacherInfo==null ? '' :item.cultureTeacherInfo.name }}</text>
-							<br/>
+							<br/> -->
+							<view class="cu-capsule radius">
+								<view class="cu-tag bg-cyan">{{item.joint.name}}</view>
+								<view class="cu-tag bg-brown" :class="item.cultureTeacherInfo==null? 'hide' : ''">{{item.cultureTeacherInfo==null ? '' :item.cultureTeacherInfo.name}}</view>
+							</view>
+							</br>
 							<rich-text :nodes="item.jointContent"></rich-text>
 						</view>
 						
@@ -44,8 +49,8 @@
 			</view>
 		
 			<view class="tab-item" :class="selectedTab==1 ? 'tab-show':''">
-				<view class="cu-list menu">
-					<view class="cu-item">
+				
+				<!-- 	<view class="cu-item">
 						<view class="half-content">
 							<text class="text-gray">教师:</text>
 							<text class="text-red">{{teacherInfo.name}}</text>
@@ -55,9 +60,24 @@
 							<text class="text-gray">性别:</text>
 							<text class="text-red">{{teacherInfo.gender==0? '女':'男'}}</text>
 						</view>
+					</view> -->
+					<view class="cu-form-group">
+						<view class="title">教师:</view>
+						<view class="full-width">
+							<text class="text-red">{{teacherInfo.name}}</text>
+						</view>
 					</view>
 					
-					<view class="cu-item">
+					
+					<view class="cu-form-group">
+						<view class="title">性别:</view>
+						<view class="full-width">
+							<text class="text-red">{{teacherInfo.gender==0? '女':'男'}}</text>
+						</view>
+					</view>
+					
+					
+					<!-- <view class="cu-item">
 						<view class="half-content">
 							<text class="text-gray">职位:</text>
 							<text class="text-red">{{teacherInfo.position}}</text>
@@ -67,9 +87,24 @@
 							<text class="text-gray">负责年级:</text>
 							<text class="text-red">{{teacherInfo.grade}}</text>
 						</view>
+					</view> -->
+					
+					<view class="cu-form-group">
+						<view class="title">职位:</view>
+						<view class="full-width">
+							<text class="text-red">{{teacherInfo.position}}</text>
+						</view>
 					</view>
 					
-					<view class="cu-item">
+					<view class="cu-form-group">
+						<view class="title">负责年级:</view>
+						<view class="full-width">
+							<text class="text-red">{{teacherInfo.grade}}</text>
+						</view>
+					</view>
+					
+					
+					<!-- <view class="cu-item">
 						<view class="half-content">
 							<text class="text-gray">负责班级:</text>
 							<text class="text-red">{{teacherInfo.classes}}</text>
@@ -79,9 +114,23 @@
 							<text class="text-gray">qq号码:</text>
 							<text class="text-red">{{teacherInfo.qqNumber}}</text>
 						</view>
+					</view> -->
+					<view class="cu-form-group">
+						<view class="title">负责班级:</view>
+						<view class="full-width">
+							<text class="text-red">{{teacherInfo.classes}}</text>
+						</view>
 					</view>
 					
-					<view class="cu-item">
+					<view class="cu-form-group">
+						<view class="title">qq号码:</view>
+						<view class="full-width">
+							<text class="text-red">{{teacherInfo.qqNumber}}</text>
+						</view>
+					</view>
+					
+					
+					<!-- <view class="cu-item">
 						<view class="half-content">
 							<text class="text-gray">微信:</text>
 							<text class="text-red">{{teacherInfo.wechatNumber}}</text>
@@ -93,14 +142,29 @@
 						</view>
 						
 						
-					</view>
+					</view> -->
+						<view class="cu-form-group">
+							<view class="title">微信:</view>
+							<view class="full-width">
+								<text class="text-red">{{teacherInfo.wechatNumber}}</text>
+							</view>
+						</view>
+						
+						
+						<view class="cu-form-group">
+							<view class="title">手机:</view>
+							<view class="full-width">
+								<text class="text-red">{{teacherInfo.phoneNumber}}</text>
+							</view>
+						</view>
+					
 					
 					
 					<view class="cu-load load-modal" v-if="loadModal">
 						<view class="gray-text">加载中...</view>
 					</view>
 					
-				</view>
+			
 				
 				
 				<view class="flex margin-top">
@@ -197,5 +261,6 @@
 </script>
 
 <style>
+
 
 </style>

@@ -22,6 +22,14 @@
 		margin: 0 20%;
 	}
 	
+	.test-border{
+		border: red solid 1upx;
+	}
+	
+	.full-width{
+		width: 100%;
+	}
+	
 	.nav-list {
 		display: flex;
 		flex-wrap: wrap;
@@ -173,14 +181,27 @@
 	}
 	
 	.zw-container{
-		margin: 0 16%;
+		padding: 6% 10%;
 	}
 	.zw-form-label{
-		display: block;
-		width: 100upx;
-		padding: 9upx 15upx;
+		display: inline-block;
+		width:20%;
+		/* padding: 8upx 30upx; */
+		margin-top:16upx;
 		font-weight: 400;
 		line-height: 20upx;
+	}
+	
+	
+	
+	.zw-form-group{
+		
+	}
+	
+	
+	.zw-form-input{
+		width: 300upx;
+		display: inline-block;
 	}
 	
 	
@@ -191,7 +212,7 @@
 	}
 	.list-left{
 		display: inline-block;
-		width:26%;
+		width:20%;
 		/* padding: 8upx 30upx; */
 		margin-top:16upx;
 		font-weight: 400;
@@ -206,7 +227,7 @@
 	}
 	.list-right input{
 		border:1upx solid #ccc;
-		padding-left:6upx;
+		padding-left:4upx;
 		border-radius:4upx;
 	}
 	
@@ -231,26 +252,27 @@
 	.row{
 		width: 100%;
 		text-align:center;
+		margin-top:20upx;
 	}
-	
+
 	.col-md-4{
 		display: inline-block;
-		width: 33%;
-		height:247.5upx;
-		padding:19upx;
+		width: 44%;
+		margin:0  13upx 10upx 13upx;
 		
 	}
+	.col-md-4 p{
+		font-size:26upx;
+		padding:16upx 0;
+	}
 	.col-md-4 image{
-		width:90upx;
-		height:90upx;
-		margin-top:30upx;
+		width:50upx;
+		height:50upx;
+		margin-top:20upx;
 	}
 	.col-md-4>view{
-		width:100%;
-		height:100%;
-		border-radius: 50%;
 		color:#fff;
-		font-size:12upx;
+		border-radius:8upx
 	}
 	.circle-yellow{
 		background-color:#feb641;
@@ -258,6 +280,7 @@
 	}
 	.circle-green{
 		background-color:#25c9bd;
+		
 		
 	}
 	.circle-purple{
@@ -270,14 +293,14 @@
 	.circle-blue{
 		background-color:#05c6e9;
 	}
-	.row .col-md-4:nth-of-type(1),.row .col-md-4:nth-of-type(3){
+	/* .row .col-md-4:nth-of-type(1),.row .col-md-4:nth-of-type(3){
 		border-bottom:1upx solid #e5e5e5;
 	}
 	.row .col-md-4:nth-of-type(2){
 		border-bottom:1upx solid #e5e5e5;
 		border-left:1upx solid #e5e5e5;
 		border-right:1upx solid #e5e5e5;
-	}
+	} */
 	
 	p{
 		font-size: 16px;
@@ -286,6 +309,36 @@
 	
 	.yg-margin-top{
 		margin-top: 14upx;
+	}
+	
+	.hide{
+		display: none;
+	}
+	
+	.border-grey{
+		border: #E5E5E5 solid 1upx;
+	}
+	
+	.form-item{
+		border:1upx solid #ccc; 
+		padding:8upx 12upx;
+		margin:0 0 40upx 0;
+		border-radius:8upx;
+	}
+	
+	
+	.cu-form-group {
+		border-bottom:1upx solid #eee;
+		padding-top:10upx;
+		padding-bottom:10upx;
+	}
+	.cu-form-group .title {
+		min-width: calc(4em + 24px);
+		font-size:26upx;
+	}
+	.cu-form-group text {
+		font-size:28upx;
+		color:red;
 	}
 	
 </style>

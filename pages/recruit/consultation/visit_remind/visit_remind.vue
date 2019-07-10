@@ -2,7 +2,7 @@
 	<view>
 	
 			<view class="bg-white">
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey  padding-sm margin-xs radius text-lg">
 						<text>id:</text>
 						<text class="text-blue">{{stu.id}}</text>
@@ -12,9 +12,22 @@
 						<text>地区:</text>
 						<text class="text-blue">{{stu.tLeatnerInfo.province + '-' + stu.tLeatnerInfo.city + '-' + stu.tLeatnerInfo.area}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">id:</view>
+					<view class="full-width">
+						<text>{{stu.id}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">地区:</view>
+					<view class="full-width">
+						<text>{{stu.tLeatnerInfo.province + '-' + stu.tLeatnerInfo.city + '-' + stu.tLeatnerInfo.area}}</text>
+					</view>
 				</view>
 				
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>学员姓名:</text>
 						<text class="text-blue">{{stu.tLeatnerInfo.name}}</text>
@@ -24,22 +37,46 @@
 						<text>意向等级</text>
 						<text class="text-blue">{{stu.tLeatnerInfo.intentionLevel}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">学员姓名:</view>
+					<view class="full-width">
+						<text>{{stu.tLeatnerInfo.name}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">意向等级:</view>
+					<view class="full-width">
+						<text>{{stu.tLeatnerInfo.intentionLevel}}</text>
+					</view>
 				</view>
 				
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>来源渠道:</text>
 						<text class="text-blue">{{stu.tLeatnerInfo==null ? '':stu.tLeatnerInfo.dicCode.dicName}}</text>
-						<!-- <text class="text-blue">{{stu.inputPerson==null ? '':stu.inputPerson.name}}</text> -->
-					
 					</view>
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>意向专业:</text>
 						<text class="text-blue">{{stu.cultureSchoolMajor.majorName}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">来源渠道:</view>
+					<view class="full-width">
+						<text>{{stu.tLeatnerInfo==null ? '':stu.tLeatnerInfo.dicCode.dicName}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">意向专业:</view>
+					<view class="full-width">
+						<text>{{stu.cultureSchoolMajor.majorName}}</text>
+					</view>
 				</view>
 				
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey padding-sm margin-xs radius text-lg">
 						<text>年级:</text>
 						<text class="text-blue">{{stu.tLeatnerInfo.grade}}</text>
@@ -50,10 +87,23 @@
 						<text class="text-blue">{{stu.cultureSchool.schoolName}}</text>
 					</view>
 						
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">年级:</view>
+					<view class="full-width">
+						<text>{{stu.tLeatnerInfo.grade}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">文化学校:</view>
+					<view class="full-width">
+						<text>{{stu.cultureSchool.schoolName}}</text>
+					</view>
 				</view>
 				
 				
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey  padding-sm margin-xs radius text-lg">
 						<text>负责人:</text>
 						<text class="text-blue">{{stu.holder.name}}</text>
@@ -62,6 +112,19 @@
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>下次回访日期:</text>
 						<text class="text-blue">{{stu.nextDate}}</text>
+					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">负责人:</view>
+					<view class="full-width">
+						<text>{{stu.holder.name}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title" style="min-width: calc(4em + 52px);">下次回访日期:</view>
+					<view class="full-width">
+						<text>{{stu.nextDate}}</text>
 					</view>
 				</view>
 				

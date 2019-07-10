@@ -13,6 +13,7 @@
 	display: -ms-flexbox;
 	display: flex;
 	padding-right: 10rpx;
+	padding-left:34rpx;
 	height: 80rpx;
 	background-color: #ffffff;
 	-webkit-box-align: center;

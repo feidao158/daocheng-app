@@ -11,9 +11,9 @@
 		
 		<!-- #ifdef APP-PLUS -->
 					<view class="flex flex-wrap" style="margin:26upx;">
-						<text style="margin-top:10upx;">姓名:</text>
+						<text style="margin:10upx 16upx 0 0;">姓名:</text>
 						<input style="width:400upx;border: #CCE6FF 1upx solid;" type="text" v-model="inputValue" />
-						<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 12upx;" class="cu-btn bg-blue" @tap="search" >click</button>
+						<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 16upx;" class="cu-btn bg-blue" @tap="search" >click</button>
 					</view>
 			
 		<!-- #endif -->
@@ -22,16 +22,23 @@
 				<button class="cu-btn bg-cyan" @tap="stuModify(stu.id)">无效回访日志</button>
 			</view> -->
 			
-			<view class="bg-white">
+			<!-- <view class="bg-white">
 				<view class="flex">
 					<view class="flex-sub border-grey  padding-sm margin-xs radius text-lg">
 						<text>id:</text>
 						<text class="text-blue">{{stu.id}}</text>
 	
 					</view>
-				</view>
+				</view> -->
 				
-				<view class="flex">
+				<view class="cu-form-group">
+					<view class="title">id:</view>
+					<view class="full-width">
+						<text>{{stu.id}}</text>
+					</view>
+				</view>
+			
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>学员姓名:</text>
 						<text class="text-blue">{{stu.tLeatnerInfo.name}}</text>
@@ -41,9 +48,22 @@
 						<text>回访类型:</text>
 						<text class="text-blue">{{stu.visitDirection}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">学员姓名:</view>
+					<view class="full-width">
+						<text>{{stu.tLeatnerInfo.name}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">回访类型:</view>
+					<view class="full-width">
+						<text>{{stu.visitDirection}}</text>
+					</view>
 				</view>
 				
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>联系方式:</text>
 						<text class="text-blue">{{stu.visitType}}</text>
@@ -53,9 +73,22 @@
 						<text>回访方向:</text>
 						<text class="text-blue">{{stu.visitDirection}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">联系方式:</view>
+					<view class="full-width">
+						<text>{{stu.visitType}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">回访方向:</view>
+					<view class="full-width">
+						<text>{{stu.visitDirection}}</text>
+					</view>
 				</view>
 				
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey padding-sm margin-xs radius text-lg">
 						<text>回访内容:</text>
 						<text class="text-blue">{{stu.paidDetails}}</text>
@@ -65,17 +98,37 @@
 						<text>下次联系日期:</text>
 						<text class="text-blue">{{stu.nextDate}}</text>
 					</view>
-					
-					
+				</view> -->
+				
+				
+				<view class="cu-form-group">
+					<view class="title">回访内容:</view>
+					<view class="full-width">
+						<text>{{stu.paidDetails}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title" style="min-width: calc(4em + 52px);">下次联系日期:</view>
+					<view class="full-width">
+						<text>{{stu.nextDate}}</text>
+					</view>
 				</view>
 				
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey  padding-sm margin-xs radius text-lg">
 						<text>创建日期:</text>
 						<text class="text-blue">{{stu.paidDate}}</text>
 					
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">创建日期:</view>
+					<view class="full-width">
+						<text>{{stu.paidDate}}</text>
+					</view>
 				</view>
+		
 				
 				<view class="cu-load load-modal" v-if="loadModal" >
 				

@@ -180,6 +180,69 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -213,7 +276,7 @@ var _default =
 
     visitRemindDate: function visitRemindDate()
     {var _this = this;
-      console.log(this.pageType, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:116");
+      console.log(this.pageType, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:179");
       uni.request({
         url: this.serverUrl + '/stu/visit_remind/' + this.pageType + '/' + this.currentNum + '?limit=1',
         method: 'GET',
@@ -231,7 +294,7 @@ var _default =
           }
 
 
-          console.log(visitTimeDate, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:134");
+          console.log(visitTimeDate, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:197");
           _this.stu = visitTimeDate.data[0];
           _this.loadModal = false;
 
@@ -258,7 +321,7 @@ var _default =
   },
   onLoad: function onLoad(param)
   {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:161");
+    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:224");
     this.pageType = param.type;
 
   } };exports.default = _default;

@@ -53,7 +53,4 @@
 		-webkit-border-radius:6rpx;
 		        border-radius:6rpx;
 }
-.border-grey{
-		border: #E5E5E5 solid 1rpx;
-}
 

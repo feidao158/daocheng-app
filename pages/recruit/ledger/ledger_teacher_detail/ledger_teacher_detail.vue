@@ -5,9 +5,14 @@
 			
 			<view class="cu-item text-blue">
 				<view class="bg-blue content">
-					<text>{{item.joint.name + "--"}}</text>
+					<!-- <text>{{item.joint.name + "--"}}</text>
 					<text>{{item.cultureTeacherInfo==null ? '' :item.cultureTeacherInfo.name }}</text>
-					<br/>
+					<br/> -->
+					<view class="cu-capsule radius">
+						<view class="cu-tag bg-cyan">{{item.joint.name}}</view>
+						<view class="cu-tag bg-brown" :class="item.cultureTeacherInfo==null? 'hide': '' ">{{item.cultureTeacherInfo==null ? '' :item.cultureTeacherInfo.name}}</view>
+					</view>
+					</br>
 					<rich-text :nodes="item.jointContent"></rich-text>
 				</view>
 			</view>

@@ -2,7 +2,7 @@
 	<view>
 	
 			<view class="bg-white">
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey  padding-sm margin-xs radius text-lg">
 						<text>id:</text>
 						<text class="text-blue">{{stu.id}}</text>
@@ -12,9 +12,25 @@
 						<text>地区:</text>
 						<text class="text-blue">{{stu.province + '-' + stu.city + '-' + stu.area}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">id</view>
+					<view class="full-width">
+						<text class="text-blue">{{stu.id}}</text>
+					</view>
 				</view>
 				
-				<view class="flex">
+				<view class="cu-form-group">
+					<view class="title">地区:</view>
+					<view class="full-width">
+						<text class="text-blue">{{stu.province + '-' + stu.city + '-' + stu.area}}</text>
+						
+					</view>
+				</view>
+				
+				
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>学员姓名:</text>
 						<text class="text-blue">{{stu.name}}</text>
@@ -24,9 +40,28 @@
 						<text>生日</text>
 						<text class="text-blue">{{stu.birthday}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">姓名:</view>
+					<view class="full-width">
+						<text class="text-blue">{{stu.name}}</text>
+					</view>
 				</view>
 				
-				<view class="flex">
+				
+				<view class="cu-form-group">
+					<view class="title">生日:</view>
+					<view class="full-width">
+						<text class="text-blue">{{stu.birthday}}</text>
+					</view>
+				</view>
+				
+				
+				
+				
+				
+			<!-- 	<view class="flex">
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>报名校区:</text>
 						<text class="text-blue">{{stu.companyCampus==null ? '': stu.companyCampus.schoolName}}</text>
@@ -36,9 +71,26 @@
 						<text>报名专业:</text>
 						<text class="text-blue">{{stu.cultureSchoolMajor==null ? '' :stu.cultureSchoolMajor.majorName}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">报名校区:</view>
+					<view class="full-width">
+						<text class="text-blue">{{stu.companyCampus==null ? '': stu.companyCampus.schoolName}}</text>
+					</view>
 				</view>
 				
-				<view class="flex">
+				
+					<view class="cu-form-group">
+					<view class="title">报名专业:</view>
+					<view class="full-width">
+						<text class="text-blue">{{stu.cultureSchoolMajor==null ? '' :stu.cultureSchoolMajor.majorName}}</text>
+					</view>
+				</view>
+				
+				
+				
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey padding-sm margin-xs radius text-lg">
 						<text>文化学校:</text>
 						<text class="text-blue">{{stu.cultureSchool==null ? '': stu.cultureSchool.schoolName}}</text>
@@ -50,7 +102,24 @@
 						<text>备注:</text>
 						<text class="text-blue">{{stu.remask}}</text>
 					</view>
+				</view> -->
+				
+				
+				<view class="cu-form-group">
+					<view class="title">文化学校:</view>
+					<view class="full-width">
+						<text class="text-blue">{{stu.cultureSchool==null ? '': stu.cultureSchool.schoolName}}</text>
+					</view>
 				</view>
+				
+				
+				<view class="cu-form-group">
+					<view class="title">备注:</view>
+					<view class="full-width">
+						<text class="text-blue">{{stu.remask}}</text>
+					</view>
+				</view>
+				
 				
 				<view class="cu-load load-modal" v-if="loadModal" >
 				

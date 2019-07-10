@@ -20,6 +20,12 @@
 				</view>
 			</view>
 			
+			
+			
+		</view>
+		
+		<view class="row">
+			
 			<view class="col-md-4">
 				<view class="circle-purple" @tap="toBirthdayDetail(2)">
 					<image src="../../../../static/consultation/stu.png" mode=""></image>
@@ -27,16 +33,17 @@
 				</view>
 			</view>
 			
-		</view>
-		
-		<view class="row">
-			
 			<view class="col-md-4">
 				<view class="circle-pink" @tap="toBirthdayDetail(3)">
 					<image src="../../../../static/consultation/stu.png"></image>
 					<p>下周过生学员</p>
 				</view>
 			</view>
+			
+					
+		</view>
+		
+		<view class="row">
 			
 			<view class="col-md-4">
 				<view class="circle-yellow" @tap="toBirthdayDetail(4)">
@@ -51,7 +58,6 @@
 					<p>下月过生学员</p>
 				</view>
 			</view>
-					
 		</view>
 		
 	</view>
@@ -79,5 +85,5 @@
 </script>
 
 <style>
-	@import url("router.css");	
+	/* @import url("router.css");	 */
 </style>

@@ -76,6 +76,13 @@
           }
         }
       },
+      "splashscreen": {
+        "android": {
+          "hdpi": "C:/Users/Admin/Desktop/微信图片_20190708111655.png",
+          "xhdpi": "C:/Users/Admin/Desktop/微信图片_20190708111702.png",
+          "xxhdpi": "C:/Users/Admin/Desktop/微信图片_20190708111707.png"
+        }
+      },
       "google": {
         "permissions": [
           "<uses-feature android:name=\"android.hardware.camera\"/>",
@@ -108,7 +115,7 @@
         }
       }
     },
-    "arguments": "{\"name\":\"\",\"path\":\"\",\"query\":\"\",\"id\":0}",
+    "arguments": "{\"id\":1,\"name\":\"pages/recruit/consultation/bill_form/bill_form\",\"pathName\":\"pages/recruit/consultation/bill_form/bill_form\",\"query\":\"\"}",
     "allowsInlineMediaPlayback": true,
     "safearea": {
       "background": "#ffffff",

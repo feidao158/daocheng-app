@@ -2320,7 +2320,7 @@ button.cuIcon.lg {
 	padding: 1upx 30upx;
 	display: flex;
 	align-items: center;
-	min-height: 100upx;
+	min-height: 50upx;
 	justify-content: space-between;
 }
 

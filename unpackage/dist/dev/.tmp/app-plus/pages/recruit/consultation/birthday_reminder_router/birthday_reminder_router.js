@@ -157,6 +157,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -171,7 +177,7 @@ var _default =
       uni.navigateTo({
         url: "../birthday_remind/birthday_remind?type=" + type });
 
-      console.log(type, " at pages\\recruit\\consultation\\birthday_reminder_router\\birthday_reminder_router.vue:74");
+      console.log(type, " at pages\\recruit\\consultation\\birthday_reminder_router\\birthday_reminder_router.vue:80");
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 

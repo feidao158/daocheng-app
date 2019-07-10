@@ -1,40 +1,30 @@
 <template>
 	<view>
-		<view class="zw-container">
+		<view class="zw-container bg-white">
 			
-			<view class="list-teacher">
-				<span class="list-left">教师:</span>
-				<picker class="list-right" mode="selector" :range="cultureTeacherInfoList"  range-key="name" @change="cultureTeacherSelected">
-					<view class="yg-margin-top">{{selectedTeacherName==null? '请选择': selectedTeacherName}}</view>
-				</picker>
-			</view>
-			
-			
-			<view class="list-teacher">
-				<span class="list-left">方式:</span>
-				<picker class="list-right" mode="selector" :range="dicCodeList"  range-key="dicName" @change="dicCodeSelected">
-					<view class="yg-margin-top">{{selectedDicCodeName==null? '请选择': selectedDicCodeName}}</view>
-				</picker>
-			</view>
-			
-			
+			<view class="form-item">
 				
-			<view class="list-teacher">
-				<span class="list-left">对接人:</span>
-				<picker class="list-right" mode="selector" :range="actorList" range-key="name" @change="actorSelected">
-					<view class="yg-margin-top">{{selectedActorName==null? '请选择': selectedActorName}}</view>
+				<picker  mode="selector" :range="cultureTeacherInfoList"  range-key="name" @change="cultureTeacherSelected">
+					<view class="yg-margin-top">{{selectedTeacherName==null? '文化教师': selectedTeacherName}}</view>
 				</picker>
 			</view>
 			
-		<!-- 	<view class="uni-textarea">
-				 <textarea style="height: 300upx;border:solid red 1upx;padding-right: 10upx;" class="margin-top margin-bottom"  placeholder-style="color:#F76260" placeholder="详情内容" v-model="content"  />
-			</view> -->
-			<view class="list-teacher">
-				<span class="list-left">内容:</span>
-				<view class="list-right">
-					<textarea v-model="content" name="" id=""  ></textarea>
-				</view>
 			
+			<view class="form-item">
+				<picker mode="selector" :range="dicCodeList"  range-key="dicName" @change="dicCodeSelected">
+					<view class="yg-margin-top">{{selectedDicCodeName==null? '对接方式': selectedDicCodeName}}</view>
+				</picker>
+			</view>
+			
+			<view class="form-item">
+				
+				<picker  mode="selector" :range="actorList" range-key="name" @change="actorSelected">
+					<view class="yg-margin-top">{{selectedActorName==null? '对接人': selectedActorName}}</view>
+				</picker>
+			</view>
+			
+			<view class="form-item">
+				<textarea v-model="content" placeholder="对接内容"></textarea>
 			</view>
 			
 			<button type="primary" @tap="submit">提交</button>

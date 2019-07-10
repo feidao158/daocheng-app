@@ -2,12 +2,12 @@
 	<view>
 		
 			<view class="flex flex-wrap" style="margin:26upx;">
-				<text style="margin-top:10upx;">姓名:</text>
+				<text style="margin:10upx 16upx 0 0;">姓名:</text>
 				<input style="width:400upx;border: #CCE6FF 1upx solid;" type="text" v-model="inputValue" />
-				<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 12upx;" class="cu-btn bg-blue" @tap="search" >click</button>
+				<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 16upx;" class="cu-btn bg-blue" @tap="search" >click</button>
 			</view>
 		
-		<view class="cu-list menu" >
+		<!-- <view class="cu-list menu" >
 			<view class="cu-item" >
 				<view class="half-content">
 					<text class="text-grey">姓名：</text>
@@ -18,9 +18,22 @@
 					<text class="text-grey">状态：</text>
 					<text class="text-red">{{billInfo.tLeatnerInfo.status}}</text>
 				</view>
+			</view> -->
+			
+			<view class="cu-form-group">
+				<view class="title">姓名:</view>
+				<view class="full-width">
+					<text>{{billInfo.tLeatnerInfo.name}}</text>
+				</view>
+			</view>
+			<view class="cu-form-group">
+				<view class="title">状态:</view>
+				<view class="full-width">
+					<text>{{billInfo.tLeatnerInfo.status}}</text>
+				</view>
 			</view>
 			
-			<view class="cu-item" >
+			<!-- <view class="cu-item" >
 				<view class="half-content">
 					<text class="text-grey">收费项目：</text>
 					<text class="text-red">{{billInfo.billProject}}</text>
@@ -30,9 +43,22 @@
 					<text class="text-grey">总金额：</text>
 					<text class="text-red">{{billInfo.totalBill}}</text>
 				</view>
+			</view> -->
+			
+			<view class="cu-form-group">
+				<view class="title">收费项目:</view>
+				<view class="full-width">
+					<text>{{billInfo.billProject}}</text>
+				</view>
+			</view>
+			<view class="cu-form-group">
+				<view class="title">总金额:</view>
+				<view class="full-width">
+					<text>{{billInfo.totalBill}}</text>
+				</view>
 			</view>
 			
-			<view class="cu-item" >
+			<!-- <view class="cu-item" >
 				<view class="half-content">
 					<text class="text-grey">已收金额：</text>
 					<text class="text-red">{{billInfo.alreadyBill}}</text>
@@ -42,9 +68,22 @@
 					<text class="text-grey">报名校区：</text>
 					<text class="text-red">{{billInfo.signUpCampus.schoolName}}</text>
 				</view>
+			</view> -->
+			
+			<view class="cu-form-group">
+				<view class="title">已收金额:</view>
+				<view class="full-width">
+					<text>{{billInfo.alreadyBill}}</text>
+				</view>
+			</view>
+			<view class="cu-form-group">
+				<view class="title">报名校区:</view>
+				<view class="full-width">
+					<text>{{billInfo.signUpCampus.schoolName}}</text>
+				</view>
 			</view>
 			
-			<view class="cu-item" >
+			<!-- <view class="cu-item" >
 				<view class="half-content">
 					<text class="text-grey">专业：</text>
 					<text class="text-red"></text>
@@ -54,9 +93,22 @@
 					<text class="text-grey">班别：</text>
 					<text class="text-red">{{billInfo.companyClass.className}}</text>
 				</view>
+			</view> -->
+			
+			<view class="cu-form-group">
+				<view class="title">专业:</view>
+				<view class="full-width">
+					<text>11111</text>
+				</view>
+			</view>
+			<view class="cu-form-group">
+				<view class="title">班别:</view>
+				<view class="full-width">
+					<text>{{billInfo.companyClass.className}}</text>
+				</view>
 			</view>
 			
-			<view class="cu-item" >
+			<!-- <view class="cu-item" >
 				<view class="half-content">
 					<text class="text-grey">学校：</text>
 					<text class="text-red">{{billInfo.cultureSchool.schoolName}}</text>
@@ -66,9 +118,22 @@
 					<text class="text-grey">收款校区：</text>
 					<text class="text-red">{{billInfo.gatheringCampus.schoolName}}</text>
 				</view>
+			</view> -->
+			
+			<view class="cu-form-group">
+				<view class="title">专业:</view>
+				<view class="full-width">
+					<text>{{billInfo.cultureSchool.schoolName}}</text>
+				</view>
+			</view>
+			<view class="cu-form-group">
+				<view class="title">收款校区:</view>
+				<view class="full-width">
+					<text>{{billInfo.gatheringCampus.schoolName}}</text>
+				</view>
 			</view>
 			
-			<view class="cu-item" >
+			<!-- <view class="cu-item" >
 				<view class="half-content">
 					<text class="text-grey">账单日期：</text>
 					<text class="text-red">{{billInfo.createDate}}</text>
@@ -78,18 +143,33 @@
 					<text class="text-grey">负责人：</text>
 					<text class="text-red">{{billInfo.actor.name}}</text>
 				</view>
+			</view> -->
+			
+			<view class="cu-form-group">
+				<view class="title">账单日期:</view>
+				<view class="full-width">
+					<text>{{billInfo.createDate}}</text>
+				</view>
+			</view>
+			<view class="cu-form-group">
+				<view class="title">负责人:</view>
+				<view class="full-width">
+					<text>{{billInfo.actor.name}}</text>
+				</view>
 			</view>
 			
-			<view class="border-yellow" v-for="item in billDetailList">
+			
+			
+			<view class="border-yellow" v-for="item in billDetailList" :key="item.id">
 				
 					<view class="cu-item" >
 						<view class="half-content">
-							<text class="text-grey">支付方式：</text>
+							<text class="text-black">支付方式：</text>
 							<text class="text-red">{{item.dicCode.dicName}}</text>
 						</view>
 						
 						<view class="half-content">
-							<text class="text-grey">收款金额：</text>
+							<text class="text-black">收款金额：</text>
 							<text class="text-red">{{item.collectedAmount}}</text>
 						</view>
 					</view>
@@ -97,12 +177,12 @@
 					
 					<view class="cu-item" >
 						<view class="half-content">
-							<text class="text-grey">创建时间：</text>
+							<text class="text-black">创建时间：</text>
 							<text class="text-red">{{item.createTime}}</text>
 						</view>
 						
 						<view class="half-content">
-							<text class="text-grey">截图凭证：</text>
+							<text class="text-black">截图凭证：</text>
 							<button class="cu-btn bg-blue" @tap="showModel">查看</button>
 							<view class="cu-modal" :class="modalName=='Image'?'show':''">
 								<view class="cu-dialog">
@@ -124,7 +204,7 @@
 					
 					<view class="cu-item" >
 						<view class="content">
-							<text class="text-grey">备注：</text>
+							<text class="text-black">备注信息：</text>
 							<text class="text-red">{{item.remark}}</text>
 						</view>
 						
@@ -291,12 +371,14 @@
 	
 	.border-yellow{
 		border-top: #eee solid 10upx ;
+		
 	}
 	
 	.border-yellow > .cu-item{
 		position: relative;
 		display: flex;
 		padding-right: 10upx;
+		padding-left:34upx;
 		height: 80upx;
 		background-color: #ffffff;
 		align-items: center

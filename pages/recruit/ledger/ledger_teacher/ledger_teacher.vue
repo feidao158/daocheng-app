@@ -2,12 +2,12 @@
 	<view>
 		
 		<view class="flex flex-wrap" style="margin:26upx;">
-			<text style="margin-top:10upx;">姓名:</text>
+			<text style="margin:10upx 16upx 0 0;">姓名:</text>
 			<input style="width:400upx;border: #CCE6FF 1upx solid;" type="text" value="" v-model="inputValue" />
-			<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 12upx;" class="cu-btn bg-blue" @tap="search">搜索</button>
+			<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 16upx;" class="cu-btn bg-blue" @tap="search">搜索</button>
 		</view>
 		<view class="cu-list menu">
-			<view class="cu-item">
+			<!-- <view class="cu-item">
 				<view class="half-content">
 					<text class="text-grey">教师:</text>
 					<text class="text-red">{{teacherInfo.name}}</text>
@@ -17,9 +17,22 @@
 					<text class="text-grey">性别:</text>
 					<text class="text-red">{{teacherInfo.gender==0 ? '女':'男'}}</text>
 				</view>
+			</view> -->
+			
+			<view class="cu-form-group">
+				<view class="title">教师:</view>
+				<view class="full-width">
+					<text>{{teacherInfo.name}}</text>
+				</view>
+			</view>
+			<view class="cu-form-group">
+				<view class="title">性别:</view>
+				<view class="full-width">
+					<text>{{teacherInfo.gender==0 ? '女':'男'}}</text>
+				</view>
 			</view>
 			
-			<view class="cu-item">
+			<!-- <view class="cu-item">
 				<view class="half-content">
 					<text class="text-grey">所在学校:</text>
 					<text class="text-red">{{teacherInfo.cultureSchool.schoolName}}</text>
@@ -29,9 +42,22 @@
 					<text class="text-grey">当前职位:</text>
 					<text class="text-red">{{teacherInfo.position}}</text>
 				</view>
+			</view> -->
+			
+			<view class="cu-form-group">
+				<view class="title">所在学校:</view>
+				<view class="full-width">
+					<text>{{teacherInfo.cultureSchool.schoolName}}</text>
+				</view>
+			</view>
+			<view class="cu-form-group">
+				<view class="title">当前职位:</view>
+				<view class="full-width">
+					<text>{{teacherInfo.position}}</text>
+				</view>
 			</view>
 			
-			<view class="cu-item">
+			<!-- <view class="cu-item">
 				<view class="half-content">
 					<text class="text-grey">负责年级:</text>
 					<text class="text-red">{{teacherInfo.grade}}</text>
@@ -41,10 +67,23 @@
 					<text class="text-grey">负责班级:</text>
 					<text class="text-red">{{teacherInfo.classes}}</text>
 				</view>
+			</view> -->
+			
+			<view class="cu-form-group">
+				<view class="title">负责年级:</view>
+				<view class="full-width">
+					<text>{{teacherInfo.grade}}</text>
+				</view>
+			</view>
+			<view class="cu-form-group">
+				<view class="title">负责班级:</view>
+				<view class="full-width">
+					<text>{{teacherInfo.classes}}</text>
+				</view>
 			</view>
 			
 			
-			<view class="cu-item">
+			<!-- <view class="cu-item">
 				<view class="half-content">
 					<text class="text-grey">qq:</text>
 					<text class="text-red">{{teacherInfo.qqNumber}}</text>
@@ -54,15 +93,35 @@
 					<text class="text-grey">wechat:</text>
 					<text class="text-red">{{teacherInfo.wechatNumber}}</text>
 				</view>
+			</view> -->
+			
+			<view class="cu-form-group">
+				<view class="title">QQ:</view>
+				<view class="full-width">
+					<text>{{teacherInfo.qqNumber}}</text>
+				</view>
+			</view>
+			<view class="cu-form-group">
+				<view class="title">Wechat:</view>
+				<view class="full-width">
+					<text>{{teacherInfo.wechatNumber}}</text>
+				</view>
 			</view>
 			
 			
-			<view class="cu-item">
+			<!-- <view class="cu-item">
 				<view class="content">
 					<text class="text-grey">台账记录与教师信息:</text>
 					<button class="cu-btn bg-blue" @tap="showTeacherLedgerInfo">show</button>
 				</view>
 				
+			</view> -->
+			
+			<view class="cu-form-group">
+				<view class="title">台账记录:</view>
+				<view class="full-width">
+					<button class="cu-btn bg-blue" @tap="showTeacherLedgerInfo">show</button>
+				</view>
 			</view>
 			
 			<view class="cu-load load-modal" v-if="loadModal" >

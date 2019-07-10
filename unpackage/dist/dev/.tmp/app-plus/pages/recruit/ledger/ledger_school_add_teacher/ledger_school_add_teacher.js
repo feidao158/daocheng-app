@@ -144,7 +144,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 var _default =
 {
   data: function data() {
@@ -164,12 +163,12 @@ var _default =
     },
     selectGrade: function selectGrade(e)
     {
-      console.log(e.target.value, " at pages\\recruit\\ledger\\ledger_school_add_teacher\\ledger_school_add_teacher.vue:85");
+      console.log(e.target.value, " at pages\\recruit\\ledger\\ledger_school_add_teacher\\ledger_school_add_teacher.vue:84");
       this.grade = e.target.value;
     },
     selectClassNumber: function selectClassNumber(e)
     {
-      console.log(e.target.value, " at pages\\recruit\\ledger\\ledger_school_add_teacher\\ledger_school_add_teacher.vue:90");
+      console.log(e.target.value, " at pages\\recruit\\ledger\\ledger_school_add_teacher\\ledger_school_add_teacher.vue:89");
       this.classNumber = e.target.value;
     },
     formSubmit: function formSubmit(e)

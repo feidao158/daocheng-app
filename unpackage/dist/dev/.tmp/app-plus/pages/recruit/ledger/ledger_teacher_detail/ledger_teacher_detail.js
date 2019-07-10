@@ -99,6 +99,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -111,14 +116,14 @@ var _default =
 
 
   onLoad: function onLoad(param) {var _this = this;
-    console.log(param.id, " at pages\\recruit\\ledger\\ledger_teacher_detail\\ledger_teacher_detail.vue:32");
+    console.log(param.id, " at pages\\recruit\\ledger\\ledger_teacher_detail\\ledger_teacher_detail.vue:37");
     uni.request({
       url: this.serverUrl + '/led/teacher/ledger/json/' + param.id }).
 
 
     then(function (data) {var _data = _slicedToArray(
       data, 2),error = _data[0],res = _data[1];
-      console.log(res.data.length, " at pages\\recruit\\ledger\\ledger_teacher_detail\\ledger_teacher_detail.vue:39");
+      console.log(res.data.length, " at pages\\recruit\\ledger\\ledger_teacher_detail\\ledger_teacher_detail.vue:44");
       _this.cultureTeacherLedgerList = res.data;
     });
 

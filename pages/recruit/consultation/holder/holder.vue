@@ -23,9 +23,9 @@
 			</view> -->
 			
 			<view class="flex flex-wrap" style="margin:26upx;">
-				<text style="margin-top:10upx;">姓名:</text>
+				<text style="margin:10upx 16upx 0 0;">姓名:</text>
 				<input style="width:400upx;border: #CCE6FF 1upx solid;" type="text" v-model="inputValue" />
-				<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 12upx;" class="cu-btn bg-blue" @tap="search" >click</button>
+				<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 16upx;" class="cu-btn bg-blue" @tap="search" >click</button>
 			</view>
 			
 		<!-- #endif -->
@@ -52,7 +52,7 @@
 			</view>
 			
 			<view class="bg-white">
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey  padding-sm margin-xs radius text-lg">
 						<text>id:</text>
 						<text class="text-blue">{{stu.id}}</text>
@@ -62,21 +62,46 @@
 						<text>地区:</text>
 						<text class="text-blue">{{stu.province + '-' + stu.city + '-' + stu.area}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">id:</view>
+					<view class="full-width">
+						<text>{{stu.id}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">地区:</view>
+					<view class="full-width">
+						<text>{{stu.province + '-' + stu.city + '-' + stu.area}}</text>
+					</view>
 				</view>
 				
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>学员姓名:</text>
 						<text class="text-blue">{{stu.name}}</text>
-					
 					</view>
 					<view class="flex-sub border-grey  padding-sm margin-xs radius text-lg">
 						<text>意向度:</text>
 						<text class="text-blue">{{stu.intentionLevel}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">学员姓名:</view>
+					<view class="full-width">
+						<text>{{stu.name}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">意向度:</view>
+					<view class="full-width">
+						<text>{{stu.intentionLevel}}</text>
+					</view>
 				</view>
 				
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>来源渠道:</text>
 						<text class="text-blue">{{stu.dicCode==null ? '' : stu.dicCode.dicName}}</text>
@@ -86,9 +111,22 @@
 						<text>意向专业:</text>
 						<text class="text-blue">{{stu.cultureSchoolMajor==null ? '' : stu.cultureSchoolMajor.majorName}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">来源渠道:</view>
+					<view class="full-width">
+						<text>{{stu.dicCode==null ? '' : stu.dicCode.dicName}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">意向专业:</view>
+					<view class="full-width">
+						<text>{{stu.cultureSchoolMajor==null ? '' : stu.cultureSchoolMajor.majorName}}</text>
+					</view>
 				</view>
 				
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey padding-sm margin-xs radius text-lg">
 						<text>文化学校:</text>
 						<text class="text-blue">{{stu.cultureSchool==null ? '': stu.cultureSchool.schoolName}}</text>
@@ -98,16 +136,23 @@
 						<text>副科:</text>
 						<text class="text-blue">{{stu.subject}}</text>
 					</view>
-					
-					
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">文化学校:</view>
+					<view class="full-width">
+						<text>{{stu.cultureSchool==null ? '': stu.cultureSchool.schoolName}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">副科:</view>
+					<view class="full-width">
+						<text>{{stu.subject}}</text>
+					</view>
 				</view>
 				
 				
-				
-				
-				
-				
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey  padding-sm margin-xs radius text-lg">
 						<text>年级:</text>
 						<text class="text-blue">{{stu.grade}}</text>
@@ -117,9 +162,22 @@
 						<text>学校:</text>
 						<text class="text-blue">{{stu.cultureSchool==null ? '': stu.cultureSchool.schoolName}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">年级:</view>
+					<view class="full-width">
+						<text>{{stu.grade}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">学校:</view>
+					<view class="full-width">
+						<text>{{stu.cultureSchool==null ? '': stu.cultureSchool.schoolName}}</text>
+					</view>
 				</view>
 				
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>状态:</text>
 						<text class="text-blue">{{stu.status}}</text>
@@ -129,9 +187,22 @@
 						<text>报名时间:</text>
 						<text class="text-blue">{{stu.entryDate==null ? '':stu.entryDate}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">状态:</view>
+					<view class="full-width">
+						<text>{{stu.status}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">报名时间:</view>
+					<view class="full-width">
+						<text>{{stu.entryDate==null ? '':stu.entryDate}}</text>
+					</view>
 				</view>
 				
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>报名校区:</text>
 						<text class="text-blue">{{stu.companyCampus==null ? '' :stu.companyCampus.schoolName}}</text>
@@ -141,9 +212,22 @@
 						<text>账单:</text>
 						<text class="text-blue">{{stu.billNum==null?'':stu.billNum}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">报名校区:</view>
+					<view class="full-width">
+						<text>{{stu.companyCampus==null ? '' :stu.companyCampus.schoolName}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">账单:</view>
+					<view class="full-width">
+						<text>{{stu.billNum==null?'':stu.billNum}}</text>
+					</view>
 				</view>
 				
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>有效回访:</text>
 						<text class="text-blue">{{stu.visitCount==null?'':stu.visitCount}}</text>
@@ -153,9 +237,22 @@
 						<text>备注:</text>
 						<text class="text-blue">{{stu.remask}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">有效回访:</view>
+					<view class="full-width">
+						<text>{{stu.visitCount==null?'':stu.visitCount}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">备注:</view>
+					<view class="full-width">
+						<text>{{stu.remask}}</text>
+					</view>
 				</view>
 				
-				<view class="flex">
+				<!-- <view class="flex">
 					
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>文化分数:</text>
@@ -166,12 +263,23 @@
 						<text>负责人:</text>
 						<text class="text-blue">{{stu.holder==null ? '':stu.holder.name}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">文化分数:</view>
+					<view class="full-width">
+						<text>{{stu.score}}</text>
+					</view>
+				</view>
+				<view class="cu-form-group">
+					<view class="title">负责人:</view>
+					<view class="full-width">
+						<text>{{stu.holder==null ? '':stu.holder.name}}</text>
+					</view>
 				</view>
 				
 				
-				
-				
-				<view class="flex">
+				<!-- <view class="flex">
 					<view class="flex-sub border-grey   padding-sm margin-xs radius text-lg">
 						<text>录入人:</text>
 						<text class="text-blue">{{stu.inputPerson==null ? '':stu.inputPerson.name}}</text>
@@ -181,7 +289,21 @@
 						<text>录入时间:</text>
 						<text class="text-blue">{{stu.inputDate}}</text>
 					</view>
+				</view> -->
+				
+				<view class="cu-form-group">
+					<view class="title">录入人:</view>
+					<view class="full-width">
+						<text>{{stu.inputPerson==null ? '':stu.inputPerson.name}}</text>
+					</view>
 				</view>
+				<view class="cu-form-group">
+					<view class="title">录入时间:</view>
+					<view class="full-width">
+						<text>{{stu.inputDate}}</text>
+					</view>
+				</view>
+				
 				
 				<view class="flex">
 					<button @tap="prevent" :class="currentNum>1? 'bg-red':''" >上一页</button>

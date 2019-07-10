@@ -178,10 +178,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 var _default =
 {
   data: function data() {
@@ -196,7 +192,7 @@ var _default =
       uni.navigateTo({
         url: "../holder/holder?type=" + type });
 
-      console.log(type, " at pages\\recruit\\consultation\\router\\router.vue:99");
+      console.log(type, " at pages\\recruit\\consultation\\router\\router.vue:95");
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 

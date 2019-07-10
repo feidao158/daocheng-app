@@ -20,6 +20,9 @@
 				</view>
 			</view>
 			
+		</view>
+		
+		<view class="row">
 			<view class="col-md-4">
 				<view class="circle-purple" @tap="toVisitTimDetail(2)">
 					<image src="../../../../static/consultation/stu.png" mode=""></image>
@@ -27,17 +30,15 @@
 				</view>
 			</view>
 			
-		</view>
-		
-		<view class="row">
-			
 			<view class="col-md-4">
 				<view class="circle-pink" @tap="toVisitTimDetail(3)">
 					<image src="../../../../static/consultation/stu.png"></image>
 					<p>15日回访提醒</p>
 				</view>
 			</view>
-			
+		</view>
+		
+		<view class="row">
 			<view class="col-md-4">
 				<view class="circle-yellow" @tap="toVisitTimDetail(4)">
 					<image src="../../../../static/consultation/stu.png"></image>
@@ -45,7 +46,6 @@
 				</view>
 			</view>		
 		</view>
-		
 	</view>
 </template>
 
@@ -71,5 +71,5 @@
 </script>
 
 <style>
-	@import url("router.css");	
+	/* @import url("router.css");	 */
 </style>

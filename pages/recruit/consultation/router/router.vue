@@ -4,7 +4,6 @@
 			<image class="header-image" src="../../../../static/consultation/header.jpg" mode="scaleToFill"></image>
 		</view>
 		
-		
 		<view class="row">
 			<view class="col-md-4">
 				<view class="circle-yellow" @tap="toDetail(0)">
@@ -12,14 +11,15 @@
 					<p>我负责的学员</p>
 				</view>
 			</view>
-			
 			<view class="col-md-4">
 				<view class="circle-green" @tap="toDetail(1)">
 					<image src="../../../../static/consultation/stu.png" mode=""></image>
 					<p>我录入的学员</p>
 				</view>
 			</view>
-			
+		</view>
+		
+		<view class="row">
 			<view class="col-md-4">
 				<view class="circle-purple" @tap="toDetail(2)">
 					<image src="../../../../static/consultation/stu.png" mode=""></image>
@@ -27,17 +27,15 @@
 				</view>
 			</view>
 			
-		</view>
-		
-		<view class="row">
-			
 			<view class="col-md-4">
 				<view class="circle-pink" @tap="toDetail(3)">
 					<image src="../../../../static/consultation/stu.png"></image>
 					<p>我的优生学员</p>
 				</view>
 			</view>
-			
+		</view>
+		
+		<view class="row">
 			<view class="col-md-4">
 				<view class="circle-yellow" @tap="toDetail(4)">
 					<image src="../../../../static/consultation/stu.png"></image>
@@ -51,8 +49,8 @@
 					<p>我的无效学员</p>
 				</view>
 			</view>
-			
 		</view>
+		
 		
 		<view class="row">
 			<view class="col-md-4">
@@ -68,14 +66,12 @@
 					<p>待续费的学员</p>
 				</view>
 			</view>
-			<view class="col-md-4" style="border:none;">
+			<!-- <view class="col-md-4" style="border:none;">
 				<view >
 					<image ></image>
 					<p></p>
 				</view>
-			</view>
-			
-			
+			</view> -->
 		</view>
 		
 	
@@ -104,5 +100,5 @@
 </script>
 
 <style>
-	@import url("router.css");	
+	/* @import url("router.css");	 */
 </style>

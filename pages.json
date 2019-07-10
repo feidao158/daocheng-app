@@ -115,7 +115,9 @@
         }
         ,{
             "path" : "pages/recruit/ledger/ledger_school_add_teacher/ledger_school_add_teacher",
-            "style" : {}
+            "style" : {
+				"backgroundColor" : "#ffffff"
+			}
         }
     ],
 	"globalStyle": {

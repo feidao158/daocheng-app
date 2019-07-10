@@ -192,6 +192,59 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -253,7 +306,7 @@ var _default =
           }
 
 
-          console.log(visitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:156");
+          console.log(visitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:209");
           _this.stu = visitDate.data[0];
           _this.loadModal = false;
 
@@ -265,13 +318,13 @@ var _default =
     search: function search()
     {
       this.currentNum = 1;
-      console.log("开始搜素", " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:168");
+      console.log("开始搜素", " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:221");
       this.validReturnLog();
     },
     // 无效回访日志
     invalidReturnLog: function invalidReturnLog()
     {var _this2 = this;
-      console.log(this.currentNum, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:174");
+      console.log(this.currentNum, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:227");
       uni.request({
         url: this.serverUrl + '/stu/visit_info/invalid/' + this.currentNum + '?limit=1',
         method: 'GET',
@@ -288,10 +341,10 @@ var _default =
             return;
           }
 
-          console.log(invalidVisitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:191");
+          console.log(invalidVisitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:244");
           _this2.loadModal = false;
           _this2.stu = invalidVisitDate.data[0];
-          console.log("stu:" + _this2.stu, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:194");
+          console.log("stu:" + _this2.stu, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:247");
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -310,7 +363,7 @@ var _default =
   },
   onLoad: function onLoad(param)
   {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:213");
+    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:266");
     this.pageType = param.type;
     if (this.pageType == 0) {
       this.validReturnLog();

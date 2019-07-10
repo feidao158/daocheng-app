@@ -2,12 +2,12 @@
 	<view>
 		
 			<view class="flex flex-wrap" style="margin:26upx;">
-				<text style="margin-top:10upx;">姓名:</text>
+				<text style="margin:10upx 16upx 0 0;">姓名:</text>
 				<input style="width:400upx;border: #CCE6FF 1upx solid;" type="text" v-model="inputValue" />
-				<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 12upx;" class="cu-btn bg-blue" @tap="search">搜索</button>
+				<button style="height:0;padding:26upx 36upx;line-height:0;margin-left: 16upx;" class="cu-btn bg-blue" @tap="search">搜索</button>
 			</view>
-		<view class="cu-list menu">
-			<view class="cu-item">
+		
+			<!-- <view class="cu-item">
 				<view class="half-content">
 					<text class="text-grey">学校名称:</text>
 					<text class="text-red">{{schoolInfo.schoolName}}</text>
@@ -17,9 +17,26 @@
 					<text class="text-grey">地区:</text>
 					<text class="text-red">{{schoolInfo.province + '-' + schoolInfo.city + '-' + schoolInfo.area}}</text>
 				</view>
+			</view> -->
+			
+			<view class="cu-form-group">
+				<view class="title">学校名称:</view>
+				<view class="full-width">
+					<text class="text-red">{{schoolInfo.schoolName}}</text>
+				</view>
 			</view>
 			
-			<view class="cu-item">
+			<view class="cu-form-group">
+				<view class="title">地区:</view>
+				<view class="full-width">
+					<text class="text-red">{{schoolInfo.province + '-' + schoolInfo.city + '-' + schoolInfo.area}}</text>
+				</view>
+			</view>
+			
+			
+			
+			
+			<!-- <view class="cu-item">
 				<view class="half-content">
 					<text class="text-grey">类别:</text>
 					<text class="text-red">{{'普通高中'}}</text>
@@ -29,9 +46,28 @@
 					<text class="text-grey">合作状态:</text>
 					<text class="text-red">{{schoolInfo.jointInfo}}</text>
 				</view>
+			</view> -->
+			
+			<view class="cu-form-group">
+				<view class="title">类别:</view>
+				<view class="full-width">
+					<text class="text-red">{{'普通高中'}}</text>
+				</view>
 			</view>
 			
-			<view class="cu-item">
+			
+			<view class="cu-form-group">
+				<view class="title">合作状态:</view>
+				<view class="full-width">
+					<text class="text-red">{{schoolInfo.jointInfo}}</text>
+				</view>
+			</view>
+			
+			
+			
+			
+			
+			<!-- <view class="cu-item">
 				<view class="half-content">
 					<text class="text-grey">台账数量:</text>
 					<text class="text-red">{{schoolInfo.ledgerCount}}</text>
@@ -41,10 +77,28 @@
 					<text class="text-grey">教师数量:</text>
 					<text class="text-red">{{schoolInfo.teacherCount}}</text>
 				</view>
+			</view> -->
+			
+			
+			<view class="cu-form-group">
+				<view class="title">台账数量:</view>
+				<view class="full-width flex justify-between">
+					<text class="text-red " style="margin-top: 18upx;">{{schoolInfo.ledgerCount}}</text>
+					<button class="cu-btn  bg-blue" @tap="addSchoolLedger">新增台账</button>
+				</view>
+			</view>
+			
+			<view class="cu-form-group">
+				<view class="title">教师数量:</view>
+				<view class="full-width flex justify-between">
+					<text class="text-red" style="margin-top: 18upx;">{{schoolInfo.teacherCount}}</text>
+					<button class="cu-btn  bg-blue" style="float: right;" @tap="addSchoolTeacher">新增教师</button>
+					
+				</view>
 			</view>
 			
 			
-			<view class="cu-item">
+			<!-- <view class="cu-item">
 				<view class="half-content">
 					<text class="text-grey">地址:</text>
 					<text class="text-red">{{schoolInfo.address}}</text>
@@ -54,18 +108,43 @@
 					<text class="text-grey">联系电话:</text>
 					<text class="text-red">{{schoolInfo.phoneNumber}}</text>
 				</view>
+			</view> -->
+			
+			<view class="cu-form-group">
+				<view class="title">地址:</view>
+				<view class="full-width">
+					<text class="text-red">{{schoolInfo.address}}</text>
+				</view>
 			</view>
 			
 			
-			<view class="cu-item">
+			<view class="cu-form-group">
+				<view class="title">联系电话:</view>
+				<view class="full-width">
+					<text class="text-red">{{schoolInfo.phoneNumber}}</text>
+				</view>
+			</view>
+			
+			
+			
+			
+			<!-- <view class="cu-item">
 				<view class="content">
 					<text class="text-grey">台账记录与教师信息:</text>
 					<button class="cu-btn bg-blue" @tap="showLedgerAndTeacherInfo">show</button>
 				</view>
 				
+			</view> -->
+			<view class="cu-form-group">
+				<view class="title" >更多:</view>
+				<view class="full-width">
+					<button class="cu-btn bg-blue" @tap="showLedgerAndTeacherInfo">台账记录与教师信息</button>
+				
+				</view>
 			</view>
 			
 			
+			<!-- 
 			<view class="cu-item">
 				<view class="half-content">
 					<text class="text-gray">新增台账</text>
@@ -76,14 +155,16 @@
 					<text class="text-gray">新增教师:</text>
 					<button class="cu-btn margin-left bg-blue" @tap="addSchoolTeacher">click</button>
 				</view>
-			</view>
+			</view> -->
+			
+			
 			
 			<view class="cu-load load-modal" v-if="loadModal" >
 			
 					<view class="gray-text">加载中...</view>
 			</view>
 			
-		</view>
+	
 		
 		<view class="flex margin-top">
 			<button @tap="prevent" :class="pageNum>1? 'bg-red':''">上一页</button>

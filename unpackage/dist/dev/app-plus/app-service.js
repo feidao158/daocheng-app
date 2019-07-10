@@ -1218,6 +1218,7 @@ __WXML_GLOBAL__.ops_cached.$gwx_10=[];
 Z([3,'__i0__'])
 Z([3,'item'])
 Z([[7],[3,'billDetailList']])
+Z([3,'id'])
 Z([[7],[3,'loadModal']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
 }
@@ -1590,13 +1591,13 @@ _(r,oHB)
 var xIB=function(fKB,oJB,cLB,gg){
 var oNB=_v()
 _(cLB,oNB)
-if(_oz(z,3,fKB,oJB,gg)){oNB.wxVkey=1
+if(_oz(z,4,fKB,oJB,gg)){oNB.wxVkey=1
 }
 oNB.wxXCkey=1
 return cLB
 }
 oHB.wxXCkey=2
-_2z(z,2,xIB,e,s,gg,oHB,'item','__i0__','')
+_2z(z,2,xIB,e,s,gg,oHB,'item','__i0__','id')
 return r
 }
 e_[x[9]]={f:m9,j:[],i:[],ti:[],ic:[]}
@@ -1886,7 +1887,7 @@ __wxAppCode__['pages/recruit/consultation/visit_router/visit_router.wxml']=$gwx(
 __wxAppCode__['pages/recruit/ledger/ledger_school_add_ledger/ledger_school_add_ledger.json']={"usingComponents":{}};
 __wxAppCode__['pages/recruit/ledger/ledger_school_add_ledger/ledger_school_add_ledger.wxml']=$gwx('./pages/recruit/ledger/ledger_school_add_ledger/ledger_school_add_ledger.wxml');
 
-__wxAppCode__['pages/recruit/ledger/ledger_school_add_teacher/ledger_school_add_teacher.json']={"usingComponents":{}};
+__wxAppCode__['pages/recruit/ledger/ledger_school_add_teacher/ledger_school_add_teacher.json']={"backgroundColor":"#ffffff","usingComponents":{}};
 __wxAppCode__['pages/recruit/ledger/ledger_school_add_teacher/ledger_school_add_teacher.wxml']=$gwx('./pages/recruit/ledger/ledger_school_add_teacher/ledger_school_add_teacher.wxml');
 
 __wxAppCode__['pages/recruit/ledger/ledger_school_detail/ledger_school_detail.json']={"usingComponents":{}};
@@ -27684,10 +27685,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 var _default =
 {
   data: function data() {
@@ -27702,7 +27699,7 @@ var _default =
       uni.navigateTo({
         url: "../holder/holder?type=" + type });
 
-      console.log(type, " at pages\\recruit\\consultation\\router\\router.vue:99");
+      console.log(type, " at pages\\recruit\\consultation\\router\\router.vue:95");
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
@@ -28069,6 +28066,128 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -28143,7 +28262,7 @@ var _default =
         method: 'GET',
         data: {},
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:296");
+          console.log(res.data, " at pages\\recruit\\consultation\\holder\\holder.vue:418");
           if (res.data.status == 200)
           {
             uni.showToast({
@@ -28169,7 +28288,7 @@ var _default =
       uni.navigateTo({
         url: "../stu_return_visit/stu_return_visit?id=" + id });
 
-      console.log(id, " at pages\\recruit\\consultation\\holder\\holder.vue:322");
+      console.log(id, " at pages\\recruit\\consultation\\holder\\holder.vue:444");
     },
     // computed:{
     // 	hasPrevent:function(){
@@ -28200,7 +28319,7 @@ var _default =
     search: function search()
     {
       this.currentNum = 1;
-      console.log("开始搜素", " at pages\\recruit\\consultation\\holder\\holder.vue:353");
+      console.log("开始搜素", " at pages\\recruit\\consultation\\holder\\holder.vue:475");
       this.loadStudentInfo();
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
@@ -29405,6 +29524,86 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -29488,7 +29687,7 @@ var _default =
     search: function search()
     {
       this.pageNum = 1;
-      console.log("开始搜素", " at pages\\recruit\\consultation\\bill_form\\bill_form.vue:235");
+      console.log("开始搜素", " at pages\\recruit\\consultation\\bill_form\\bill_form.vue:315");
       this.loadData();
     },
     next: function next()
@@ -29516,7 +29715,7 @@ var _default =
         data: {},
         success: function success(res) {
           _this2.billDetailList = res.data;
-          console.log(_this2.billDetailList.length, " at pages\\recruit\\consultation\\bill_form\\bill_form.vue:263");
+          console.log(_this2.billDetailList.length, " at pages\\recruit\\consultation\\bill_form\\bill_form.vue:343");
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -30191,6 +30390,59 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -30252,7 +30504,7 @@ var _default =
           }
 
 
-          console.log(visitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:156");
+          console.log(visitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:209");
           _this.stu = visitDate.data[0];
           _this.loadModal = false;
 
@@ -30264,13 +30516,13 @@ var _default =
     search: function search()
     {
       this.currentNum = 1;
-      console.log("开始搜素", " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:168");
+      console.log("开始搜素", " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:221");
       this.validReturnLog();
     },
     // 无效回访日志
     invalidReturnLog: function invalidReturnLog()
     {var _this2 = this;
-      console.log(this.currentNum, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:174");
+      console.log(this.currentNum, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:227");
       uni.request({
         url: this.serverUrl + '/stu/visit_info/invalid/' + this.currentNum + '?limit=1',
         method: 'GET',
@@ -30287,10 +30539,10 @@ var _default =
             return;
           }
 
-          console.log(invalidVisitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:191");
+          console.log(invalidVisitDate, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:244");
           _this2.loadModal = false;
           _this2.stu = invalidVisitDate.data[0];
-          console.log("stu:" + _this2.stu, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:194");
+          console.log("stu:" + _this2.stu, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:247");
         },
         fail: function fail() {},
         complete: function complete() {} });
@@ -30309,7 +30561,7 @@ var _default =
   },
   onLoad: function onLoad(param)
   {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:213");
+    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\return_visit\\return_visit.vue:266");
     this.pageType = param.type;
     if (this.pageType == 0) {
       this.validReturnLog();
@@ -30754,6 +31006,69 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -30787,7 +31102,7 @@ var _default =
 
     visitRemindDate: function visitRemindDate()
     {var _this = this;
-      console.log(this.pageType, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:116");
+      console.log(this.pageType, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:179");
       uni.request({
         url: this.serverUrl + '/stu/visit_remind/' + this.pageType + '/' + this.currentNum + '?limit=1',
         method: 'GET',
@@ -30805,7 +31120,7 @@ var _default =
           }
 
 
-          console.log(visitTimeDate, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:134");
+          console.log(visitTimeDate, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:197");
           _this.stu = visitTimeDate.data[0];
           _this.loadModal = false;
 
@@ -30832,7 +31147,7 @@ var _default =
   },
   onLoad: function onLoad(param)
   {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:161");
+    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\visit_remind\\visit_remind.vue:224");
     this.pageType = param.type;
 
   } };exports.default = _default;
@@ -31039,6 +31354,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -31053,7 +31374,7 @@ var _default =
       uni.navigateTo({
         url: "../birthday_remind/birthday_remind?type=" + type });
 
-      console.log(type, " at pages\\recruit\\consultation\\birthday_reminder_router\\birthday_reminder_router.vue:74");
+      console.log(type, " at pages\\recruit\\consultation\\birthday_reminder_router\\birthday_reminder_router.vue:80");
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
@@ -31268,6 +31589,75 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -31315,7 +31705,7 @@ var _default =
             return;
 
           }
-          console.log(birthdayData, " at pages\\recruit\\consultation\\birthday_remind\\birthday_remind.vue:117");
+          console.log(birthdayData, " at pages\\recruit\\consultation\\birthday_remind\\birthday_remind.vue:186");
           _this.stu = birthdayData.data[0];
           _this.loadModal = false;
         },
@@ -31338,7 +31728,7 @@ var _default =
   },
   onLoad: function onLoad(param)
   {
-    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\birthday_remind\\birthday_remind.vue:140");
+    console.log("load... type:" + param.type, " at pages\\recruit\\consultation\\birthday_remind\\birthday_remind.vue:209");
     this.pageType = param.type;
 
   } };exports.default = _default;
@@ -31563,6 +31953,87 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -31583,7 +32054,7 @@ var _default =
         method: 'GET',
         data: {},
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\ledger\\ledger_school\\ledger_school.vue:116");
+          console.log(res.data, " at pages\\recruit\\ledger\\ledger_school\\ledger_school.vue:197");
           if (_this.schoolInfo != null && _this.schoolInfo.id == res.data[0].id)
           {
             uni.showToast({
@@ -31639,7 +32110,7 @@ var _default =
     {
 
       this.pageNum = 1;
-      console.log("开始搜素", " at pages\\recruit\\ledger\\ledger_school\\ledger_school.vue:172");
+      console.log("开始搜素", " at pages\\recruit\\ledger\\ledger_school\\ledger_school.vue:253");
       this.loadData();
     } },
 
@@ -31878,6 +32349,70 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -31947,7 +32482,7 @@ var _default =
       data: {},
       success: function success(res) {
         _this2.cultuerTeacherLedgerList = res.data.reverse();
-        console.log(res.data, " at pages\\recruit\\ledger\\ledger_school_detail\\ledger_school_detail.vue:186");
+        console.log(res.data, " at pages\\recruit\\ledger\\ledger_school_detail\\ledger_school_detail.vue:250");
       },
       fail: function fail() {},
       complete: function complete() {} });
@@ -32073,6 +32608,65 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -32578,6 +33172,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -32590,14 +33189,14 @@ var _default =
 
 
   onLoad: function onLoad(param) {var _this = this;
-    console.log(param.id, " at pages\\recruit\\ledger\\ledger_teacher_detail\\ledger_teacher_detail.vue:32");
+    console.log(param.id, " at pages\\recruit\\ledger\\ledger_teacher_detail\\ledger_teacher_detail.vue:37");
     uni.request({
       url: this.serverUrl + '/led/teacher/ledger/json/' + param.id }).
 
 
     then(function (data) {var _data = _slicedToArray(
       data, 2),error = _data[0],res = _data[1];
-      console.log(res.data.length, " at pages\\recruit\\ledger\\ledger_teacher_detail\\ledger_teacher_detail.vue:39");
+      console.log(res.data.length, " at pages\\recruit\\ledger\\ledger_teacher_detail\\ledger_teacher_detail.vue:44");
       _this.cultureTeacherLedgerList = res.data;
     });
 
@@ -33366,16 +33965,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 var _default =
 {
   data: function data() {
@@ -33426,7 +34015,7 @@ var _default =
 
         return;
       }
-      console.log(this.content, " at pages\\recruit\\ledger\\ledger_school_add_ledger\\ledger_school_add_ledger.vue:98");
+      console.log(this.content, " at pages\\recruit\\ledger\\ledger_school_add_ledger\\ledger_school_add_ledger.vue:88");
 
 
       uni.request({
@@ -33441,7 +34030,7 @@ var _default =
           schoolId: this.schoolId },
 
         success: function success(res) {
-          console.log(res.data, " at pages\\recruit\\ledger\\ledger_school_add_ledger\\ledger_school_add_ledger.vue:113");
+          console.log(res.data, " at pages\\recruit\\ledger\\ledger_school_add_ledger\\ledger_school_add_ledger.vue:103");
           uni.navigateBack({
             delta: 1 });
 
@@ -33644,7 +34233,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 var _default =
 {
   data: function data() {
@@ -33664,12 +34252,12 @@ var _default =
     },
     selectGrade: function selectGrade(e)
     {
-      console.log(e.target.value, " at pages\\recruit\\ledger\\ledger_school_add_teacher\\ledger_school_add_teacher.vue:85");
+      console.log(e.target.value, " at pages\\recruit\\ledger\\ledger_school_add_teacher\\ledger_school_add_teacher.vue:84");
       this.grade = e.target.value;
     },
     selectClassNumber: function selectClassNumber(e)
     {
-      console.log(e.target.value, " at pages\\recruit\\ledger\\ledger_school_add_teacher\\ledger_school_add_teacher.vue:90");
+      console.log(e.target.value, " at pages\\recruit\\ledger\\ledger_school_add_teacher\\ledger_school_add_teacher.vue:89");
       this.classNumber = e.target.value;
     },
     formSubmit: function formSubmit(e)
