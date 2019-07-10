@@ -6,7 +6,7 @@
     <uni-collapse-item title="基本信息" animation="true">
         <view style="padding: 16upx;">
             <view class="form-item">
-            	<input type="text" name="name" value="" placeholder="请输入姓名" />
+            	<input type="text" name="name" value="" v-model="username"  placeholder="请输入姓名" />
             </view>
             
             <view class="form-item">
@@ -217,6 +217,7 @@
 	export default {
 		data() {
 			return {
+				username:null,
 				selectedIntentionLevel:null,
 				intentionLevel:['A','B','C'],
 				selectedRelationShip:null,
@@ -332,6 +333,13 @@
 			// 提交表单
 			// 文化学校 紧急联系人关系 来源渠道 推荐班主任 意向专业 意向等级
 			formSubmit(e){
+				if(null == (this.username)){
+					console.log("用户名不能为空")
+					uni.showToast({
+						title:"用户名不能为空"
+					})
+					return 
+				}
 				console.log(e.detail.value);
 				var data = e.detail.value;
 				data.province = this.province;

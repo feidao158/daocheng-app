@@ -1,0 +1,2 @@
+setCssToHead([],undefined,{path:"./pages/recruit/consultation/visit_router/visit_router.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/recruit/consultation/visit_router/visit_router.wxml') } }));

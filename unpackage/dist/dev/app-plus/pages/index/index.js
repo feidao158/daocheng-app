@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"collapse-item-content{ padding: ",[0,30],"; text-align: center; }\n",],undefined,{path:"./pages/index/index.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index/index.wxml') } }));

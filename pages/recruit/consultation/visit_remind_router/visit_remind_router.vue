@@ -60,12 +60,27 @@
 			
 			toVisitTimDetail(type)
 			{
-				uni.navigateTo({
-					url: "../visit_remind/visit_remind?type=" + type
-				})
-				console.log(type)
+				
+				uni.request({
+					url:this.serverUrl + '/stu/visit_remind/count/' + type,
+					method:'GET',
+					data:{},
+					success: visitRemindCount => {
+						console.log(visitRemindCount.data)
+						if(visitRemindCount.data == 0){
+							uni.showToast({
+								title: '没有更多的数据了'
+							})
+							return
+							}
+							else{
+							uni.navigateTo({
+								url: "../visit_remind/visit_remind?type=" + type
+							})
+							}
+			            }
+			    })
 			}
-			
 		}
 	}
 </script>
