@@ -1,2 +1,0 @@
-setCssToHead([],undefined,{path:"./pages/recruit/consultation/visit_remind_router/visit_remind_router.wxss"})();
-document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/recruit/consultation/visit_remind_router/visit_remind_router.wxml') } }));

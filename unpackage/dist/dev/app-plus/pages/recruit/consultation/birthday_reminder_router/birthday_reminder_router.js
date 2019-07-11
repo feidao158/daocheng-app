@@ -1,2 +1,0 @@
-setCssToHead([],undefined,{path:"./pages/recruit/consultation/birthday_reminder_router/birthday_reminder_router.wxss"})();
-document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/recruit/consultation/birthday_reminder_router/birthday_reminder_router.wxml') } }));
