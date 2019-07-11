@@ -1,7 +1,46 @@
 <script>
 	export default {
 		onLaunch: function() {
-			console.log('App Launch')
+			// 更新地址
+			// {  服务器响应数据如下
+			// 	"status":1,//升级标志，1：需要升级；0：无需升级  
+			// 	"note": "修复bug1；\n修复bug2;",//release notes  
+			// 	"url": "http://www.example.com/uniapp.apk" //更新包下载地址  
+			// }  
+			// #ifdef APP-PLUS
+			var updateServer = this.serverUrl + '/app/update';
+			var req = {
+				"appid": plus.runtime.appid,
+				"version": plus.runtime.version
+			};
+			
+			uni.request({
+				url: updateServer,
+				method: 'GET',
+				data: req,
+				success: res => {
+				
+				
+					if(res.statusCode ==200 && res.data.status ==1)
+					{
+						var url = res.data.url
+						uni.showModal({
+							title: '更新提示',
+							content: res.data.note,
+							success: res => {
+								if(res.confirm){
+									plus.runtime.openURL(url);
+								}
+							}
+							
+						});
+					}
+				},
+				fail: () => {},
+				complete: () => {}
+			});
+			// #endif
+			
 		},
 		onShow: function() {
 			console.log('App Show')
