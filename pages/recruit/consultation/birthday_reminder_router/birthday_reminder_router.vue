@@ -74,10 +74,26 @@
 			
 			toBirthdayDetail(type)
 			{
-				uni.navigateTo({
-					url:"../birthday_remind/birthday_remind?type=" + type,
+				uni.request({
+					url:this.serverUrl + '/stu/birthday/count/' + type,
+					method:'GET',
+					data:{},
+					success: visitRemindCount => {
+						console.log(visitRemindCount.data)
+						if(visitRemindCount.data == 0){
+							uni.showToast({
+								title: '没有更多的数据了'
+							})
+							return
+							}
+							else{
+							uni.navigateTo({
+								url:"../birthday_remind/birthday_remind?type=" + type,
+							})
+							console.log(type)
+							}
+				        }
 				})
-				console.log(type)
 			}
 			
 		}
