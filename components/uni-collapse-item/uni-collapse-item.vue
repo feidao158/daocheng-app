@@ -1,4 +1,4 @@
-﻿<template>
+<template>
 	<view :class="setCollapseCellClass" :hover-class="disabled === true || disabled === 'true' ? '' : 'uni-collapse-cell--hover'">
 		<view class="uni-collapse-cell__title" @click="onClick">
 			<view class="uni-collapse-cell__title-extra" v-if="thumb">

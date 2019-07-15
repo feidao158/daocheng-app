@@ -92,7 +92,7 @@
 				uni.navigateTo({
 					url: "../holder/holder?type=" + type
 				})
-				console.log(type)
+				
 			}
 			
 		}

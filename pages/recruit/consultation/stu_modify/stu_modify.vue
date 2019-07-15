@@ -320,7 +320,7 @@
 			// 提交表单
 			// 文化学校 紧急联系人关系 来源渠道 推荐班主任 意向专业 意向等级
 			formSubmit(e){
-				console.log(e.detail.value);
+				
 				var data = e.detail.value;
 				data.id = this.id;
 				data.province = this.province;
@@ -331,6 +331,7 @@
 				data.chanel = this.selectedResourceFromId
 				data.recommend_id = this.selectedCultureTeacherId
 				data.grade = this.grade;
+				data.intentionLevel = this.selectedIntentionLevel
 				
 				
 				// 提交修改表单
@@ -342,7 +343,9 @@
 					method: 'POST',
 					data: data,
 					success: res => {
-						console.log(res.data)
+						uni.navigateBack({
+							delta:1
+						})
 					},
 					fail: () => {
 						
@@ -455,7 +458,7 @@
 					method: 'GET',
 					data: {},
 					success: res => {
-						console.log(res.data)
+						
 						this.stuInfo = res.data;
 						this.location = res.data.province + '/' + res.data.city + '/' + res.data.area;
 						let hasCommandTeacher = res.data.holder!=null
@@ -477,7 +480,7 @@
 								method: 'GET',
 								data: {},
 								success: res => {
-									console.log(res.data)
+								
 									this.cultureSchoolTeachers = res.data;
 									
 									// 存在推荐教师

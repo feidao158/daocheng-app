@@ -350,12 +350,14 @@
 				dataList:null,
 				pageType:null,
 				loadModal:false,
-				inputValue:''
+				inputValue:'',
+				enterModifyPage:false
 			}
 		},
 		methods: {
 			next()
 			{
+				
 				this.loadModal=true;
 				this.currentNum++;
 				this.loadStudentInfo()
@@ -403,6 +405,7 @@
 			},
 			stuModify(id)
 			{
+				this.enterModifyPage = true
 				uni.navigateTo({
 					url:"../stu_modify/stu_modify?id=" + id
 				})
@@ -415,7 +418,7 @@
 					method: 'GET',
 					data: {},
 					success: res => {
-						console.log(res.data)
+						
 						if(res.data.status==200)
 						{
 							uni.showToast({
@@ -441,7 +444,7 @@
 				uni.navigateTo({
 					url:"../stu_return_visit/stu_return_visit?id=" + id
 				})
-				console.log(id)
+				
 			},	
 		// computed:{
 		// 	hasPrevent:function(){
@@ -458,21 +461,37 @@
 			})
 			
 		},	
-		onShow(param) {
-			var me = this;
+		onShow() {
 			
+			let me = this
+			let inputStr = encodeURI(this.inputValue)
+			if(this.enterModifyPage==true)
+			{
+				uni.request({
+					url: this.serverUrl + '/stu/mystudent/'  + this.pageType + '/' + this.currentNum + '?name=' + inputStr + '&limit=1',
+					method: 'GET',
+					data: {},
+					success: res => {
+						this.enterModifyPage = false
+						this.stu = res.data[0]
+						
+					},
+					fail: () => {},
+					complete: () => {}
+				});
+			}
 			
 		},
 		onLoad(param)
 		{
-			
+		
 			this.pageType = param.type
 			this.loadStudentInfo()
 		},
 		search()
 		{
 			this.currentNum=1
-			console.log("开始搜素")
+			
 			this.loadStudentInfo()
 		},
 		}

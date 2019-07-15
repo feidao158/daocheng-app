@@ -19,8 +19,6 @@
 				method: 'GET',
 				data: req,
 				success: res => {
-				
-				
 					if(res.statusCode ==200 && res.data.status ==1)
 					{
 						var url = res.data.url

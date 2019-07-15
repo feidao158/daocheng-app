@@ -89,7 +89,7 @@
 							})
 						}
 						
-						console.log(res.data)
+					
 					},
 					fail: () => {
 						console.log("出错了")
@@ -112,7 +112,7 @@
 			uni.request({
 				url: me.serverUrl + '/login/status',
 				success(res) {
-					console.log(res.data.msg)
+					
 					if(res.data.status==500 && res.data.msg== '未登录')
 					{
 						var username =  uni.getStorageSync('username');
